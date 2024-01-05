@@ -1,0 +1,395 @@
+<!-- itemnotes.html -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- <link rel="stylesheet" href="css/table.css"> -->
+    <script src="js/fcc.js"></script>
+    <title>FCC</title>
+    <!-- <style>
+        body
+        {
+            overflow: hidden;
+        }
+    </style> -->
+    <!-- Extrenal css file  
+/* ACtuator Sizing */
+.actuator{
+    margin-top: 30px;
+
+}-->
+
+</head>
+
+<body>
+    <div class="container-fulid itemnotes">
+        <div class="row mr-0">
+            <div class="col-2">
+                <div class="sidenav">
+                    <img src="photo/FCC _new.png"  alt="fcc">
+                    <ul class="nav nav-pills flex-column vh-100">
+                        <!-- <li class="nav-item mt-4">
+                            <p><a class="nav-link" href="#">Dashboard</a></p>
+                        </li> -->
+                        <li  class="nav-item mt-4" style="margin-top: 0;">
+                            <p><a class="nav-link" href="Dash.html">
+                                <!-- <img src="icon/Dashboard.png" alt="dash" style="width: 15%;"> -->
+                            Dashboard</a></p>
+                        </li>
+                        <li class="nav-item">
+                            <p><a class="nav-link" href="projectdetails.html">
+                                <!-- <img src="icon/Project Details.png" alt="projectdetail" style="width: 15%;"> -->
+                                Project Details</a></p>
+                        </li>
+                        <li class="nav-item">
+                            <p><a class="nav-link" href="valvedata.html">	
+                                <!-- <i class="fa-solid fa-memo"></i> -->
+                                Valve Data</a></p>
+                        </li>
+                        <li class="nav-item">
+                            <p>
+                                <a class="nav-link" href="valvesizing.html">
+                                    <!-- <img src="icon/Valve Sizing.png" alt="valve" style="width: 15%;"> -->
+                                     Valve Sizing</a>
+                            </p>
+                        </li>
+                        <li class="nav-item">
+                            <p><a class="nav-link" href="Actuatorsizing.html">
+                                <!-- <img src="icon/Actuator Sizing.png" alt="valve" style="width: 15%;">  -->
+                                Actuator Sizing</a></p>
+                        </li>
+                        <li class="nav-item">
+                            <p><a class="nav-link" href="Accessories.html">
+                                <!-- <img src="photo/Accessories.png" alt="valve" style="width: 10%; border-radius: 10px;">  -->
+                                Accessories</a></p>
+                        </li>
+                        <li class="nav-item">
+                            <p><a class="nav-link active" href="Itemnotes.html">
+                                <!-- <i class="fa-solid fa-ballot-check"></i>  -->
+                               Orders, Item Notes</a></p>
+                        </li>
+                        <li class="nav-item">
+                            <p><a class="nav-link" href="Projectnotes.html">
+                                <!-- <i class="fa-solid fa-ballot-check" style="color: white;"> -->
+                                </i> Project Notes</a></p>
+                        </li>
+                        <li class="nav-item">
+                            <p><a class="nav-link" href="Viewdata.html">
+                                <!-- <i class="fa-solid fa-magnifying-glass"></i> -->
+                                Reference Table
+                            </a></p>
+                        </li>
+                        <li class="nav-item">
+                            <p><a class="nav-link" href="#"> 
+                                <!-- <i class="fa-solid fa-users" style="color: white;"></i>   -->
+                                Customer Master</a></p>
+                        </li>
+                        <li class="nav-item">
+                            <p><a class="nav-link" href="#">
+                                <!-- <i class="fa-solid fa-arrow-right-from-bracket" style="color: white;"></i> -->
+                                 Logout</a></p>
+                        </li>
+                        <li class="nav-item" style="margin-top: 10px;">
+                            <p><a class="nav-link" href="#"> <i class="fa-solid fa-circle-user pr-2" style="color: white;"></i>  Suraj</a></p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="col-10">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="topicons mt-3 ml-3">
+                            <div class="row">
+                                <div class="icon">
+                                    <i class="fa-solid fa-backward-step" data-toggle="tooltip" title="first"></i>
+                                    <i class="fa-solid fa-angle-left ml-3" data-toggle="tooltip" title="Previous"></i>
+                                    <input type="text" class="form-control-sm-sm ml-3" name="name"
+                                        style="height: 26px;" />
+                                    <i class="fa-solid fa-angle-right ml-3" data-toggle="tooltip" title="next"></i>
+                                    <i class="fa-solid fa-forward-step ml-3" data-toggle="tooltip" title="last"></i>
+                                    <i class="fa-solid fa-file ml-3" data-toggle="tooltip"
+                                    title="file"></i>                                    <i class="fa-solid fa-floppy-disk ml-3 fa-lg" data-toggle="tooltip"
+                                        title="save"></i>
+                                    <a href="Preference.html"><i class="fa-solid fa-sliders fa-1x ml-3"
+                                            data-toggle="tooltip" title="Preference"></i></a>
+                                    <i class="fa-solid fa-question ml-3" data-toggle="tooltip" title="help"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <hr>
+
+
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="row">
+                                        <!--Special Processing-->
+                                        <div class="col-3 mt-2 p-3 shadow">
+                                            <h6 class="Itemnotes_heading"><b>Special Processing</b></h6>
+                                            <hr>
+                                            <div class="row">
+                                                <div class="col-4">
+                                                    <label>Cleaning</label>
+                                                </div>
+                                                <div class="col-8">
+                                                    <input type="text" class="form-control-sm-sm item_input">
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-4">
+                                                    <label>Certification</label>
+                                                </div>
+                                                <div class="col-8">
+                                                    <input type="text" class="form-control-sm-sm item_input">
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-4">
+                                                    <label>Paint Finish</label>
+                                                </div>
+                                                <div class="col-8">
+                                                    <input type="text" class="form-control-sm-sm item_input">
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-4">
+                                                    <label>Paint Certs</label>
+                                                </div>
+                                                <div class="col-8">
+                                                    <input type="text" class="form-control-sm-sm item_input">
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-4">
+                                                    <label>Special SP1</label>
+                                                </div>
+                                                <div class="col-8">
+                                                    <input type="text" class="form-control-sm-sm item_input">
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-4">
+                                                    <label>Special SP2</label>
+                                                </div>
+                                                <div class="col-8">
+                                                    <input type="text" class="form-control-sm-sm item_input">
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-4">
+                                                    <label>Special SP3</label>
+                                                </div>
+                                                <div class="col-8">
+                                                    <input type="text" class="form-control-sm-sm item_input">
+                                                </div>
+                                            </div>
+
+
+
+
+                                        </div>
+
+                                        <!------Inspection Table-->
+                                        <div class="col-3 mt-2 ml-3 p-3 shadow">
+                                            <h6 class="Itemnotes_heading"><b>Inspection & Testing</b></h6>
+                                            <hr>
+                                            <div class="row">
+                                                <div class="col-5">
+                                                    <label>RM Inspection</label>
+                                                </div>
+                                                <div class="col-7">
+                                                    <input type="text" class="form-control-sm-sm item_input">
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-5">
+                                                    <label>Hydro Test</label>
+                                                </div>
+                                                <div class="col-7">
+                                                    <input type="text" class="form-control-sm-sm item_input">
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-5">
+                                                    <label>Final Inspection</label>
+                                                </div>
+                                                <div class="col-7">
+                                                    <input type="text" class="form-control-sm-sm item_input">
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-5 pr-0">
+                                                    <label>Painting Inspection</label>
+                                                </div>
+                                                <div class="col-7">
+                                                    <input type="text" class="form-control-sm-sm item_input">
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-5">
+                                                    <label>Packing Inspection</label>
+                                                </div>
+                                                <div class="col-7">
+                                                    <input type="text" class="form-control-sm-sm item_input">
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-5 pr-0">
+                                                    <label>Validation Test VT1</label>
+                                                </div>
+                                                <div class="col-7">
+                                                    <input type="text" class="form-control-sm-sm item_input">
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-5 pr-0">
+                                                    <label>Validation Test VT2</label>
+                                                </div>
+                                                <div class="col-7">
+                                                    <input type="text" class="form-control-sm-sm item_input">
+                                                </div>
+                                            </div>
+                                            <!-- <button type="button" class="btn btn-info mt-1">Save Data</button> -->
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                        <div class="row mt-3">
+                            <div class="col-12">
+                                <h6 class="Itemnotes_heading"><b>Item Notes</b></h6>
+                                <div class="row">
+                                    <div class="col-1 mt-1">
+                                        <select id="" class="form-control-sm-sm item_select">
+                                            <option>N1</option>
+                                            <option>N2</option>
+                                            <option>N3</option>
+                                            <option>N4</option>
+                                            <option>N5</option>
+                                            <option>N6</option>
+                                            <option>N7</option>
+                                            <option>N8</option>
+                                            <option>N9</option>
+                                            <option>General</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-6 mt-1">
+                                        <select id="" class="form-control-sm-sm item_select">
+                                            <option>Material inspections And Certifiction Requirement in accordance
+                                                with EN 10204 3.1 for wetted parts</option>
+                                            <option>Dimension Inspection On The Assembled Valve Shall be as per
+                                                Approved General Assembly</option>
+                                            <option> Material inspections And Certifiction Requirement in accordance
+                                                with EN
+                                                10204 3.1 for wetted parts</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-2">
+                                        <button type="button" class="btn btn-info item_btn1">ADD</button>
+                                        <!-- <button type="button" class="btn item_btn">Save Data</button> -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row mt-2 Item_notes">
+                            <div class="col-12">
+                               <table class="table table-striped table-bordered tableitem">
+                                    <thead class="table-sm itemhead">
+                                        <tr>
+                                            <th class="table_notes">Notes</th>
+                                            <th class="table_content">Content</th>
+                                            <th class="table_remove">Remove</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody class="table-sm itembody_table">
+                                        <tr>
+                                            <td class="body_content">N1</td>
+                                            <td class="body_content">Material inspections And Certifiction Requirement in accordance</td>
+                                            <td class="body_content"><i class="fa-solid fa-close fa-1x closeicon item_cancle_icon"></i></td>
+                                        </tr>
+
+                                        <tr>
+                                            <td class="body_content">N1</td>
+                                            <td class="body_content">Material inspections And Certifiction Requirement in accordance</td>
+                                            <td class="body_content"><i class="fa-solid fa-close fa-1x closeicon item_cancle_icon"></i></td>
+                                        </tr>
+
+                                        <tr>
+                                            <td class="body_content">N1</td>
+                                            <td class="body_content">Material inspections And Certifiction Requirement in accordance</td>
+                                            <td class="body_content"><i class="fa-solid fa-close fa-1x closeicon item_cancle_icon"></i></td>
+                                        </tr>
+
+                                        <tr>
+                                            <td class="body_content">N1</td>
+                                            <td class="body_content">Material inspections And Certifiction Requirement in accordance</td>
+                                            <td class="body_content"><i class="fa-solid fa-close fa-1x closeicon item_cancle_icon"></i></td>
+                                        </tr>
+
+                                        <tr>
+                                            <td class="body_content">N1</td>
+                                            <td class="body_content">Material inspections And Certifiction Requirement in accordance</td>
+                                            <td class="body_content"><i class="fa-solid fa-close fa-1x closeicon item_cancle_icon"></i></td>
+                                        </tr>
+
+                                        <tr>
+                                            <td class="body_content">N1</td>
+                                            <td class="body_content">Material inspections And Certifiction Requirement in accordance</td>
+                                            <td class="body_content"><i class="fa-solid fa-close fa-1x closeicon item_cancle_icon"></i></td>
+                                        </tr>
+
+                                        <tr>
+                                            <td class="body_content">General</td>
+                                            <td class="body_content">Material inspections And Certifiction Requirement in accordance</td>
+                                            <td class="body_content"><i class="fa-solid fa-close fa-1x closeicon item_cancle_icon"></i></td>
+                                        </tr>
+
+                                        <tr>
+                                            <td class="body_content">General</td>
+                                            <td class="body_content">Material inspections And Certifiction Requirement in accordance</td>
+                                            <td class="body_content"><i class="fa-solid fa-close fa-1x closeicon item_cancle_icon"></i></td>
+                                        </tr>
+
+                                        <tr>
+                                            <td class="body_content">General</td>
+                                            <td class="body_content">Material inspections And Certifiction Requirement in accordance</td>
+                                            <td class="body_content"><i class="fa-solid fa-close fa-1x closeicon item_cancle_icon"></i></td>
+                                        </tr>
+
+                                        <tr>
+                                            <td class="body_content">General</td>
+                                            <td class="body_content">Material inspections And Certifiction Requirement in accordance</td>
+                                            <td class="body_content"><i class="fa-solid fa-close fa-1x closeicon item_cancle_icon"></i></td>
+                                        </tr>
+
+                                        <tr>
+                                            <td class="body_content">General</td>
+                                            <td class="body_content">Material inspections And Certifiction Requirement in accordance</td>
+                                            <td class="body_content"><i class="fa-solid fa-close fa-1x closeicon item_cancle_icon"></i></td>
+                                        </tr>
+                                    </tbody>
+                               </table>
+                               <button type="button" class="btn item_btn">Save Data</button>
+                            </div>
+                        </div>   
+                    </div>
+                </div>
+            </div>
+        </div>
+</body>
+
+</html>

@@ -1,0 +1,786 @@
+/* ----------------------------------------------------------------------style.css file-------------------------------------------------------- */
+.nav-pills .nav-link.active
+{
+    background-color: white;
+    color: black;
+}
+img {
+    width: 80%;
+    margin-top: 9%;
+    margin-left: 8%;
+}
+
+.adjust {
+    resize: horizontal;
+    overflow: auto;
+    display: block;
+    white-space: nowrap;
+    /* width: 10px; */
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+label {
+    font-size: 11px;
+}
+
+.sidenav {
+    background-color: #353a40;
+    position: fixed;
+    /* left: 0; */
+    width: 15%;
+    /* margin-top: 67px; */
+
+    z-index: 1;
+    line-height: 100%;
+}
+
+.nav-link {
+    /* text-align: center; */
+    color: white;
+    font-size: 16px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+}
+
+.nav-link:hover {
+    background-color: white;
+    color: black;
+    /* border-radius: -20px; */
+}
+.fa-circle-user {
+    font-size: 25px
+}
+
+/* .nav-link p{
+    font-size: 15px;
+} */
+.topicons {
+    /* margin-left: 25px; */
+    margin-top: 2%;
+    width: 97%;
+    height: 30px;
+}
+
+.projectdetails {
+    /* margin-top: 20px; */
+    /* margin-right: 20px; */
+    /* margin-left: 10px; */
+    width: 97%;
+    /* height: 40px; */
+}
+
+/* .Itemdetails
+{
+    margin-top: 40px;
+} */
+.project {
+    border: 1px solid white;
+    padding: 2px;
+    /* box-shadow: 2px 2px 2px 2px rgb(247, 241, 241); */
+    border-radius: 5px;
+    height: 50px;
+}
+
+.item {
+    margin-top: 14%;
+    /* border: 1px solid white; */
+    padding: 2px;
+
+    border-radius: 5px;
+    height: 50px
+}
+
+
+.Itemdetails {
+    margin-top: 10px;
+}
+
+.fa-solid {
+    color: black;
+}
+
+.fa-magnifying-glass {
+    /* background-color: #353a40; */
+    color: white;
+}
+
+#btn {
+    background-color: #353a40;
+    outline: none;
+    border: none;
+}
+
+
+/* ----------------------------------------------------project details page-------------------------------------------------------------- */
+.projectdetails-form {
+    /* background-color: white; */
+    padding: 15px;
+    width: 95%;
+    /* -webkit-box-shadow: 2px 7px 15px 1px rgba(148, 183, 212, 1);
+    -moz-box-shadow: 2px 7px 15px 1px rgba(148, 183, 212, 1);
+    box-shadow: 2px 7px 15px 1px #cbd0d7; */
+}
+
+.orderinformation-form {
+    margin-left: 3%;
+    padding: 15px;
+    /* -webkit-box-shadow: 2px 7px 15px 1px rgba(148, 183, 212, 1);
+    -moz-box-shadow: 2px 7px 15px 1px rgba(148, 183, 212, 1);
+    box-shadow: 2px 7px 15px 1px #cbd0d7; */
+}
+.projectdetail_heading {
+    font-size: 15px;
+}
+
+.projectdetail_input {
+    width: 100%;
+    height: 70%;
+    font-size: 11px;
+}
+
+.projectdetail_select {
+    width: 100%;
+    height: 70%;
+    font-size: 11px;
+    background-color: white;
+    border: 1px solid #607274;
+}
+
+.projectdetail_btn {
+    background-color: #04AA6D;
+    color: white;
+    font-size: 11px;
+}
+
+/* ---------------------------------------------------------------valve data page-------------------------------------------------------- */
+
+.valvedata_heading {
+    font-size: 15px;
+}
+
+.valvedata_input {
+    width: 100%;
+    height: 70%;
+    font-size: 11px;
+}
+
+.valvedata_select {
+    width: 100%;
+    height: 70%;
+    background-color: white;
+    border: 1px solid #607274;
+    font-size: 11px;
+}
+
+.valvedata_input1 {
+    width: 120%;
+    height: 70%;
+    font-size: 11px;
+}
+
+.valvedata_select1 {
+    width: 120%;
+    height: 70%;
+    background-color: white;
+    border: 1px solid #607274;
+    font-size: 11px;
+}
+
+.valvedata_inputbox {
+    width: 150%;
+    height: 70%;
+}
+
+.valvedata_selectbox {
+    width: 150%;
+    height: 69%;
+    background-color: white;
+    border: 1px solid #607274;
+    font-size: 11px;
+}
+
+.valveselection {
+    height: 100%;
+}
+
+.materialselection {
+    height: 100%;
+}
+
+.warnings {
+    height: 240px;
+}
+
+.valvebutton {
+    background-color: #04AA6D;
+    font-size: 14px;
+    color: white;
+}
+
+/* -------------------------------------valvesizing page------------------------------------------------------------------------ */
+.sizingtable {
+    height: 25px;
+    border-top: 1px solid #607274;
+    border-right: 1px solid #607274;
+
+
+    /* width: 100%; */
+    /* border:1px solid #607274; */
+}
+
+.sizingtableleft {
+    height: 25px;
+    border-top: 1px solid #607274;
+    border-right: 1px solid #607274;
+    border-left: 1px solid #607274;
+    background-color: #e5e5e5;
+    /* border:1px solid #607274; */
+}
+
+.sizingtableleft_warning{
+    height: 25px;
+    border-top: 1px solid #607274;
+    border-right: white;
+    border-left: 1px solid #607274;
+    background-color: #ffffff;
+    /* border:1px solid #607274; */
+    
+}
+
+.sizingtable_header{
+    height: 25px;
+    border-top: 1px solid #607274;
+    border-right:white;
+
+}
+
+.sizingtablebottom {
+    height: 21px;
+    border-top: 1px solid #607274;
+    border-right: 1px solid #607274;
+    border-left: 1px solid #607274;
+    border-bottom: 1px solid #607274;
+    /* border:1px solid #607274; */
+}
+
+.sizingp {
+    margin-left: 10px;
+    margin-top: 3px;
+    /* color: #f90606; */
+    color: #000000;
+    /* font-weight: 700; */
+    font-size: 12px;
+}
+
+.colborder_bottom {
+    border-bottom: 1px solid #607274;
+
+}
+
+
+.sizingtable_inputs {
+    width: 100%;
+    border: 0px solid;
+}
+
+.clear {
+    margin-left: 5%;
+    margin-top: 10%;
+    text-align: right;
+    color: rgb(28, 28, 28);
+    font-size: 12px;
+}
+
+.calculatedcv_row {
+    width: 100%;
+    border: 0px solid;
+    background-color: #ddebf7
+}
+
+.closeicon {
+    margin-left: 5%;
+    margin-top: 7%;
+    text-align: right;
+    color: rgb(95, 95, 95);
+}
+
+.valvesizing_fluid_data {
+    width: 100%;
+}
+
+.valve_box2 {
+    font-size: 12px;
+}
+
+
+
+label {
+    font-size: 11px;
+}
+
+input {
+    height: 100%;
+    font-size: 11px;
+}
+
+
+select {
+    height: 100%;
+    font-size: 11px;
+    background-color: white;
+    width: 100%;
+}
+
+.valve_btn {
+    font-size: 11px;
+    font-family: Verdana sans-serif;
+
+}
+
+.valve_btn2 {
+    font-size: 11px;
+    font-family: Verdana sans-serif;
+    background-color: #04AA6D;
+    margin: 0;
+}
+
+/* --------------------------Select Valve------------------------ */
+.selectvalve_borderbottom{
+    border-bottom:  1px solid #607274;
+}
+
+.selectvalve_borderleft{
+    border-left: 1px solid #607274;
+
+}
+
+.outline{
+    border-left: groove 1px black; 
+    border-right: groove 1px black;
+}
+/* -------------------------------------------------------------------------------------------------- */
+
+/* .actuator
+{
+    margin-right: 30px;
+} */
+/* project details page css code */
+
+.projectdetails-form {
+    background-color: white;
+    padding: 15px;
+    width: 95%;
+
+}
+
+.orderinformation-form {
+    margin-left: 3%;
+    padding: 15px;
+
+}
+
+
+a:link {
+    text-decoration: none;
+}
+
+/* ---------------------------------------------Actuatorsizing page css----------------------------------------------------------------- */
+
+/* .actuator
+{
+    width: 110%;
+} */
+.actuator_heading {
+    font-size: 15px;
+}
+
+.actuator_input {
+    width: 100%;
+    height: 70%;
+    font-size: 11px;
+}
+
+.actuator_select {
+    width: 100%;
+    height: 70%;
+    font-size: 11px;
+    background-color: white;
+    border: 1px solid #607274;
+}
+
+.actuator_input1 {
+    width: 130%;
+    height: 70%;
+    font-size: 11px;
+}
+
+.actuator_select1 {
+    width: 100%;
+    height: 70%;
+    font-size: 11px;
+    background-color: white;
+    border: 1px solid #607274;
+}
+
+.actuator_button1 {
+    background-color: #04aa6d;
+    color: white;
+    width: 100%;
+    font-size: 14px;
+}
+
+.actuator_button2 {
+    color: white;
+    width: 100%;
+    font-size: 14px;
+}
+
+.actuator_button3 {
+    background-color: rgb(139, 43, 43);
+    color: white;
+    width: 100%;
+    font-size: 14px;
+}
+
+/* -----------------------------------------------RotaryActuator page css---------------------------------------------------------- */
+
+.Rotaryactuator_button1 {
+    background-color: #04aa6d;
+    color: white;
+    width: 100%;
+    font-size: 14px;
+}
+
+.Rotaryactuator_button2 {
+    color: white;
+    width: 100%;
+    font-size: 14px;
+}
+
+.Rotaryactuator_button3 {
+    background-color: rgb(139, 43, 43);
+    color: white;
+    width: 100%;
+    font-size: 14px;
+}
+
+.Rotary_heading {
+    font-size: 15px;
+}
+
+.input_btn1 {
+    width: 150px;
+    font-size: 14px;
+}
+
+.input_btn2 {
+    width: 150px;
+    background-color: #04AA6D;
+    color: white;
+    font-size: 14px;
+}
+
+/* .input_btn3
+{
+    width: 150px;
+    background-color: #04AA6D; 
+    color: white;
+    font-size: 14px;
+}
+.input_btn4
+{
+    width: 150px;
+    font-size: 14px;
+} */
+.Rotary_input {
+    height: 100%;
+    font-size: 12px;
+    width: 100%;
+    border: 0px solid;
+}
+
+.Rotary_select {
+    height: 100%;
+    font-size: 12px;
+    width: 100%;
+    background-color: white;
+    border: 0px solid;
+}
+
+.savebtn {
+    margin-left: 60%;
+}
+
+/* ----------------------------------slidingstem page css------------------------------------------------------------------------- */
+.sliding_heading {
+    font-size: 15px;
+    margin-top: 3%;
+}
+
+.sliding_select {
+    height: 100%;
+    font-size: 12px;
+    width: 100%;
+    background-color: white;
+    border: 0px solid;
+}
+
+.sliding_input {
+    height: 100%;
+    font-size: 12px;
+    width: 100%;
+    border: 0px solid;
+}
+
+.slidingtop_input {
+    height: 90%;
+    font-size: 11px;
+}
+
+/* ----------------------------------------------Accessories page css------------------------------------------------------------------ */
+
+.Accessories_heading {
+    font-size: 15px;
+}
+.arow_icon
+{
+    color: black;
+}
+.accesories_input
+{
+    width: 120%;
+    height: 70%;
+    font-size: 11px;
+}
+.accesories_select
+{
+    width: 120%;
+    height: 70%;
+    background-color: white;
+    border: 1px solid #607274;
+    font-size: 11px;
+}
+.accesories_btn
+{
+    margin-top: 13%;
+    margin-left: 88%;
+}
+
+/* -------------------------------------limit switch(accessories)------------------------------------------------------------- */
+
+.limitswitch_table
+{
+    font-size: 11px;
+}
+.accesories_radio
+{
+    margin-left: 30%;
+}
+.limitswitch_btn
+{
+    margin-left: 77%;
+    margin-top: 3%;
+    font-size: 14px;
+}
+
+/* ----------------------------------------------solenoid(accessories)------------------------------------------------------------ */
+
+.solenoid_table
+{
+    font-size: 11px;
+    /* overflow-y: scroll;
+    display: block; */
+}
+/* -----------------------------------------------afr(accessories)----------------------------------------------------------------- */
+
+.afr_table
+{
+    font-size: 11px;
+    width: 100%;
+    /* overflow-y: scroll;
+    display: block; */
+}
+.afr_btn
+{
+    margin-left: 84%;
+    margin-top: 3%;
+    font-size: 14px;
+}
+
+/* -----------------------------------------------positioner(accessories)---------------------------------------------------------- */
+
+.positioner_table
+{
+    width: 100%;
+    font-size: 11px;
+    /* overflow-y: scroll;
+    display: block; */
+}
+.positioner_btn
+{
+    /* margin-top: 4%; */
+    margin-left: 77%;
+    margin-top: 3%;
+    font-size: 14px;
+}
+.back-btn
+{
+    background-color: #04AA6D;
+    color: white;
+    margin-top: 3%;
+    font-size: 14px;
+}
+/* ----------------------------------------------order and item notes page css----------------------------------------------------- */
+.Itemnotes_heading
+{
+    font-size: 15px;
+}
+.item_input
+{
+    width: 100%;
+    height: 70%;
+    font-size: 11px;
+}
+.item_select
+{
+    width: 100%;
+    height: 70%;
+    font-size: 11px;
+    background-color: white;
+    border: 1px solid #607274;
+}
+.item_btn
+{
+    background-color: #04AA6D; 
+    color: white;
+    font-size: 14px;
+    margin-left: 90%;
+}
+.item_btn1
+{
+    color: white;
+    font-size: 14px;
+    height: 98%;
+}
+.item_cancle_icon
+{
+    margin-left: 45%;
+}
+.tableitem
+{
+    width: 64%;
+    overflow-y: scroll;
+    display: block;
+    height: 43%;
+}
+.itemhead th
+{
+    position: sticky;
+    top: 0;
+    background-color: #ffffff;
+}
+.table_notes
+{
+    width: 6%;
+    font-size: 11px;
+}
+.table_content
+{
+    width: 50%;
+    font-size: 11px;
+}
+.table_remove
+{
+    width: 1%;
+    font-size: 11px;
+}
+.body_content
+{
+    font-size: 11px;
+}
+
+/* -------------------------------------------project notes page css--------------------------------------------------------------- */
+
+.projectnotes_input
+{
+    width: 100%;
+    height: 75%;
+}
+.tableproject
+{
+    width: 64%;
+    overflow-y: scroll;
+    display: block;
+    height: 82%;
+}
+
+/* ----------------------------------------------View Data CSS---------------------------------------------------------------------- */
+.viewbtn {
+    background-color: #dedbdb;
+    color: #000000;
+    font-size: 12px;
+}
+
+
+/* --------------------------------------------reference table 2 page css------------------------------------------------------------ */
+.heading
+{
+    font-size: 15px;
+}
+.refernce_selectfile
+{
+    width: 40%;
+    height: 75%;
+}
+.refernce_btn
+{
+    width: 20%;
+}
+.show-entry
+{
+    width: 10%;
+    background-color: white;
+    border:  1px solid #607274;
+    font-size: 12px;
+}
+.show 
+{
+    font-size: 14px;
+}
+.refernce_table2
+{
+    width: 100%;
+    overflow-y: scroll;
+    display: block;
+    height: 500px;
+}
+/* -----------------------------------reference table 1 page css---------------------------------------------------------- */
+
+.refernce_table1
+{
+    width: 50%;
+    font-size: 11px;
+    overflow-y: scroll;
+    display: block;
+    height: 500px;
+}
+/* -----------------------------------preference page css------------------------------------------------------------------------- */
+
+.preference_heading
+{
+    font-size: 15px;
+}
+.preference_select
+{
+    width: 100%;
+    height: 70%;
+    background-color: white;
+    border: 1px solid #607274;
+}
+.preference_btn
+{
+    background-color: #04AA6D;
+    color: white;
+    margin-top: 3%;
+}

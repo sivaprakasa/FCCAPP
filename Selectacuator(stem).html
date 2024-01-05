@@ -1,0 +1,384 @@
+<!-- selectactuator(stem).html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+		/>
+		<script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.slim.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+			integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		/>
+		<link rel="stylesheet" href="css/style.css" />
+		<!-- <link rel="stylesheet" href="css/table.css"> -->
+		<script src="js/fcc.js"></script>
+    <title>buttonselectact</title>
+    <style>
+        label
+        {
+            font-size: 12px;
+        }
+        input
+        {
+            height: 100%;
+            font-size: 12px;
+        }
+        select
+        {
+            height: 100%;
+            font-size: 12px;
+            background-color: white;
+        }
+        /* div 
+        {
+            font-size: 12px;
+        } */
+    </style>
+</head>
+<body>
+    <div class="container-fulid">
+        <div class="row mr-0">
+            <div class="col-2">
+                <div class="sidenav">
+                    <img src="photo/FCC _new.png"  alt="fcc">
+                    <ul class="nav flex-column vh-100">
+                        <!-- <li class="nav-item mt-4">
+                            <p><a class="nav-link" href="#">Dashboard</a></p>
+                        </li> -->
+                        <li  class="nav-item mt-4" style="margin-top: 0;">
+                            <p><a class="nav-link" href="Dash.html">
+                                <!-- <img src="icon/Dashboard.png" alt="dash" style="width: 15%;"> -->
+                            Dashboard</a></p>
+                        </li>
+                        <li class="nav-item">
+                            <p><a class="nav-link" href="projectdetails.html">
+                                <!-- <img src="icon/Project Details.png" alt="projectdetail" style="width: 15%;"> -->
+                                Project Details</a></p>
+                        </li>
+                        <li class="nav-item">
+                            <p><a class="nav-link" href="valvedata.html">	
+                                <!-- <i class="fa-solid fa-memo"></i> -->
+                                Valve Data</a></p>
+                        </li>
+                        <li class="nav-item">
+                            <p>
+                                <a class="nav-link" href="valvesizing.html">
+                                    <!-- <img src="icon/Valve Sizing.png" alt="valve" style="width: 15%;"> -->
+                                     Valve Sizing</a>
+                            </p>
+                        </li>
+                        <li class="nav-item">
+                            <p><a class="nav-link" href="Actuatorsizing.html">
+                                <!-- <img src="icon/Actuator Sizing.png" alt="valve" style="width: 15%;">  -->
+                                Actuator Sizing</a></p>
+                        </li>
+                        <li class="nav-item">
+                            <p><a class="nav-link" href="Accessories.html">
+                                <!-- <img src="photo/Accessories.png" alt="valve" style="width: 10%; border-radius: 10px;">  -->
+                                Accessories</a></p>
+                        </li>
+                        <li class="nav-item">
+                            <p><a class="nav-link" href="Itemnotes.html">
+                                <!-- <i class="fa-solid fa-ballot-check"></i>  -->
+                               Orders, Item Notes</a></p>
+                        </li>
+                        <li class="nav-item">
+                            <p><a class="nav-link" href="Projectnotes.html">
+                                <!-- <i class="fa-solid fa-ballot-check" style="color: white;"> -->
+                                </i> Project Notes</a></p>
+                        </li>
+                        <li class="nav-item">
+                            <p><a class="nav-link" href="Viewdata.html">
+                                <!-- <i class="fa-solid fa-magnifying-glass"></i> -->
+                                Reference Table
+                            </a></p>
+                        </li>
+                        <li class="nav-item">
+                            <p><a class="nav-link" href="#"> 
+                                <!-- <i class="fa-solid fa-users" style="color: white;"></i>   -->
+                                Customer Master</a></p>
+                        </li>
+                        <li class="nav-item">
+                            <p><a class="nav-link" href="#">
+                                <!-- <i class="fa-solid fa-arrow-right-from-bracket" style="color: white;"></i> -->
+                                 Logout</a></p>
+                        </li>
+                        <li class="nav-item" style="margin-top: 10px;">
+                            <p><a class="nav-link" href="#"> <i class="fa-solid fa-circle-user pr-2" style="color: white;"></i>  Suraj</a></p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="col-10">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="topicons mt-3 ml-3">
+                            <div class="row">
+                                <div class="icon">
+                                    <i class="fa-solid fa-backward-step" data-toggle="tooltip" title="first"></i>
+                                    <i class="fa-solid fa-angle-left ml-3" data-toggle="tooltip" title="Previous"></i>
+                                    <input type="text" class="form-control-sm-sm ml-3" name="name"
+                                        style="height: 26px;" />
+                                    <i class="fa-solid fa-angle-right ml-3" data-toggle="tooltip" title="next"></i>
+                                    <i class="fa-solid fa-forward-step ml-3" data-toggle="tooltip" title="last"></i>
+                                    <i class="fa-solid fa-file ml-3" data-toggle="tooltip"
+                                    title="file"></i>                                    <i class="fa-solid fa-floppy-disk ml-3 fa-lg" data-toggle="tooltip"
+                                        title="save"></i>
+                                    <a href="Preference.html"><i class="fa-solid fa-sliders fa-1x ml-3"
+                                            data-toggle="tooltip" title="Preference"></i></a>
+                                    <i class="fa-solid fa-question ml-3" data-toggle="tooltip" title="help"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <hr>
+                    </div>
+                </div>
+
+                <div class="row mt-5 ml-3">
+                    <div class="col-12">
+                        <div class="row">
+                            <!-- <div class="col-8">
+                                <div class="row">
+                                    <div class="col-1">
+                                        <div class="row">
+                                            <select id="" class="form-control-sm-sm">
+                                                <option>Globle</option>
+                                                <option>Butterfly</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-1">
+                                        <div class="row">
+                                            <select id="" class="form-control-sm-sm">
+                                                <option>Contoured</option>
+                                                <option>Ported</option>
+                                                <option>Anti-Cav</option>
+                                                <option>Anti-Noise</option>
+                                                <option>Double Offset</option>
+                                                <option>Triple Offset</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-1 ml-4">
+                                        <div class="row">
+                                            <select id="" class="form-control-sm-sm">
+                                                <option>Equal %</option>
+                                                <option>Linear</option>
+                                                <option>Mod Eq %</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-1 ml-2">
+                                        <div class="row">
+                                            <select id="" class="form-control-sm-sm">
+                                                <option>Flow Over</option>
+                                                <option>Flow Under</option>
+                                                <option>Seat Downstream</option>
+                                                <option>Seat Upstream</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-1 ml-5">
+                                        <div class="row">
+                                            <select id="" class="form-control-sm-sm">
+                                                <option>150</option>
+                                                <option>300</option>
+                                                <option>600</option>
+                                                <option>900</option>
+                                                <option>1500</option>
+                                                <option>2500</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-2">
+                                        <div class="row">
+                                            <button type="button" class="btn btn-info">Get Valves</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div> -->
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row mt-5 ml-3">
+                    <div class="col-12">
+                        <div class="row">
+                            <div class="col-3" style="border-bottom:  1px solid #607274;">
+                                <div class="row">
+                                    <div class="col-2" style="border-left: 1px solid #607274;">
+                                        <div class="row sizingtableleft"></div>
+                                        <div class="row sizingtable"><input type="radio" style="margin-left: 35%;"></div>
+                                        <div class="row sizingtable"><input type="radio" style="margin-left: 35%;"></div>
+                                        <div class="row sizingtable"><input type="radio" style="margin-left: 35%;"></div>
+                                        <div class="row sizingtable"><input type="radio" style="margin-left: 35%;"></div>
+                                        <div class="row sizingtable"><input type="radio" style="margin-left: 35%;"></div>
+                                        <div class="row sizingtable"><input type="radio" style="margin-left: 35%;"></div>
+                                        <div class="row sizingtable"><input type="radio" style="margin-left: 35%;"></div>
+                                        <div class="row sizingtable"><input type="radio" style="margin-left: 35%;"></div>
+                                    </div>
+                                    <div class="col-4">
+                                        <div class="row sizingtableleft"><p class="sizingp">Actuator Size</p></div>
+                                        <div class="row sizingtable"><p class="sizingp">110</p></div>
+                                        <div class="row sizingtable"><p class="sizingp">110</p></div>
+                                        <div class="row sizingtable"><p class="sizingp">110</p></div>
+                                        <div class="row sizingtable"><p class="sizingp">110</p></div>
+                                        <div class="row sizingtable"><p class="sizingp">110</p></div>
+                                        <div class="row sizingtable"><p class="sizingp">110</p></div>
+                                        <div class="row sizingtable"><p class="sizingp">110</p></div>
+                                        <div class="row sizingtable"><p class="sizingp">110</p></div>
+                                    </div>
+                                    <div class="col-3">
+                                        <div class="row sizingtableleft"><p class="sizingp">Stem Dia</p></div>
+                                        <div class="row sizingtable"><p class="sizingp">0.75</p></div>
+                                        <div class="row sizingtable"><p class="sizingp">0.75</p></div>
+                                        <div class="row sizingtable"><p class="sizingp">0.75</p></div>
+                                        <div class="row sizingtable"><p class="sizingp">0.75</p></div>
+                                        <div class="row sizingtable"><p class="sizingp">0.75</p></div>
+                                        <div class="row sizingtable"><p class="sizingp">0.75</p></div>
+                                        <div class="row sizingtable"><p class="sizingp">0.75</p></div>
+                                        <div class="row sizingtable"><p class="sizingp">0.75</p></div>
+                                       
+                                    </div>
+                                    <div class="col-3">
+                                        <div class="row sizingtableleft"><p class="sizingp">Travel</p></div>
+                                        <div class="row sizingtable"><p class="sizingp">1.5</p></div>
+                                        <div class="row sizingtable"><p class="sizingp">1.5</p></div>
+                                        <div class="row sizingtable"><p class="sizingp">1.5</p></div>
+                                        <div class="row sizingtable"><p class="sizingp">1.5</p></div>
+                                        <div class="row sizingtable"><p class="sizingp">1.5</p></div>
+                                        <div class="row sizingtable"><p class="sizingp">1.5</p></div>
+                                        <div class="row sizingtable"><p class="sizingp">1.5</p></div>
+                                        <div class="row sizingtable"><p class="sizingp">1.5</p></div>
+                               
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-9" >
+                                <div class="row">
+                                    <div class="col-1" style="border-bottom:  1px solid #607274;">
+                                        <div class="row sizingtableleft"><p class="sizingp">Range(min.)</p></div>
+                                        <div class="row sizingtable"><p class="sizingp">9.9</p></div>
+                                        <div class="row sizingtable"><p class="sizingp">14.8</p></div>
+                                        <div class="row sizingtable"><p class="sizingp">18.6</p></div>
+                                        <div class="row sizingtable"><p class="sizingp">21.4</p></div>
+                                        <div class="row sizingtable"><p class="sizingp">6.6</p></div>
+                                        <div class="row sizingtable"><p class="sizingp">6.6</p></div>
+                                        <div class="row sizingtable"><p class="sizingp">6.6</p></div>
+                                        <div class="row sizingtable"><p class="sizingp">6.6</p></div>
+                                    </div>
+                                    <div class="col-1" style="border-bottom:  1px solid #607274;">
+                                        <div class="row sizingtableleft"><p class="sizingp">Range(max.)</p></div>
+                                        <div class="row sizingtable"><p class="sizingp">14.8</p></div>
+                                        <div class="row sizingtable"><p class="sizingp">21.9</p></div>
+                                        <div class="row sizingtable"><p class="sizingp">27.9</p></div>
+                                        <div class="row sizingtable"><p class="sizingp">30.6</p></div>
+                                        <div class="row sizingtable"><p class="sizingp">9.9</p></div>
+                                        <div class="row sizingtable"><p class="sizingp">9.9</p></div>
+                                        <div class="row sizingtable"><p class="sizingp">9.9</p></div>
+                                        <div class="row sizingtable"><p class="sizingp">9.9</p></div>
+                                    </div>
+                                    <div class="col-1" style="border-bottom:  1px solid #607274;">
+                                        <div class="row sizingtableleft"><p class="sizingp">Fail Action</p></div>
+                                        <div class="row sizingtable"><p class="sizingp">AFO</p></div>
+                                        <div class="row sizingtable"><p class="sizingp">AFO</p></div>
+                                        <div class="row sizingtable"><p class="sizingp">AFO</p></div>
+                                        <div class="row sizingtable"><p class="sizingp">AFO</p></div>
+                                        <div class="row sizingtable"><p class="sizingp">AFO</p></div>
+                                        <div class="row sizingtable"><p class="sizingp">AFO</p></div>
+                                        <div class="row sizingtable"><p class="sizingp">AFO</p></div>
+                                        <div class="row sizingtable"><p class="sizingp">AFO</p></div>
+                                  
+                                    </div>
+                                    <div class="col-1" style="border-bottom:  1px solid #607274;">
+                                        <div class="row sizingtableleft"><p class="sizingp">Spring Rate</p></div>
+                                        <div class="row sizingtable"><p class="sizingp">365.21333</p></div>
+                                        <div class="row sizingtable"><p class="sizingp">365.21333</p></div>
+                                        <div class="row sizingtable"><p class="sizingp">365.21333</p></div>
+                                        <div class="row sizingtable"><p class="sizingp">365.21333</p></div>
+                                        <div class="row sizingtable"><p class="sizingp">365.21333</p></div>
+                                        <div class="row sizingtable"><p class="sizingp">365.21333</p></div>
+                                        <div class="row sizingtable"><p class="sizingp">365.21333</p></div>
+                                        <div class="row sizingtable"><p class="sizingp">365.21333</p></div>
+                                 
+                                    </div>
+                                    <div class="col-1" style="border-bottom:  1px solid #607274;">
+                                        <div class="row sizingtableleft"><p class="sizingp">SF Min</p></div>
+                                        <div class="row sizingtable"><p class="sizingp">737.88</p></div>
+                                        <div class="row sizingtable"><p class="sizingp">737.88</p></div>
+                                        <div class="row sizingtable"><p class="sizingp">737.88</p></div>
+                                        <div class="row sizingtable"><p class="sizingp">737.88</p></div>
+                                        <div class="row sizingtable"><p class="sizingp">737.88</p></div>
+                                        <div class="row sizingtable"><p class="sizingp">737.88</p></div>
+                                        <div class="row sizingtable"><p class="sizingp">737.88</p></div>
+                                        <div class="row sizingtable"><p class="sizingp">737.88</p></div>
+                                     
+                                    </div>
+                                  
+                                    <div class="col-1" style="border-bottom:  1px solid #607274;">
+                                        <div class="row sizingtableleft"><p class="sizingp">SF Max</p></div>
+                                        <div class="row sizingtable"><p class="sizingp">1654.64</p></div>
+                                        <div class="row sizingtable"><p class="sizingp">1654.64</p></div>
+                                        <div class="row sizingtable"><p class="sizingp">1654.64</p></div>
+                                        <div class="row sizingtable"><p class="sizingp">1654.64</p></div>
+                                        <div class="row sizingtable"><p class="sizingp">1654.64</p></div>
+                                        <div class="row sizingtable"><p class="sizingp">1654.64</p></div>
+                                        <div class="row sizingtable"><p class="sizingp">1654.64</p></div>
+                                        <div class="row sizingtable"><p class="sizingp">1654.64</p></div>
+                                      
+                                    </div>
+                                    <div class="col-1" style="border-bottom:  1px solid #607274;">
+                                        <div class="row sizingtableleft"><p class="sizingp">NAT Max</p></div>
+                                        <div class="row sizingtable"><p class="sizingp">5601.18</p></div>
+                                        <div class="row sizingtable"><p class="sizingp">5601.18</p></div>
+                                        <div class="row sizingtable"><p class="sizingp">5601.18</p></div>
+                                        <div class="row sizingtable"><p class="sizingp">5601.18</p></div>
+                                        <div class="row sizingtable"><p class="sizingp">5601.18</p></div>
+                                        <div class="row sizingtable"><p class="sizingp">5601.18</p></div>
+                                        <div class="row sizingtable"><p class="sizingp">5601.18</p></div>
+                                        <div class="row sizingtable"><p class="sizingp">5601.18</p></div>
+                                       
+                                    </div>
+                                    <div class="col-1" style="border-bottom:  1px solid #607274;">
+                                        <div class="row sizingtableleft"><p class="sizingp">NAT Min</p></div>
+                                        <div class="row sizingtable high"><p class="sizingp">5053.36</p></div>
+                                        <div class="row sizingtable high"><p class="sizingp">5053.36</p></div>
+                                        <div class="row sizingtable  high"><p class="sizingp">5053.36</p></div>
+                                        <div class="row sizingtable  high"><p class="sizingp">5053.36</p></div>
+                                        <div class="row sizingtable  high"><p class="sizingp">5053.36</p></div>
+                                        <div class="row sizingtable  high"><p class="sizingp">5053.36</p></div>
+                                        <div class="row sizingtable  high"><p class="sizingp">5053.36</p></div>
+                                        <div class="row sizingtable  high"><p class="sizingp">5053.36</p></div>
+                                    
+                                    </div>
+                                    <!-- <div class="col-1" style="border-bottom:  1px solid #607274;">
+                                        <div class="row sizingtableleft"><p class="sizingp">100%</p></div>
+                                        <div class="row sizingtable"><p class="sizingp">100</p></div>
+                                        <div class="row sizingtable"><p class="sizingp">100</p></div>
+                                        <div class="row sizingtable"><p class="sizingp">100</p></div>
+                                        <div class="row sizingtable"><p class="sizingp">100</p></div>
+                                        <div class="row sizingtable"><p class="sizingp">100</p></div>
+                                    </div> -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="btn">
+                    <button type="button" class="btn " style="background-color: #04aa6d;color: white;">Select Actuator</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

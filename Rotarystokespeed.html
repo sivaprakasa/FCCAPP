@@ -1,0 +1,674 @@
+<!-- rotarystokespeed.html -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" />
+	<script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.slim.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+		integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+		crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<link rel="stylesheet" href="css/style.css" />
+	<!-- <link rel="stylesheet" href="css/table.css"> -->
+	<script src="js/fcc.js"></script>
+	<title>Actuator2table</title>
+	<style>
+		label {
+			font-size: 12px;
+		}
+
+		input {
+			height: 100%;
+			font-size: 12px;
+
+		}
+
+		select {
+			height: 100%;
+			font-size: 12px;
+			width: 100%;
+			background-color: white;
+		}
+
+		h5 {
+			font-size: 20px;
+			margin-top: 20px;
+		}
+
+		.btn {
+			font-size: 14px;
+			width: 30%;
+
+		}
+
+		p {
+
+			font-size: 12px;
+		}
+	</style>
+
+	<!-- Extrenal css file  
+/* ACtuator Sizing */
+.actuator{
+    margin-top: 30px;
+
+}-->
+
+</head>
+
+<body>
+	<div class="container-fulid">
+		<div class="row mr-0">
+			<div class="col-2">
+				<div class="sidenav">
+                    <img src="photo/FCC _new.png"  alt="fcc">
+                    <ul class="nav flex-column vh-100">
+                        <!-- <li class="nav-item mt-4">
+                            <p><a class="nav-link" href="#">Dashboard</a></p>
+                        </li> -->
+                        <li  class="nav-item mt-4" style="margin-top: 0;">
+                            <p><a class="nav-link" href="Dash.html">
+                                <!-- <img src="icon/Dashboard.png" alt="dash" style="width: 15%;"> -->
+                            Dashboard</a></p>
+                        </li>
+                        <li class="nav-item">
+                            <p><a class="nav-link" href="projectdetails.html">
+                                <!-- <img src="icon/Project Details.png" alt="projectdetail" style="width: 15%;"> -->
+                                Project Details</a></p>
+                        </li>
+                        <li class="nav-item">
+                            <p><a class="nav-link" href="valvedata.html">	
+                                <!-- <i class="fa-solid fa-memo"></i> -->
+                                Valve Data</a></p>
+                        </li>
+                        <li class="nav-item">
+                            <p>
+                                <a class="nav-link" href="valvesizing.html">
+                                    <!-- <img src="icon/Valve Sizing.png" alt="valve" style="width: 15%;"> -->
+                                     Valve Sizing</a>
+                            </p>
+                        </li>
+                        <li class="nav-item">
+                            <p><a class="nav-link" href="Actuatorsizing.html">
+                                <!-- <img src="icon/Actuator Sizing.png" alt="valve" style="width: 15%;">  -->
+                                Actuator Sizing</a></p>
+                        </li>
+                        <li class="nav-item">
+                            <p><a class="nav-link" href="Accessories.html">
+                                <!-- <img src="photo/Accessories.png" alt="valve" style="width: 10%; border-radius: 10px;">  -->
+                                Accessories</a></p>
+                        </li>
+                        <li class="nav-item">
+                            <p><a class="nav-link" href="Itemnotes.html">
+                                <!-- <i class="fa-solid fa-ballot-check"></i>  -->
+                               Orders, Item Notes</a></p>
+                        </li>
+                        <li class="nav-item">
+                            <p><a class="nav-link" href="Projectnotes.html">
+                                <!-- <i class="fa-solid fa-ballot-check" style="color: white;"> -->
+                                </i> Project Notes</a></p>
+                        </li>
+                        <li class="nav-item">
+                            <p><a class="nav-link" href="Viewdata.html">
+                                <!-- <i class="fa-solid fa-magnifying-glass"></i> -->
+                                Reference Table
+                            </a></p>
+                        </li>
+                        <li class="nav-item">
+                            <p><a class="nav-link" href="#"> 
+                                <!-- <i class="fa-solid fa-users" style="color: white;"></i>   -->
+                                Customer Master</a></p>
+                        </li>
+                        <li class="nav-item">
+                            <p><a class="nav-link" href="#">
+                                <!-- <i class="fa-solid fa-arrow-right-from-bracket" style="color: white;"></i> -->
+                                 Logout</a></p>
+                        </li>
+                        <li class="nav-item" style="margin-top: 10px;">
+                            <p><a class="nav-link" href="#"> <i class="fa-solid fa-circle-user pr-2" style="color: white;"></i>  Suraj</a></p>
+                        </li>
+                    </ul>
+                </div>
+			</div>
+
+			<div class="col-10">
+				<div class="row">
+					<div class="col-12">
+						<div class="topicons mt-3 ml-3">
+                            <div class="row">
+                                <div class="icon">
+                                    <i class="fa-solid fa-backward-step" data-toggle="tooltip" title="first"></i>
+                                    <i class="fa-solid fa-angle-left ml-3" data-toggle="tooltip" title="Previous"></i>
+                                    <input type="text" class="form-control-sm-sm ml-3" name="name"
+                                        style="height: 26px;" />
+                                    <i class="fa-solid fa-angle-right ml-3" data-toggle="tooltip" title="next"></i>
+                                    <i class="fa-solid fa-forward-step ml-3" data-toggle="tooltip" title="last"></i>
+                                    <i class="fa-solid fa-file ml-3" data-toggle="tooltip"
+                                    title="file"></i>                                    <i class="fa-solid fa-floppy-disk ml-3 fa-lg" data-toggle="tooltip"
+                                        title="save"></i>
+                                    <a href="Preference.html"><i class="fa-solid fa-sliders fa-1x ml-3"
+                                            data-toggle="tooltip" title="Preference"></i></a>
+                                    <i class="fa-solid fa-question ml-3" data-toggle="tooltip" title="help"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <hr>
+					</div>
+				</div>
+
+
+				<!-- <div class="container mt-4">
+                    <div class="row" style="margin-left: -90px;">
+
+                    
+                        <div class="col-4">
+                            <div class="row"> 
+                                <div class="col-2">Trim</div>
+                                <div class="col-3"><input type="text" class="" style="height: 20px;"></div>
+                            </div>
+                        </div>
+
+                
+                        <div class="col-4">
+                            <div class="row">
+                                <div class="col-6 mb-5">Balancing</div>
+                                <div class="col-4"><input type="text" class="" style="height: 20px;"></div>
+                            </div>
+                        </div>
+
+               
+                        <div class="col-4">
+                            <div class="row">
+                                <div class="col-6">Flow Direction</div>
+                                <div class="col-3"><input type="text" class="" style="height: 20px;"></div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div> -->
+
+				<div class="row ">
+					<div class="col-12 mt-4 ">
+						<div class="row mt-1">
+							<!-- inputs--------------------------- -->
+							<div class="col-4 ">
+
+								<h5><b>Input</b></h5>
+
+								<div class="row" style="margin-left: 1px;">
+									<div class="col-6" style="border-bottom:  1px solid #607274;">
+										<div class="row sizingtableleft">
+											<p class="sizingp">Description</p>
+										</div>
+										<div class="row sizingtableleft">
+											<p class="sizingp"> Air Fail Action</p>
+										</div>
+										<div class="row sizingtableleft">
+											<p class="sizingp">Actuator size</p>
+										</div>
+										<div class="row sizingtableleft">
+											<p class="sizingp">Effective Area</p>
+										</div>
+										<div class="row sizingtableleft">
+											<p class="sizingp">Stroke</p>
+										</div>
+										<div class="row sizingtableleft">
+											<p class="sizingp">Operating Temperature</p>
+										</div>
+										<div class="row sizingtableleft">
+											<p class="sizingp">Operating Pressure</p>
+										</div>
+										<div class="row sizingtableleft">
+											<p class="sizingp">Clearance Vol</p>
+										</div>
+										<div class="row sizingtableleft">
+											<p class="sizingp">Swept Volume</p>
+										</div>
+										<div class="row sizingtableleft">
+											<p class="sizingp">Pressure @ Begining</p>
+										</div>
+										<div class="row sizingtableleft">
+											<p class="sizingp">Pressure @ End Of Time</p>
+										</div>
+										<div class="row sizingtableleft">
+											<p class="sizingp">Supply Air Pressure</p>
+										</div>
+										<div class="row sizingtableleft">
+											<p class="sizingp">Stroke Pressure</p>
+										</div>
+										<div class="row sizingtableleft">
+											<p class="sizingp">Combined Cv Fill</p>
+										</div>
+										<div class="row sizingtableleft">
+											<p class="sizingp">Combined Cv Exhaust</p>
+										</div>
+										<!-- <div class="row sizingtableleft">
+                                            <p class="sizingp">ΔP Flowing </p>
+                                        </div> -->
+									</div>
+									<div class="col-3" style="border-bottom:  1px solid #607274;">
+										<div class="row sizingtableleft">
+											<p class="sizingp">Values</p>
+										</div>
+										<div class="row sizingtable"><input type="text" class="form-control-sm-sm"
+												style="width: 100%;border: 0px solid;"></div>
+										<div class="row sizingtable"><input type="text" class="form-control-sm-sm"
+												style="width: 100%;border: 0px solid;"></div>
+										<div class="row sizingtable"><input type="text" class="form-control-sm-sm"
+												style="width: 100%;border: 0px solid;"></div>
+										<div class="row sizingtable"><input type="text" class="form-control-sm-sm"
+												style="width: 100%;border: 0px solid;"></div>
+										<div class="row sizingtable"><input type="text" class="form-control-sm-sm"
+												style="width: 100%;border: 0px solid;"></div>
+										<div class="row sizingtable"><input type="text" class="form-control-sm-sm"
+												style="width: 100%;border: 0px solid;"></div>
+										<div class="row sizingtable"><input type="text" class="form-control-sm-sm"
+												style="width: 100%;border: 0px solid;"></div>
+										<div class="row sizingtable"><input type="text" class="form-control-sm-sm"
+												style="width: 100%;border: 0px solid;"></div>
+										<div class="row sizingtable"><input type="text" class="form-control-sm-sm"
+												style="width: 100%;border: 0px solid;"></div>
+										<div class="row sizingtable"><input type="text" class="form-control-sm-sm"
+												style="width: 100%;border: 0px solid;"></div>
+										<div class="row sizingtable"><input type="text" class="form-control-sm-sm"
+												style="width: 100%;border: 0px solid;"></div>
+										<div class="row sizingtable"><input type="text" class="form-control-sm-sm"
+												style="width: 100%;border: 0px solid;"></div>
+										<div class="row sizingtable"><input type="text" class="form-control-sm-sm"
+												style="width: 100%;border: 0px solid;"></div>
+										<div class="row sizingtable"><input type="text" class="form-control-sm-sm"
+												style="width: 100%;border: 0px solid;"></div>
+										<!-- <div class="row sizingtable"><input type="text" class="form-control-sm-sm"
+                                                style="width: 100%;border: 0px solid;"></div> -->
+										<!-- <div class="row sizingtable"><input type="text" class="form-control-sm-sm"
+                                                style="width: 100%;border: 0px solid;"></div> -->
+
+
+									</div>
+									<div class="col-3" style="border-bottom:  1px solid #607274;">
+										<div class="row sizingtableleft">
+											<p class="sizingp">Unit</p>
+										</div>
+										<div class="row sizingtable">
+											<input type="text" class="form-control-sm-sm"
+												style="width: 100%;border: 0px solid;">
+										</div>
+										<div class="row sizingtable">
+											<input type="text" class="form-control-sm-sm"
+												style="width: 100%;border: 0px solid;">
+										</div>
+										<div class="row sizingtable">
+											<select id="" class="form-control-sm-sm"
+												style="width: 100%;border: 0px solid;">
+												<option>in²</option>
+												<option>inch</option>
+
+											</select>
+										</div>
+										<div class="row sizingtable">
+											<select id="" class="form-control-sm-sm"
+												style="width: 100%;border: 0px solid;">
+												<option>in</option>
+												<option>mm</option>
+											</select>
+										</div>
+										<div class="row sizingtable">
+											<select id="" class="form-control-sm-sm"
+												style="width: 100%;border: 0px solid;">
+												<option value="bar">°C</option>
+												<option value="bar">in</option>
+											</select>
+										</div>
+										<div class="row sizingtable">
+											<select id="" class="form-control-sm-sm"
+												style="width: 100%;border: 0px solid;">
+												<option value="bar">psig</option>
+												<option value="bar">in²</option>
+											</select>
+										</div>
+										<!-- <div class="row sizingtable"><input type="text" class="form-control-sm-sm" style="width: 100%;border: 0px solid;"></div> -->
+										<!-- <div class="row sizingtable"><input type="text" class="form-control-sm-sm" style="width: 100%;border: 0px solid;"></div>
+                                        <div class="row sizingtable"><input type="text" class="form-control-sm-sm" style="width: 100%;border: 0px solid;"></div>
+                                        <div class="row sizingtable"><input type="text" class="form-control-sm-sm" style="width: 100%;border: 0px solid;"></div>
+                                        <div class="row sizingtable"><input type="text" class="form-control-sm-sm" style="width: 100%;border: 0px solid;"></div> -->
+										<div class="row sizingtable">
+											<select id="" class="form-control-sm-sm"
+												style="width: 100%;border: 0px solid;">
+												<option value="bar">in3</option>
+												<option value="bar">in²</option>
+											</select>
+										</div>
+										<div class="row sizingtable">
+											<select id="" class="form-control-sm-sm"
+												style="width: 100%;border: 0px solid;">
+												<option>in3</option>
+												<option>mm</option>
+											</select>
+										</div>
+										<div class="row sizingtable">
+											<select id="" class="form-control-sm-sm"
+												style="width: 100%;border: 0px solid;">
+												<option value="bar">psia</option>
+												<option value="bar">in²</option>
+											</select>
+										</div>
+										<div class="row sizingtable">
+											<select id="" class="form-control-sm-sm"
+												style="width: 100%;border: 0px solid;">
+												<option>psia</option>
+												<option>psig</option>
+											</select>
+										</div>
+										<div class="row sizingtable">
+											<select id="" class="form-control-sm-sm"
+												style="width: 100%;border: 0px solid;">
+												<option>psia</option>
+												<option>psig</option>
+											</select>
+										</div>
+										<div class="row sizingtable">
+											<select id="" class="form-control-sm-sm"
+												style="width: 100%;border: 0px solid;">
+												<option>psia</option>
+												<option>psig</option>
+											</select>
+										</div>
+										<div class="row sizingtable">
+											<input type="text" class="form-control-sm-sm"
+												style="width: 100%;border: 0px solid;">
+											<!-- <select id="" class="form-control-sm-sm"
+												style="width: 100%;border: 0px solid;">
+												<option>in3</option>
+												<option>psig</option>
+											</select> -->
+										</div>
+										<div class="row sizingtable">
+											<input type="text" class="form-control-sm-sm"
+												style="width: 100%;border: 0px solid;">
+											<!-- <select id="" class="form-control-sm-sm"
+											
+												style="width: 100%;border: 0px solid;">
+												
+												<option>in3</option>
+												<option>psig</option>
+											</select> -->
+										</div>
+
+										<!-- <div class="row sizingtable">
+                                            <select id="" class="form-control-sm-sm"
+                                                style="width: 100%;border: 0px solid;">
+                                                <option>in3</option>
+                                                <option>psig</option>
+                                            </select>
+                                        </div> -->
+										<!-- <div class="row sizingtable">
+                                            <select id="" class="form-control-sm-sm"
+                                                style="width: 100%;border: 0px solid;">
+                                                <option>psig</option>
+                                                <option>psig</option>
+                                            </select>
+                                        </div> -->
+
+									</div>
+
+								</div>
+							</div>
+							<!-- <calculates ############################################### -->
+							<div class="col-4 mt-0" style="margin-left: 2%;">
+								<!-- <div class="trim mt-1">
+                                    <div class="row">
+                                        <div class="col-12">
+                                            <div class="row">
+                                                <div class="col-3">
+                                                    Balancing
+                                                </div>
+                                                <div class="col-3">
+                                                    <input type="text" class="form-control-sm-sm">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div> -->
+								<h5 style="font-size: 20px;"><b>Results</b></h5>
+								<div class="row ml-1">
+									<div class="col-6" style="border-bottom:  1px solid #607274;">
+										<div class="row sizingtableleft">
+											<p class="sizingp">Description</p>
+										</div>
+										<div class="row sizingtableleft">
+											<p class="sizingp">Pre Fill Time (sec)</p>
+										</div>
+										<div class="row sizingtableleft">
+											<p class="sizingp">Total Fill Time (sec)</p>
+										</div>
+										<div class="row sizingtableleft">
+											<p class="sizingp">Pre Exhaust Time (sec)</p>
+										</div>
+										<div class="row sizingtableleft">
+											<p class="sizingp">Total Exhaust Time (sec)</p>
+										</div>
+										<!-- <div class="row sizingtableleft">
+											<p class="sizingp">Combined Cv Fill</p>
+										</div>
+										<div class="row sizingtableleft">
+											<p class="sizingp">Combined Cv Exhaust</p>
+										</div> -->
+										<!-- <div class="row sizingtableleft">
+                                            <p class="sizingp">Packing Friction</p>
+                                        </div> -->
+										<!-- <div class="row sizingtableleft">
+											<p class="sizingp">Lower Bench set</p>
+										</div> -->
+										<!-- <div class="row sizingtableleft">
+											<p class="sizingp">Upper Bench Set</p>
+										</div> -->
+										<!-- <div class="row sizingtableleft">
+											<p class="sizingp">Spring Rate</p>
+										</div>
+										<div class="row sizingtableleft">
+											<p class="sizingp">Packing Friction</p>
+										</div> -->
+										<!-- <div class="row sizingtableleft">
+											<p class="sizingp">Clearance Vol</p>
+										</div>
+										<div class="row sizingtableleft">
+											<p class="sizingp">Swept Volume</p>
+										</div> -->
+										<!-- <div class="row sizingtableleft">
+                                            <p class="sizingp">ΔP Flowing </p>
+                                        </div> -->
+									</div>
+									<div class="col-3" style="border-bottom:  1px solid #607274;">
+										<div class="row sizingtableleft">
+											<p class="sizingp">Values</p>
+										</div>
+										<div class="row sizingtable"><input type="text" class="form-control-sm-sm"
+												style="width: 100%;border: 0px solid;"></div>
+										<div class="row sizingtable"><input type="text" class="form-control-sm-sm"
+												style="width: 100%;border: 0px solid;"></div>
+										<div class="row sizingtable"><input type="text" class="form-control-sm-sm"
+												style="width: 100%;border: 0px solid;"></div>
+										<div class="row sizingtable"><input type="text" class="form-control-sm-sm"
+												style="width: 100%;border: 0px solid;"></div>
+										<!-- <div class="row sizingtable"><input type="text" class="form-control-sm-sm"
+												style="width: 100%;border: 0px solid;"></div>
+										<div class="row sizingtable"><input type="text" class="form-control-sm-sm"
+												style="width: 100%;border: 0px solid;"></div> -->
+										<!-- <div class="row sizingtable"><input type="text" class="form-control-sm-sm"
+												style="width: 100%;border: 0px solid;"></div> -->
+										<!-- <div class="row sizingtable"><input type="text" class="form-control-sm-sm"
+												style="width: 100%;border: 0px solid;"></div>
+										<div class="row sizingtable"><input type="text" class="form-control-sm-sm"
+												style="width: 100%;border: 0px solid;"></div> -->
+										<!-- <div class="row sizingtable"><input type="text" class="form-control-sm-sm"
+												style="width: 100%;border: 0px solid;"></div>
+										<div class="row sizingtable"><input type="text" class="form-control-sm-sm"
+												style="width: 100%;border: 0px solid;"></div> -->
+										<!-- <div class="row sizingtable"><input type="text" class="form-control-sm-sm"
+												style="width: 100%;border: 0px solid;"></div> -->
+										<!-- <div class="row sizingtable"><input type="text" class="form-control-sm-sm"
+                                                style="width: 100%;border: 0px solid;"></div> -->
+										<!-- <div class="row sizingtable"><input type="text" class="form-control-sm-sm"
+                                                style="width: 100%;border: 0px solid;"></div> -->
+
+
+									</div>
+									<div class="col-3" style="border-bottom:  1px solid #607274;">
+										<div class="row sizingtableleft">
+											<p class="sizingp">Unit</p>
+										</div>
+										<div class="row sizingtable">
+											<select id="" class="form-control-sm-sm"
+												style="width: 100%;border: 0px solid;">
+												<option>Sec</option>
+												<option>inch</option>
+
+											</select>
+										</div>
+										<div class="row sizingtable">
+											<select id="" class="form-control-sm-sm"
+												style="width: 100%;border: 0px solid;">
+												<option>Sec</option>
+												<option>inch</option>
+
+											</select>
+										</div>
+										<div class="row sizingtable">
+											<select id="" class="form-control-sm-sm"
+												style="width: 100%;border: 0px solid;">
+												<option>Sec</option>
+												<option>inch</option>
+
+											</select>
+										</div>
+										<div class="row sizingtable">
+											<select id="" class="form-control-sm-sm"
+												style="width: 100%;border: 0px solid;">
+												<option>Sec</option>
+												<option>mm</option>
+											</select>
+										</div>
+										<!-- <div class="row sizingtable">
+											<input type="text" class="form-control-sm-sm"
+												style="width: 100%;border: 0px solid;">
+										</div>
+										<div class="row sizingtable">
+											<input type="text" class="form-control-sm-sm"
+												style="width: 100%;border: 0px solid;">
+										</div> -->
+										<!-- <div class="row sizingtable"><input type="text" class="form-control-sm-sm" style="width: 100%;border: 0px solid;"></div> -->
+										<!-- <div class="row sizingtable"><input type="text" class="form-control-sm-sm" style="width: 100%;border: 0px solid;"></div>
+                                        <div class="row sizingtable"><input type="text" class="form-control-sm-sm" style="width: 100%;border: 0px solid;"></div>
+                                        <div class="row sizingtable"><input type="text" class="form-control-sm-sm" style="width: 100%;border: 0px solid;"></div>
+                                        <div class="row sizingtable"><input type="text" class="form-control-sm-sm" style="width: 100%;border: 0px solid;"></div> -->
+										<!-- <div class="row sizingtable">
+											<select id="" class="form-control-sm-sm"
+												style="width: 100%;border: 0px solid;">
+												<option value="bar">psig</option>
+												<option value="bar">in²</option>
+											</select>
+										</div> -->
+										<!-- <div class="row sizingtable">
+											<select id="" class="form-control-sm-sm"
+												style="width: 100%;border: 0px solid;">
+												<option>psig</option>
+												<option>mm</option>
+											</select>
+										</div>
+										<div class="row sizingtable">
+											<select id="" class="form-control-sm-sm"
+												style="width: 100%;border: 0px solid;">
+												<option value="bar">lbf</option>
+												<option value="bar">in²</option>
+											</select>
+										</div> -->
+										<!-- <div class="row sizingtable">
+											<select id="" class="form-control-sm-sm"
+												style="width: 100%;border: 0px solid;">
+												<option>lbf</option>
+												<option>psig</option>
+											</select>
+										</div> -->
+										<!-- <div class="row sizingtable">
+											<select id="" class="form-control-sm-sm"
+												style="width: 100%;border: 0px solid;">
+												<option>in3</option>
+												<option>psig</option>
+											</select>
+										</div> -->
+										<!-- <div class="row sizingtable">
+											<select id="" class="form-control-sm-sm"
+												style="width: 100%;border: 0px solid;">
+												<option>in3</option>
+												<option>psig</option>
+											</select>
+										</div> -->
+										<!-- <div class="row sizingtable">
+                                            <select id="" class="form-control-sm-sm"
+                                                style="width: 100%;border: 0px solid;">
+                                                <option>in3</option>
+                                                <option>psig</option>
+                                            </select>
+                                        </div> -->
+										<!-- <div class="row sizingtable">
+                                            <select id="" class="form-control-sm-sm"
+                                                style="width: 100%;border: 0px solid;">
+                                                <option>psig</option>
+                                                <option>psig</option>
+                                            </select>
+                                        </div> -->
+
+									</div>
+
+								</div>
+
+
+								<!------------------buttons---------------------->
+								<div class="button mt-3 ml-3">
+									<div class="row">
+										<a href="Combined_CV.html"><button type="button" class="btn btn-info" style="width: 150px;">Combined cv</button></a>
+										<button type="button" class="btn ml-1"
+											style="background-color: #04AA6D; color: white;">Calculate</button>
+										<!-- <button type="button" class="btn ml-3" style="background-color: #04AA6D; color: white;">Select Actuator</button> -->
+									</div>
+									<!-- <div class="row mt-2">
+				<button type="button" class="btn btn-info">Storke Speed</button>
+				<button type="button" class="btn ml-3" style="background-color: #04AA6D; color: white;">Spec Sheet</button>
+			</div> -->
+								</div>
+
+							</div>
+
+						</div>
+
+
+
+
+
+
+
+
+
+
+
+					</div>
+
+					<!--                         
+                        <button type="button" class="btn btn-info">Calculate</button>
+                        <button type="button" class="btn" style="background-color: #04AA6D;">Select Actuator</button>
+                        <button type="button" class="btn btn-info">Storke Speed</button>
+                        <button type="button" class="btn" style="background-color: #04AA6D;">Spec Sheet</button> -->
+				</div>
+
+			</div>
+
+		</div>
+	</div>
+	</div>
+</body>
+
+</html>

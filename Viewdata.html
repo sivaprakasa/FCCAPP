@@ -1,0 +1,285 @@
+<!-- viewdata.html -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- <link rel="stylesheet" href="css/table.css"> -->
+    <script src="js/fcc.js"></script>
+    <title>FCC</title>
+    
+</head>
+
+<body>
+    <div class="container-fulid">
+        <div class="row mr-0">
+            <div class="col-2">
+                <div class="sidenav">
+                    <img src="photo/FCC _new.png"  alt="fcc">
+                    <ul class="nav nav-pills flex-column vh-100">
+                        <!-- <li class="nav-item mt-4">
+                            <p><a class="nav-link" href="#">Dashboard</a></p>
+                        </li> -->
+                        <li  class="nav-item mt-4" style="margin-top: 0;">
+                            <p><a class="nav-link" href="Dash.html">
+                                <!-- <img src="icon/Dashboard.png" alt="dash" style="width: 15%;"> -->
+                            Dashboard</a></p>
+                        </li>
+                        <li class="nav-item">
+                            <p><a class="nav-link" href="projectdetails.html">
+                                <!-- <img src="icon/Project Details.png" alt="projectdetail" style="width: 15%;"> -->
+                                Project Details</a></p>
+                        </li>
+                        <li class="nav-item">
+                            <p><a class="nav-link" href="valvedata.html">	
+                                <!-- <i class="fa-solid fa-memo"></i> -->
+                                Valve Data</a></p>
+                        </li>
+                        <li class="nav-item">
+                            <p>
+                                <a class="nav-link" href="valvesizing.html">
+                                    <!-- <img src="icon/Valve Sizing.png" alt="valve" style="width: 15%;"> -->
+                                     Valve Sizing</a>
+                            </p>
+                        </li>
+                        <li class="nav-item">
+                            <p><a class="nav-link" href="Actuatorsizing.html">
+                                <!-- <img src="icon/Actuator Sizing.png" alt="valve" style="width: 15%;">  -->
+                                Actuator Sizing</a></p>
+                        </li>
+                        <li class="nav-item">
+                            <p><a class="nav-link" href="Accessories.html">
+                                <!-- <img src="photo/Accessories.png" alt="valve" style="width: 10%; border-radius: 10px;">  -->
+                                Accessories</a></p>
+                        </li>
+                        <li class="nav-item">
+                            <p><a class="nav-link" href="Itemnotes.html">
+                                <!-- <i class="fa-solid fa-ballot-check"></i>  -->
+                               Orders, Item Notes</a></p>
+                        </li>
+                        <li class="nav-item">
+                            <p><a class="nav-link" href="Projectnotes.html">
+                                <!-- <i class="fa-solid fa-ballot-check" style="color: white;"> -->
+                                </i> Project Notes</a></p>
+                        </li>
+                        <li class="nav-item">
+                            <p><a class="nav-link active" href="Viewdata.html">
+                                <!-- <i class="fa-solid fa-magnifying-glass"></i> -->
+                                Reference Table
+                            </a></p>
+                        </li>
+                        <li class="nav-item">
+                            <p><a class="nav-link" href="#"> 
+                                <!-- <i class="fa-solid fa-users" style="color: white;"></i>   -->
+                                Customer Master</a></p>
+                        </li>
+                        <li class="nav-item">
+                            <p><a class="nav-link" href="#">
+                                <!-- <i class="fa-solid fa-arrow-right-from-bracket" style="color: white;"></i> -->
+                                 Logout</a></p>
+                        </li>
+                        <li class="nav-item" style="margin-top: 10px;">
+                            <p><a class="nav-link" href="#"> <i class="fa-solid fa-circle-user pr-2" style="color: white;"></i>  Suraj</a></p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="col-10">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="topicons mt-3 ml-3">
+                            <div class="row">
+                                <div class="icon">
+                                    <i class="fa-solid fa-backward-step" data-toggle="tooltip" title="first"></i>
+                                    <i class="fa-solid fa-angle-left ml-3" data-toggle="tooltip" title="Previous"></i>
+                                    <input type="text" class="form-control-sm-sm ml-3" name="name"
+                                        style="height: 26px;" />
+                                    <i class="fa-solid fa-angle-right ml-3" data-toggle="tooltip" title="next"></i>
+                                    <i class="fa-solid fa-forward-step ml-3" data-toggle="tooltip" title="last"></i>
+                                    <i class="fa-solid fa-file ml-3" data-toggle="tooltip"
+                                    title="file"></i>                                    <i class="fa-solid fa-floppy-disk ml-3 fa-lg" data-toggle="tooltip"
+                                        title="save"></i>
+                                    <a href="Preference.html"><i class="fa-solid fa-sliders fa-1x ml-3"
+                                            data-toggle="tooltip" title="Preference"></i></a>
+                                    <i class="fa-solid fa-question ml-3" data-toggle="tooltip" title="help"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <hr>
+
+                        <div class="container-fulid">
+                            <div class="row">
+                                <!-- <div class="col-3">
+                                    <div class="CVTable mt-5">
+                                        <div class="row">
+                                            <div class="col-10 shadow p-3">
+                                                <h6><b>CV Table</b></h6>
+                                                <button type="button" class="btn btn-info btn-block">Valve Data - Globe & Butterfly</button>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="ActuatorData mt-2">
+                                        <div class="row">
+                                            <div class="col-10 shadow p-3">
+                                                <h6><b>Actuator Data</b></h6>
+                                                <button type="button" class="btn btn-info btn-block">Actuator Size</button>
+                                                <button type="button" class="btn btn-info btn-block">Handweel</button>
+                                                <button type="button" class="btn btn-info btn-block">Travel Stops</button>
+                                                <button type="button" class="btn btn-info btn-block">Fail Action</button>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="Customer/Process Data mt-2">
+                                        <div class="row">
+                                            <div class="col-10 shadow p-3">
+                                                <h6><b>Actuator Data</b></h6>
+                                                <button type="button" class="btn btn-info btn-block">Fluid Type</button>
+                                                <button type="button" class="btn btn-info btn-block">Application</button>
+                                                <button type="button" class="btn btn-info btn-block">Fluid Name</button>
+                                                <button type="button" class="btn btn-info btn-block">Schedule</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div> -->
+
+                                <div class="col-3">
+                                    <div class="Accessories mt-3">
+                                        <div class="row">
+                                            <div class="col-11 shadow p-3">
+                                                <h6><b>Accessories</b></h6>
+                                                <button type="button" class="viewbtn btn btn-info btn-block">Positioner Make</button>
+                                                <button type="button" class="viewbtn btn btn-info btn-block">AFR</button>
+                                                <!-- <button type="button" class="viewbtn btn btn-info btn-block">Solenoid Valve</button>
+                                                <button type="button" class="viewbtn btn btn-info btn-block">Air Lock Valve</button>
+                                                <button type="button" class="viewbtn btn btn-info btn-block">Vol.Booster</button>
+                                                <button type="button" class="viewbtn btn btn-info btn-block">Pilot Valve</button>
+                                                <button type="button" class="viewbtn btn btn-info btn-block">Switch Position</button>
+                                                <button type="button" class="viewbtn btn btn-info btn-block">IPConverter</button>
+                                                <button type="button" class="viewbtn btn btn-info btn-block">Air Receiver</button>
+                                                <button type="button" class="viewbtn btn btn-info btn-block">Tubing</button>
+                                                <button type="button" class="viewbtn btn btn-info btn-block">Fittings</button> -->
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="Customer/Process Data mt-4">
+                                        <div class="row">
+                                            <div class="col-11 shadow p-3">
+                                                <h6><b>Customer/Process Data</b></h6>
+                                                <button type="button" class="viewbtn btn btn-info btn-block">Fluid Type</button>
+                                                <button type="button" class="viewbtn btn btn-info btn-block">Application</button>
+                                                <!-- <button type="button" class="viewbtn btn btn-info btn-block">Fluid Name</button>
+                                                <button type="button" class="viewbtn btn btn-info btn-block">Schedule</button> -->
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                <div class="col-6">
+                                    <div class="Valve Data mt-3 ml-3">
+                                        <div class="row">
+                                            <div class="col-11 shadow p-3">
+                                                <h6><b>Valve Data</b></h6>
+                                                <div class="row">
+                                                    <div class="col-6">
+                                                        <button type="button" class="viewbtn btn btn-info btn-block">Valve Style</button>
+                                                    </div>
+                                                    <div class="col-6">
+                                                        <button type="button" class="viewbtn btn btn-info btn-block">Valve Size</button>
+                                                    </div>
+                                                </div>
+                                                <div class="row mt-2">
+                                                    <div class="col-6">
+                                                        <button type="button" class="viewbtn btn btn-info btn-block">Rating</button>
+                                                    </div>
+                                                    <div class="col-6">
+                                                        <button type="button" class="viewbtn btn btn-info btn-block">Material</button>
+                                                    </div>
+                                                </div>
+                                                <!-- <button type="button" class="viewbtn btn btn-info btn-block">Valve Style</button>
+                                                <button type="button" class="viewbtn btn btn-info btn-block">Valve Size</button>
+                                                <button type="button" class="viewbtn btn btn-info btn-block">Rating</button>
+                                                <button type="button" class="viewbtn btn btn-info btn-block">Material</button>
+                                                <button type="button" class="viewbtn btn btn-info btn-block">Valve Details</button>
+                                                <button type="button" class="viewbtn btn btn-info btn-block">Standard Master</button>
+                                                <button type="button" class="viewbtn btn btn-info btn-block">End Connection</button>
+                                                <button type="button" class="viewbtn btn btn-info btn-block">End Finish</button>
+                                                <button type="button" class="viewbtn btn btn-info btn-block">Bonnet Type</button>
+                                                <button type="button" class="viewbtn btn btn-info btn-block">Packing Type</button>
+                                                <button type="button" class="viewbtn btn btn-info btn-block">Packing Material</button>
+                                                <button type="button" class="viewbtn btn btn-info btn-block">Trim Type</button>
+                                                <button type="button" class="viewbtn btn btn-info btn-block">Flow Direction</button>
+                                                <button type="button" class="viewbtn btn btn-info btn-block">Leakage Class</button>
+                                                <button type="button" class="viewbtn btn btn-info btn-block">Body Bonnet Testing</button>
+                                                <button type="button" class="viewbtn btn btn-info btn-block">Soft Parts Material</button>
+                                                <button type="button" class="viewbtn btn btn-info btn-block">Valve Balancing</button>
+                                                <button type="button" class="viewbtn btn btn-info btn-block">Valve Series</button> -->
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-3">
+                                    <div class="Miscellaneous mt-3">
+                                        <div class="row">
+                                            <div class="col-11 shadow p-3">
+                                                <h6><b>Miscellaneous</b></h6>
+                                                <button type="button" class="viewbtn btn btn-info btn-block">Industry</button>
+                                                <button type="button" class="viewbtn btn btn-info btn-block">Region Data</button>
+                                                <!-- <button type="button" class="viewbtn btn btn-info btn-block">Status</button>
+                                                <button type="button" class="viewbtn btn btn-info btn-block">Customer</button>
+                                                <button type="button" class="viewbtn btn btn-info btn-block">Engineer</button>
+                                                <button type="button" class="viewbtn btn btn-info btn-block">Cleaning</button>
+                                                <button type="button" class="viewbtn btn btn-info btn-block">Certification</button>
+                                                <button type="button" class="viewbtn btn btn-info btn-block">Paint Finish</button>
+                                                <button type="button" class="viewbtn btn btn-info btn-block">Paint Certs</button> -->
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="ActuatorData mt-4">
+                                        <div class="row">
+                                            <div class="col-11 shadow p-3">
+                                                <h6><b>Actuator Data</b></h6>
+                                                <button type="button" class="viewbtn btn btn-info btn-block">Actuator Size</button>
+                                                <button type="button" class="viewbtn btn btn-info btn-block">Handweel</button>
+                                                <!-- <button type="button" class="viewbtn btn btn-info btn-block">Travel Stops</button>
+                                                <button type="button" class="viewbtn btn btn-info btn-block">Fail Action</button> -->
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="CVTable mt-3">
+                                        <div class="row">
+                                            <div class="col-11 shadow p-3">
+                                                <h6><b>CV Table</b></h6>
+                                                <button type="button" class="viewbtn btn btn-info btn-block">Valve Data - Globe & Butterfly</button>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

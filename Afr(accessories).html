@@ -1,0 +1,477 @@
+<!-- afr(accessories).html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+		/>
+		<script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.slim.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+			integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		/>
+		<link rel="stylesheet" href="css/style.css" />
+		<!-- <link rel="stylesheet" href="css/table.css"> -->
+		<script src="js/fcc.js"></script>
+    <title>AFR</title>
+    <style>
+   
+  
+    </style>
+</head>
+<body>
+    <div class="container-fulid">
+        <div class="row mr-0">
+            <div class="col-2">
+                <div class="sidenav">
+                    <img src="photo/FCC _new.png"  alt="fcc">
+                    <ul class="nav nav-pills flex-column vh-100">
+                        <!-- <li class="nav-item mt-4">
+                            <p><a class="nav-link" href="#">Dashboard</a></p>
+                        </li> -->
+                        <li  class="nav-item mt-4" style="margin-top: 0;">
+                            <p><a class="nav-link" href="Dash.html">
+                                <!-- <img src="icon/Dashboard.png" alt="dash" style="width: 15%;"> -->
+                            Dashboard</a></p>
+                        </li>
+                        <li class="nav-item">
+                            <p><a class="nav-link" href="projectdetails.html">
+                                <!-- <img src="icon/Project Details.png" alt="projectdetail" style="width: 15%;"> -->
+                                Project Details</a></p>
+                        </li>
+                        <li class="nav-item">
+                            <p><a class="nav-link" href="valvedata.html">	
+                                <!-- <i class="fa-solid fa-memo"></i> -->
+                                Valve Data</a></p>
+                        </li>
+                        <li class="nav-item">
+                            <p>
+                                <a class="nav-link" href="valvesizing.html">
+                                    <!-- <img src="icon/Valve Sizing.png" alt="valve" style="width: 15%;"> -->
+                                     Valve Sizing</a>
+                            </p>
+                        </li>
+                        <li class="nav-item">
+                            <p><a class="nav-link" href="Actuatorsizing.html">
+                                <!-- <img src="icon/Actuator Sizing.png" alt="valve" style="width: 15%;">  -->
+                                Actuator Sizing</a></p>
+                        </li>
+                        <li class="nav-item">
+                            <p><a class="nav-link active" href="Accessories.html">
+                                <!-- <img src="photo/Accessories.png" alt="valve" style="width: 10%; border-radius: 10px;">  -->
+                                Accessories</a></p>
+                        </li>
+                        <li class="nav-item">
+                            <p><a class="nav-link" href="Itemnotes.html">
+                                <!-- <i class="fa-solid fa-ballot-check"></i>  -->
+                               Orders, Item Notes</a></p>
+                        </li>
+                        <li class="nav-item">
+                            <p><a class="nav-link" href="Projectnotes.html">
+                                <!-- <i class="fa-solid fa-ballot-check" style="color: white;"> -->
+                                </i> Project Notes</a></p>
+                        </li>
+                        <li class="nav-item">
+                            <p><a class="nav-link" href="Viewdata.html">
+                                <!-- <i class="fa-solid fa-magnifying-glass"></i> -->
+                                Reference Table
+                            </a></p>
+                        </li>
+                        <li class="nav-item">
+                            <p><a class="nav-link" href="#"> 
+                                <!-- <i class="fa-solid fa-users" style="color: white;"></i>   -->
+                                Customer Master</a></p>
+                        </li>
+                        <li class="nav-item">
+                            <p><a class="nav-link" href="#">
+                                <!-- <i class="fa-solid fa-arrow-right-from-bracket" style="color: white;"></i> -->
+                                 Logout</a></p>
+                        </li>
+                        <li class="nav-item" style="margin-top: 10px;">
+                            <p><a class="nav-link" href="#"> <i class="fa-solid fa-circle-user pr-2" style="color: white;"></i>  Suraj</a></p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="col-10">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="topicons mt-3 ml-3">
+                            <div class="row">
+                                <div class="icon">
+                                    <i class="fa-solid fa-backward-step" data-toggle="tooltip" title="first"></i>
+                                    <i class="fa-solid fa-angle-left ml-3" data-toggle="tooltip" title="Previous"></i>
+                                    <input type="text" class="form-control-sm-sm ml-3" name="name"
+                                        style="height: 26px;" />
+                                    <i class="fa-solid fa-angle-right ml-3" data-toggle="tooltip" title="next"></i>
+                                    <i class="fa-solid fa-forward-step ml-3" data-toggle="tooltip" title="last"></i>
+                                    <i class="fa-solid fa-file ml-3" data-toggle="tooltip"
+                                    title="file"></i>                                    <i class="fa-solid fa-floppy-disk ml-3 fa-lg" data-toggle="tooltip"
+                                        title="save"></i>
+                                    <a href="Preference.html"><i class="fa-solid fa-sliders fa-1x ml-3"
+                                            data-toggle="tooltip" title="Preference"></i></a>
+                                    <i class="fa-solid fa-question ml-3" data-toggle="tooltip" title="help"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <hr>
+                    </div>
+                </div>
+
+                <div class="row mt-3">
+                    <div class="col-12">
+                        <!-- <div class="row">
+                            <div class="col-1" style="border-bottom: 1px solid #607274;">
+                                <div class="row">
+                                    <div class="col-12" style="border-left: 1PX solid #607274;">
+                                        <div class="row sizingtableleft"></div>
+                                        <div class="row sizingtable"><input type="radio" style="margin-left:40%"></div>
+                                        <div class="row sizingtable"><input type="radio" style="margin-left:40%"></div>
+                                        <div class="row sizingtable"><input type="radio" style="margin-left:40%"></div>
+                                        <div class="row sizingtable"><input type="radio" style="margin-left:40%"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-3" style="border-bottom:  1px solid #607274;">
+                                <div class="row">
+                                    <div class="col-4" style="border-left: 1px solid #607274;">
+                                        <div class="row sizingtableleft"><p class="sizingp "><b>Manufacturer</b></p></div>
+                                        <div class="row sizingtable"><p class="sizingp">Shavo</p></div>
+                                        <div class="row sizingtable"><p class="sizingp">Shavo</p></div>
+                                        <div class="row sizingtable"><p class="sizingp">Shavo</p></div>
+                                        <div class="row sizingtable"><p class="sizingp">Shavo</p></div>
+                           
+                                    </div>
+                                    <div class="col-4">
+                                        <div class="row sizingtableleft"><p class="sizingp"><b>Series</b></p></div>
+                                        <div class="row sizingtable"><p class="sizingp">11-4SN Series</p></div>
+                                        <div class="row sizingtable"><p class="sizingp">11-4SN Series</p></div>
+                                        <div class="row sizingtable"><p class="sizingp">11-4SN Series</p></div>
+                                        <div class="row sizingtable"><p class="sizingp">11-4SN Series</p></div>
+                        
+                                       
+                                    </div>
+                                    <div class="col-4">
+                                        <div class="row sizingtableleft"><p class="sizingp"><b>MOC</b></p></div>
+                                        <div class="row sizingtable"><p class="sizingp">AL</p></div>
+                                        <div class="row sizingtable"><p class="sizingp">AL</p></div>
+                                        <div class="row sizingtable"><p class="sizingp">AL</p></div>
+                                        <div class="row sizingtable"><p class="sizingp">AL</p></div>
+                            
+                               
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                            <div class="col-8" >
+                                <div class="row">
+                                    <div class="col-1" style="border-bottom:  1px solid #607274;">
+                                        <div class="row sizingtableleft"><p class="sizingp"><b>Size</b></p></div>
+                                        <div class="row sizingtable"><p class="sizingp">1/4</p></div>
+                                        <div class="row sizingtable"><p class="sizingp">1/4</p></div>
+                                        <div class="row sizingtable"><p class="sizingp">1/4</p></div>
+                                        <div class="row sizingtable"><p class="sizingp">1/4</p></div>
+                             
+                                    </div>
+                                    <div class="col-1" style="border-bottom:  1px solid #607274;">
+                                        <div class="row sizingtableleft"><p class="sizingp"><b>Drain</b></p></div>
+                                        <div class="row sizingtable"><p class="sizingp">Manual</p></div>
+                                        <div class="row sizingtable"><p class="sizingp">Manual</p></div>
+                                        <div class="row sizingtable"><p class="sizingp">Manual</p></div>
+                                        <div class="row sizingtable"><p class="sizingp">Manual</p></div>
+                            
+                                    </div>
+                                    <div class="col-2" style="border-bottom:  1px solid #607274;">
+                                        <div class="row sizingtableleft"><p class="sizingp"><b>Filter Size(Elemental)</b></p></div>
+                                        <div class="row sizingtable"><p class="sizingp">5(SS)</p></div>
+                                        <div class="row sizingtable"><p class="sizingp">5(SS)</p></div>
+                                        <div class="row sizingtable"><p class="sizingp">5(SS)</p></div>
+                                        <div class="row sizingtable"><p class="sizingp">5(SS)</p></div>
+          
+                                  
+                                    </div>
+                                    <div class="col-1" style="border-bottom:  1px solid #607274;">
+                                        <div class="row sizingtableleft"><p class="sizingp"><b>Relieving</b></p></div>
+                                        <div class="row sizingtable"><p class="sizingp">Self</p></div>
+                                        <div class="row sizingtable"><p class="sizingp">Self</p></div>
+                                        <div class="row sizingtable"><p class="sizingp">Self</p></div>
+                                        <div class="row sizingtable"><p class="sizingp">Self</p></div>
+                    
+                                 
+                                    </div>
+                                    <div class="col-2" style="border-bottom:  1px solid #607274;">
+                                        <div class="row sizingtableleft"><p class="sizingp"><b>Pressure Range</b></p></div>
+                                        <div class="row sizingtable"><p class="sizingp">10-100 psi/0-7 barg</p></div>
+                                        <div class="row sizingtable"><p class="sizingp">10-100 psi/0-7 barg</p></div>
+                                        <div class="row sizingtable"><p class="sizingp">10-100 psi/0-7 barg</p></div>
+                                        <div class="row sizingtable"><p class="sizingp">10-100 psi/0-7 barg</p></div>
+                               
+                                     
+                                    </div>
+                                  
+                                    <div class="col-1" style="border-bottom:  1px solid #607274;">
+                                        <div class="row sizingtableleft"><p class="sizingp"><b>Fluid</b></p></div>
+                                        <div class="row sizingtable"><p class="sizingp">None</p></div>
+                                        <div class="row sizingtable"><p class="sizingp">None</p></div>
+                                        <div class="row sizingtable"><p class="sizingp">None</p></div>
+                                        <div class="row sizingtable"><p class="sizingp">None</p></div>
+                           
+                                      
+                                    </div>
+                                    <div class="col-3" style="border-bottom:  1px solid #607274;">
+                                        <div class="row sizingtableleft"><p class="sizingp"><b>Model No</b></p></div>
+                                        <div class="row sizingtable"><p class="sizingp">11-4SN-250M-M5KN-NN</p></div>
+                                        <div class="row sizingtable"><p class="sizingp">11-4SN-250M-M5KN-NN</p></div>
+                                        <div class="row sizingtable"><p class="sizingp">11-4SN-250M-M5KN-NN</p></div>
+                                        <div class="row sizingtable"><p class="sizingp">11-4SN-250M-M5KN-NN</p></div>
+                                
+                                       
+                                    </div>
+                             
+                                </div>
+                            </div>
+                        </div> -->
+                        <table class="table table-striped table-bordered tablepositioner afr_table">
+                            <thead class="table-sm">
+                                <tr>
+                                    <th></th>
+                                    <th>Manufacturer</th>
+                                    <th>Series</th>
+                                    <th>MOC</th>
+                                    <th>Size</th>
+                                    <th>Drain</th>
+                                    <th>Filter Size(Elemental)</th>
+                                    <th>Relieving</th>
+                                    <th>Pressure Range</th>
+                                    <th>Fluid</th>
+                                    <th>Model No</th>
+                                    <!-- <th class="table_remove">Remove</th> -->
+                                </tr>
+                            </thead>
+                            <tbody class="table-sm ">
+                                <tr>
+                                    <td><input type="radio" class="form-control-sm-sm accesories_radio"></td>
+                                    <td>Shavo</td>
+                                    <td>11-4SN Series</td>
+                                    <td>AL</td>
+                                    <td>1/4</td>
+                                    <td>Manual</td>
+                                    <td>5(SS)</td>
+                                    <td>Self</td>
+                                    <td>10-100 psi/0-7 barg</td>
+                                    <td>None</td>
+                                    <td>11-4SN-250M-MSKN-NN</td>
+                                </tr>
+        
+                                <tr>
+                                    <td><input type="radio" class="form-control-sm-sm accesories_radio"></td>
+                                    <td>Shavo</td>
+                                    <td>11-4SN Series</td>
+                                    <td>AL</td>
+                                    <td>1/4</td>
+                                    <td>Manual</td>
+                                    <td>5(SS)</td>
+                                    <td>Self</td>
+                                    <td>10-100 psi/0-7 barg</td>
+                                    <td>None</td>
+                                    <td>11-4SN-250M-MSKN-NN</td>
+                                </tr>
+        
+                                <tr>
+                                    <td><input type="radio" class="form-control-sm-sm accesories_radio"></td>
+                                    <td>Shavo</td>
+                                    <td>11-4SN Series</td>
+                                    <td>AL</td>
+                                    <td>1/4</td>
+                                    <td>Manual</td>
+                                    <td>5(SS)</td>
+                                    <td>Self</td>
+                                    <td>10-100 psi/0-7 barg</td>
+                                    <td>None</td>
+                                    <td>11-4SN-250M-MSKN-NN</td>
+                                </tr>
+                                <tr>
+                                    <td><input type="radio" class="form-control-sm-sm accesories_radio"></td>
+                                    <td>Shavo</td>
+                                    <td>11-4SN Series</td>
+                                    <td>AL</td>
+                                    <td>1/4</td>
+                                    <td>Manual</td>
+                                    <td>5(SS)</td>
+                                    <td>Self</td>
+                                    <td>10-100 psi/0-7 barg</td>
+                                    <td>None</td>
+                                    <td>11-4SN-250M-MSKN-NN</td>
+                                </tr>
+                                <tr>
+                                    <td><input type="radio" class="form-control-sm-sm accesories_radio"></td>
+                                    <td>Shavo</td>
+                                    <td>11-4SN Series</td>
+                                    <td>AL</td>
+                                    <td>1/4</td>
+                                    <td>Manual</td>
+                                    <td>5(SS)</td>
+                                    <td>Self</td>
+                                    <td>10-100 psi/0-7 barg</td>
+                                    <td>None</td>
+                                    <td>11-4SN-250M-MSKN-NN</td>
+                                </tr>
+                                <tr>
+                                    <td><input type="radio" class="form-control-sm-sm accesories_radio"></td>
+                                    <td>Shavo</td>
+                                    <td>11-4SN Series</td>
+                                    <td>AL</td>
+                                    <td>1/4</td>
+                                    <td>Manual</td>
+                                    <td>5(SS)</td>
+                                    <td>Self</td>
+                                    <td>10-100 psi/0-7 barg</td>
+                                    <td>None</td>
+                                    <td>11-4SN-250M-MSKN-NN</td>
+                                </tr>
+                                <tr>
+                                    <td><input type="radio" class="form-control-sm-sm accesories_radio"></td>
+                                    <td>Shavo</td>
+                                    <td>11-4SN Series</td>
+                                    <td>AL</td>
+                                    <td>1/4</td>
+                                    <td>Manual</td>
+                                    <td>5(SS)</td>
+                                    <td>Self</td>
+                                    <td>10-100 psi/0-7 barg</td>
+                                    <td>None</td>
+                                    <td>11-4SN-250M-MSKN-NN</td>
+                                </tr>
+                                <tr>
+                                    <td><input type="radio" class="form-control-sm-sm accesories_radio"></td>
+                                    <td>Shavo</td>
+                                    <td>11-4SN Series</td>
+                                    <td>AL</td>
+                                    <td>1/4</td>
+                                    <td>Manual</td>
+                                    <td>5(SS)</td>
+                                    <td>Self</td>
+                                    <td>10-100 psi/0-7 barg</td>
+                                    <td>None</td>
+                                    <td>11-4SN-250M-MSKN-NN</td>
+                                </tr>
+                                <tr>
+                                    <td><input type="radio" class="form-control-sm-sm accesories_radio"></td>
+                                    <td>Shavo</td>
+                                    <td>11-4SN Series</td>
+                                    <td>AL</td>
+                                    <td>1/4</td>
+                                    <td>Manual</td>
+                                    <td>5(SS)</td>
+                                    <td>Self</td>
+                                    <td>10-100 psi/0-7 barg</td>
+                                    <td>None</td>
+                                    <td>11-4SN-250M-MSKN-NN</td>
+                                </tr>
+                                <tr>
+                                    <td><input type="radio" class="form-control-sm-sm accesories_radio"></td>
+                                    <td>Shavo</td>
+                                    <td>11-4SN Series</td>
+                                    <td>AL</td>
+                                    <td>1/4</td>
+                                    <td>Manual</td>
+                                    <td>5(SS)</td>
+                                    <td>Self</td>
+                                    <td>10-100 psi/0-7 barg</td>
+                                    <td>None</td>
+                                    <td>11-4SN-250M-MSKN-NN</td>
+                                </tr>
+                                <tr>
+                                    <td><input type="radio" class="form-control-sm-sm accesories_radio"></td>
+                                    <td>Shavo</td>
+                                    <td>11-4SN Series</td>
+                                    <td>AL</td>
+                                    <td>1/4</td>
+                                    <td>Manual</td>
+                                    <td>5(SS)</td>
+                                    <td>Self</td>
+                                    <td>10-100 psi/0-7 barg</td>
+                                    <td>None</td>
+                                    <td>11-4SN-250M-MSKN-NN</td>
+                                </tr>
+                                <tr>
+                                    <td><input type="radio" class="form-control-sm-sm accesories_radio"></td>
+                                    <td>Shavo</td>
+                                    <td>11-4SN Series</td>
+                                    <td>AL</td>
+                                    <td>1/4</td>
+                                    <td>Manual</td>
+                                    <td>5(SS)</td>
+                                    <td>Self</td>
+                                    <td>10-100 psi/0-7 barg</td>
+                                    <td>None</td>
+                                    <td>11-4SN-250M-MSKN-NN</td>
+                                </tr>
+                                <tr>
+                                    <td><input type="radio" class="form-control-sm-sm accesories_radio"></td>
+                                    <td>Shavo</td>
+                                    <td>11-4SN Series</td>
+                                    <td>AL</td>
+                                    <td>1/4</td>
+                                    <td>Manual</td>
+                                    <td>5(SS)</td>
+                                    <td>Self</td>
+                                    <td>10-100 psi/0-7 barg</td>
+                                    <td>None</td>
+                                    <td>11-4SN-250M-MSKN-NN</td>
+                                </tr>
+                                <tr>
+                                    <td><input type="radio" class="form-control-sm-sm accesories_radio"></td>
+                                    <td>Shavo</td>
+                                    <td>11-4SN Series</td>
+                                    <td>AL</td>
+                                    <td>1/4</td>
+                                    <td>Manual</td>
+                                    <td>5(SS)</td>
+                                    <td>Self</td>
+                                    <td>10-100 psi/0-7 barg</td>
+                                    <td>None</td>
+                                    <td>11-4SN-250M-MSKN-NN</td>
+                                </tr>
+                                <tr>
+                                    <td><input type="radio" class="form-control-sm-sm accesories_radio"></td>
+                                    <td>Shavo</td>
+                                    <td>11-4SN Series</td>
+                                    <td>AL</td>
+                                    <td>1/4</td>
+                                    <td>Manual</td>
+                                    <td>5(SS)</td>
+                                    <td>Self</td>
+                                    <td>10-100 psi/0-7 barg</td>
+                                    <td>None</td>
+                                    <td>11-4SN-250M-MSKN-NN</td>
+                                </tr>
+                            </tbody>
+                       </table>
+                    </div>
+                
+            
+            </div>
+            <div class="row">
+                <!-- <button type="button" class="btn back-btn">Back</button>
+                <button type="button" class="btn btn-info">Select Positioner</button> -->
+                <div class="col-6">
+                    <a href="Accessories.html"><button type="button" class="btn back-btn">Back</button></a>
+                </div>
+                <div class="col-6">
+                    <button type="button" class="btn btn-info afr_btn">Select AFR</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
