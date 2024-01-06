@@ -1,6 +1,22 @@
 /* -------------------------------------------------table.css---------------------------------------------------------------------------- */
 
 /* ---------------------------------------Dashboard Table------------------------------------------------ */
+/* .fa-circle-user
+{
+    color: white;
+} */
+/* img {
+    width: 80%;
+    margin-top: 9%;
+    margin-left: 8%;
+} */
+
+.image
+{
+    width: 80%;
+    margin-top: 9%;
+    margin-left: 8%;
+}
 
 .nav-pills .nav-link.active
 {
@@ -19,34 +35,12 @@ thead {
     top: 0;
     z-index: 1;
     font-size: 11px;
-    background-color:white;
+    background-color: white;
 }
-tbody{
+
+tbody {
     font-size: 11px;
     height: 90px;
-}
-
-
-.table-container1 {
-    /* max-height: 110px; */
-    /* overflow-y: auto; */
-    position: relative;
-    margin-top: 1%;
-
-    
-    /* position: relative; */
- 
-    
-    
-}
-
-
-.table-container2 {
-    max-height: 210px;
-    overflow-y: auto;
-    position: relative;
-    margin-top: 2%;
-    
 }
 
 
@@ -54,18 +48,18 @@ table {
 
     table-layout: fixed;
 
- 
+
 }
 
 table col {
     width: 100%;
-    
+
 }
 
 
 
 table td {
- 
+
     padding: 2%;
     font-weight: normal;
     text-align: left;
@@ -73,7 +67,7 @@ table td {
     overflow: hidden;
     /* line-height: 18px; */
     white-space: nowrap;
-    
+
 }
 
 
@@ -86,8 +80,9 @@ table th>div {
     padding-left: 0;
     padding-right: 0;
     position: relative;
-    
+
 }
+
 /* table resize after refresh ,in side line */
 .tableResize {
     position: absolute;
@@ -96,7 +91,7 @@ table th>div {
     height: 100%;
     width: 5%;
     cursor: e-resize;
-    
+
 }
 
 /* line color */
@@ -108,22 +103,182 @@ th>div:hover .tableResize {
 .textWidth {
     position: absolute;
     visibility: hidden;
-   
+
 }
 
 /* .tableResize{
     min-width: 100px;
 } */
-th{
+th {
     min-width: 100px;
 
+}
+
+
+/* Dashboard Table1 */
+.table-container1 {
+    /* max-height: 110px; */
+    overflow-y: scroll;
+    display: block;
+    height: 150px;
+    position: relative;
+    margin-top: 1%;
+
+
+    /* position: relative; */
+
+
+
+}
+
+
+.table1_ratio {
+    text-align: center;
+    width: 0%;
+    color: white
+}
+
+.table1_quote {
+    text-align: left;
+    width: 6%
+}
+
+.table1_customer {
+    text-align: left;
+    width: 17%;
+}
+
+.table1_enquiry {
+    text-align: left;
+    width: 12%;
+}
+
+.table1_receipt {
+    text-align: left;
+    width: 6%;
+}
+
+.table1_due {
+    text-align: left;
+    width: 6%;
+}
+
+.table1_region {
+    text-align: left;
+    width: 8%;
+}
+
+.table1_industry {
+    text-align: left;
+    width: 15%;
+}
+
+.table1_engineer {
+    text-align: left;
+    width: 5%;
+
+}
+
+.table1_status {
+    text-align: left;
+    width: 8%;
+
+}
+
+.table1_print {
+    text-align: center;
+    width: 2%;
+}
+
+
+/* Dashboard Table2 */
+
+.table-container2 {
+    max-height: 218px;
+    overflow-y: auto;
+    position: relative;
+    margin-top: 2%;
+
+}
+
+.table2_ratio {
+    text-align: center;
+    width: 0%;
+}
+
+.table2_item {
+    text-align: left;
+    width: 3%
+}
+
+.table2_alt {
+    text-align: center;
+    width: 4%
+}
+
+.table2_tag {
+    text-align: left;
+    width: 6%
+}
+
+.table2_series {
+    text-align: center;
+    width: 6%
+}
+
+.table2_size {
+    text-align: left;
+    width: 5%
+}
+
+.table2_model {
+    text-align: left;
+    width: 7%
+}
+
+
+.table2_type {
+    text-align: left;
+    width: 6%
+}
+
+
+.table2_rating {
+    text-align: left;
+    width: 5%
+}
+
+.table2_material {
+    text-align: left;
+    width: 7%
+}
+
+.table2_unit {
+    text-align: right;
+    width: 5%;
+
+}
+
+.table2_qty {
+    text-align: center;
+    width: 6%
+}
+
+.table2_total {
+    text-align: right;
+    width: 7%;
+}
+
+.table2_print {
+    text-align: center;
+    width: 3%
 }
 
 
 /* ---------------------------------------/--------dashboard----------/------------------------------------------ */
 
 .topicons {
-  
+
     margin-top: 2%;
     width: 97%;
     height: 30px;
@@ -133,7 +288,7 @@ th{
     margin-top: 2%;
 
     width: 97%;
- 
+
 }
 
 
@@ -164,9 +319,10 @@ th{
 }
 
 .fa-magnifying-glass {
-  
+
     color: white;
 }
+
 #btn {
     background-color: #353a40;
     outline: none;
@@ -177,24 +333,25 @@ th{
 /* ----------------------------------Logo------------------------ */
 
 img {
-    width: 90%;
-    margin-top: 5%;
+    width: 75%;
+    margin-top: 6%;
+    margin-left: 4%;
 }
 
 /* ------------------------------------------Sidenavbaar----------------------------------------------------------- */
 .sidenav {
     background-color: #353a40;
     position: fixed;
-  
+
     width: 15%;
- 
+
 
     z-index: 1;
     line-height: 100%;
 }
 
 .nav-link {
-  
+
     color: white;
     font-size: 16px;
     padding-top: 2px;
@@ -204,12 +361,18 @@ img {
 .nav-link:hover {
     background-color: white;
     color: black;
-    
+
+}
+
+.nav-pills .nav-link.active {
+    background-color: white;
+    color: black;
 }
 
 
 .fa-circle-user {
-    font-size: 25px
+    font-size: 25px;
+    color: white;
 }
 
 /* .Itemdetails {
