@@ -23,6 +23,7 @@
     background-color: white;
     color: black;
     position: relative;
+    border-radius: 0%;
 }
 .fcclogo {
     width: 80%;
@@ -203,7 +204,7 @@ th {
 
 .table2_ratio {
     text-align: center;
-    width: 0%;
+    width: 2%;
 }
 
 .table2_item {
@@ -356,11 +357,13 @@ img {
     font-size: 16px;
     padding-top: 2px;
     padding-bottom: 2px;
+    
 }
 
 .nav-link:hover {
     background-color: white;
     color: black;
+    border-radius: 0%;
 
 }
 

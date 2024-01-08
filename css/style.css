@@ -3,6 +3,7 @@
 {
     background-color: white;
     color: black;
+    border-radius: 0%;
 }
 img {
     width: 80%;
@@ -46,6 +47,7 @@ label {
 .nav-link:hover {
     background-color: white;
     color: black;
+    border-radius: 0%;
     /* border-radius: -20px; */
 }
 .fa-circle-user
@@ -540,6 +542,17 @@ a:link {
 .slidingtop_input {
     height: 90%;
     font-size: 11px;
+}
+
+/* ------------------------------------------------Stroke Time Calculation------------------------------------------------ */
+.stroke_speed_piston_input {
+    width: 100%;
+    border: 0px solid;
+}
+
+.piston_unit_input {
+    width: 100%;
+    border: 0px solid;
 }
 
 /* ----------------------------------------------Accessories page css------------------------------------------------------------------ */
