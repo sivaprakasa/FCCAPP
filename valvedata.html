@@ -265,314 +265,345 @@
 									</div>
 								</div>
 
-								<!---VALVE SELECTION-->
-								<div class="col-3">
-									
-									<div class="valveselection shadow p-3" >
-										<h6 class="valvedata_heading"><b>Valve Selection</b></h6>
-										<hr>
-										<div class="row">
-											<div class="col-6">
-												<label for="Valve Series">Valve Series</label>
+								<div class="col-6">
+									<div class="row">
+										<div class="col-12">
+											<div class="row">
+												<div class="col-6">
+													<!---VALVE SELECTION-->
+													<!-- <div class="col-3"> -->
+														
+														<div class="valveselection shadow p-3" >
+															<h6 class="valvedata_heading"><b>Valve Selection</b></h6>
+															<hr>
+															<div class="row">
+																<div class="col-6">
+																	<label for="Valve Series">Valve Series</label>
 
-											</div>
-											<div class="col-6 mr-0">
-												<select class="form-control-sm-sm valvedata_select" name="Valve Series" id="Valve Series"
-												 name="valve series">
-													<option value="">20</option>
-													<option value="">10</option>
-													<option value="">11</option>
-												</select>
+																</div>
+																<div class="col-6 mr-0">
+																	<select class="form-control-sm-sm valvedata_select" name="Valve Series" id="Valve Series"
+																	name="valve series">
+																		<option value="">20</option>
+																		<option value="">10</option>
+																		<option value="">11</option>
+																	</select>
 
+																</div>
+															</div>
+															<div class="row">
+																<div class="col-6">
+																	<label for="End Connection">End Connection</label>
+
+																</div>
+																<div class="col-6">
+																	<select class="form-control-sm-sm valvedata_select" name="end Connection"
+																		id="end connection"  name="end connection">
+																		<option value="">None</option>
+																		<option value="">Integral Flange</option>
+																		<option value="">Loose Flange</option>
+																		<option value="">Flange(Drilled ASME 150)</option>
+																	</select>
+
+
+																</div>
+															</div>
+															<div class="row">
+																<div class="col-6">
+																	<label for="end finish">End Finish</label>
+
+																</div>
+																<div class="col-6">
+																	<select class="form-control-sm-sm valvedata_select" name="end finish" id="end connection" name="end finish"
+																	>
+																		<option value="">N/A</option>
+																		<option value="">RF Serrated</option>
+																		<option value="">RF(125-250AARH)3.2-6.3um</option>
+																		<option value="">Flange(Drilled ASME 150)</option>
+																	</select>
+																</div>
+															</div>
+															<div class="row ">
+																<div class="col-6">
+																	<label for="bonnet finish">Bonnet Type</label>
+
+																</div>
+																<div class="col-6">
+																	<select class="form-control-sm-sm valvedata_select" name="bonnet finish"
+																		id="bonnet finish">
+																		<option value="">Standard</option>
+																		<option value="">Standard Extension</option>
+																		<option value="">Normalized/Finned</option>
+
+																	</select>
+																</div>
+															</div>
+															<div class="row">
+																<div class="col-6 pr-0">
+																	<label for="Bonnet Ext Dimension">Bonnet Ext Dimension</label>
+
+																</div>
+																<div class="col-6">
+																	<input type="text" class="form-control-sm-sm valvedata_input"
+																		name="bonnet Ext Dimension">
+																</div>
+															</div>
+															<div class="row">
+																<div class="col-6">
+																	<label for="Packing Type">Packing Type</label>
+
+																</div>
+																<div class="col-6">
+																	<select class="form-control-sm-sm valvedata_select" name="Paking Type" id="packing Type">
+																	
+
+																		<option value="">Single</option>
+																		<option value="">Double</option>
+																		<option value="">Inverted</option>
+																	</select>
+																</div>
+															</div>
+															<!-- <div class="row">
+																<div class="col-6">
+																	<label for="Trim Type">Trim Type</label>
+
+																</div>
+																<div class="col-6">
+																	<select class="form-control-sm-sm valvedata_select" name="trim type" id="Trim Type">
+																		<option value="">Contour</option>
+																		<option value="">Act-1</option>
+																		<option value="">Act-2</option>
+																		<option value="">ACT-3</option>
+																	</select>
+																</div>
+															</div> -->
+															<div class="row">
+																<div class="col-6 pr-0">
+																	<label for="Flow Charcter" >Flow
+																		Characteristic</label>
+
+																</div>
+																<div class="col-6">
+																	<select class="form-control-sm-sm valvedata_select" name="flow charcter"
+																		id="Flow Charcter">
+																		<option value="">Equal%</option>
+																		<option value="">Linear</option>
+
+																	</select>
+																</div>
+															</div>
+
+															<!-- <div class="row">
+																<div class="col-6 pr-0">
+																	<label for="Flow Direction">Flow Direction</label>
+
+																</div>
+																<div class="col-6">
+																	<select class="form-control-sm-sm valvedata_select" name="flow direction"
+																		id="Flow Direction">
+																		<option value="">Over</option>
+																		<option value="">Under</option>
+																		<option value="">Seat Downstream</option>
+
+																	</select>
+																</div>
+															</div> -->
+															<div class="row">
+																<div class="col-6 pr-0">
+																	<label for="Seat Leakage Class">Seat Leakage Class</label>
+
+																</div>
+																<div class="col-6">
+																	<select class="form-control-sm-sm valvedata_select" name="seat seakage "
+																		id="Seat Leakage Class">
+																		<option value="">ANSI Class II</option>
+																		<option value="">ANSI Class III</option>
+																		<option value="">ANSI Class IV</option>
+
+																	</select>
+																</div>
+															</div>
+															<!-- <button type="button" class="btn btn-info mt-4" style="margin-left: 60%;">Add
+																Project</button> -->
+														</div>
+													<!-- </div> -->
+												</div>
+
+												<div class="col-6">
+													<div class="materialselection shadow p-3">
+														<h6 class="valvedata_heading"><b>Material Selection</b></h6>
+														<hr>
+														<div class="row">
+															<div class="col-6">
+																<label for="Bonnet">Bonnet
+																</label>
+				
+															</div>
+															<div class="col-6">
+																<select class="form-control-sm-sm valvedata_select" name="valve series" id="Valve Series"
+																	>
+																	<option value="">20</option>
+																	<option value="">10</option>
+																	<option value="">11</option>
+																</select>
+				
+															</div>
+														</div>
+														
+														<div class="row">
+															<div class="col-6">
+																<label for="shaft">Shaft</label>
+				
+															</div>
+															<div class="col-6">
+																<select class="form-control-sm-sm valvedata_select" name="shaft" id="shaft"
+																	>
+																	<option value="">None</option>
+																	<option value="">Integral Flange</option>
+																	<option value="">Loose Flange</option>
+																	<option value="">Flange(Drilled ASME 150)</option>
+																</select>
+															</div>
+														</div>
+														<div class="row">
+															<div class="col-6">
+																<label for="Disc">Disc</label>
+				
+															</div>
+															<div class="col-6">
+																<select class="form-control-sm-sm valvedata_select" name="disc" id="disc"
+																	>
+																	<option value="">None</option>
+																	<option value="">Integral Flange</option>
+																	<option value="">Loose Flange</option>
+																	<option value="">Flange(Drilled ASME 150)</option>
+																</select>
+															</div>
+														</div>
+														<div class="row">
+															<div class="col-6">
+																<label for="Seat">Seat</label>
+				
+															</div>
+															<div class="col-6">
+																<select class="form-control-sm-sm valvedata_select" name="seat" id="seat"
+																>
+																	<option value="">None</option>
+																	<option value="">Integral Flange</option>
+																	<option value="">Loose Flange</option>
+																	<option value="">Flange(Drilled ASME 150)</option>
+																</select>
+															</div>
+														</div>
+														<div class="row">
+															<div class="col-6">
+																<label for="Packing">Packing</label>
+				
+															</div>
+															<div class="col-6">
+																<select class="form-control-sm-sm valvedata_select" name="packing" id="packing"
+																>
+																	<option value="">None</option>
+																	<option value="">Integral Flange</option>
+																	<option value="">Loose Flange</option>
+																	<option value="">Flange(Drilled ASME 150)</option>
+																</select>
+															</div>
+														</div>
+														<div class="row">
+															<div class="col-6">
+																<label for="Balance Seal">Balance Seal</label>
+				
+															</div>
+															<div class="col-6">
+																<select class="form-control-sm-sm valvedata_select" name="balance seal"
+																	id="Flow Charcter">
+																	<option value="">None</option>
+																	<option value="">Integral Flange</option>
+																	<option value="">Loose Flange</option>
+																	<option value="">Flange(Drilled ASME 150)</option>
+																</select>
+															</div>
+														</div>
+				
+														<div class="row">
+															<div class="col-6">
+																<label for="FStud/Nut">Stud/Nut</label>
+				
+															</div>
+															<div class="col-6">
+																<select class="form-control-sm-sm valvedata_select" name="stud/nut"
+																>
+																	<option value="">None</option>
+																	<option value="">Integral Flange</option>
+																	<option value="">Loose Flange</option>
+																	<option value="">Flange(Drilled ASME 150)</option>
+																</select>
+															</div>
+														</div>
+														<div class="row">
+															<div class="col-6">
+																<label for="Gasket">Gasket</label>
+				
+															</div>
+															<div class="col-6">
+																<select class="form-control-sm-sm valvedata_select" name="gasket" id="gasket"
+																>
+																	<option value="">None</option>
+																	<option value="">Integral Flange</option>
+																	<option value="">Loose Flange</option>
+																	<option value="">Flange(Drilled ASME 150)</option>
+																</select>
+															</div>
+														</div>
+														<!-- <button type="button" class="btn btn-info mt-4" style="margin-left: 60%;">Add
+															Project</button> -->
+													</div>
+				
+												</div>
 											</div>
 										</div>
-										<div class="row">
-											<div class="col-6">
-												<label for="End Connection">End Connection</label>
+									</div>
 
-											</div>
-											<div class="col-6">
-												<select class="form-control-sm-sm valvedata_select" name="end Connection"
-													id="end connection"  name="end connection">
-													<option value="">None</option>
-													<option value="">Integral Flange</option>
-													<option value="">Loose Flange</option>
-													<option value="">Flange(Drilled ASME 150)</option>
-												</select>
-
-
+									<div class="row mt-2">
+										<div class="col-12">
+											<div class="warnings shadow p-3">
+												<h6 class="valvedata_heading"><b>warnings</b></h6>
+												<hr>
 											</div>
 										</div>
-										<div class="row">
-											<div class="col-6">
-												<label for="end finish">End Finish</label>
-
-											</div>
-											<div class="col-6">
-												<select class="form-control-sm-sm valvedata_select" name="end finish" id="end connection" name="end finish"
-												>
-													<option value="">N/A</option>
-													<option value="">RF Serrated</option>
-													<option value="">RF(125-250AARH)3.2-6.3um</option>
-													<option value="">Flange(Drilled ASME 150)</option>
-												</select>
-											</div>
-										</div>
-										<div class="row ">
-											<div class="col-6">
-												<label for="bonnet finish">Bonnet Type</label>
-
-											</div>
-											<div class="col-6">
-												<select class="form-control-sm-sm valvedata_select" name="bonnet finish"
-													id="bonnet finish">
-													<option value="">Standard</option>
-													<option value="">Standard Extension</option>
-													<option value="">Normalized/Finned</option>
-
-												</select>
-											</div>
-										</div>
-										<div class="row">
-											<div class="col-6 pr-0">
-												<label for="Bonnet Ext Dimension">Bonnet Ext Dimension</label>
-
-											</div>
-											<div class="col-6">
-												<input type="text" class="form-control-sm-sm valvedata_input"
-													name="bonnet Ext Dimension">
-											</div>
-										</div>
-										<div class="row">
-											<div class="col-6">
-												<label for="Packing Type">Packing Type</label>
-
-											</div>
-											<div class="col-6">
-												<select class="form-control-sm-sm valvedata_select" name="Paking Type" id="packing Type">
-												
-
-													<option value="">Single</option>
-													<option value="">Double</option>
-													<option value="">Inverted</option>
-												</select>
-											</div>
-										</div>
-										<div class="row">
-											<div class="col-6">
-												<label for="Trim Type">Trim Type</label>
-
-											</div>
-											<div class="col-6">
-												<select class="form-control-sm-sm valvedata_select" name="trim type" id="Trim Type">
-													<option value="">Contour</option>
-													<option value="">Act-1</option>
-													<option value="">Act-2</option>
-													<option value="">ACT-3</option>
-												</select>
-											</div>
-										</div>
-										<div class="row">
-											<div class="col-6 pr-0">
-												<label for="Flow Charcter" >Flow
-													Characteristic</label>
-
-											</div>
-											<div class="col-6">
-												<select class="form-control-sm-sm valvedata_select" name="flow charcter"
-													id="Flow Charcter">
-													<option value="">Equal%</option>
-													<option value="">Linear</option>
-
-												</select>
-											</div>
-										</div>
-
-										<div class="row">
-											<div class="col-6 pr-0">
-												<label for="Flow Direction">Flow Direction</label>
-
-											</div>
-											<div class="col-6">
-												<select class="form-control-sm-sm valvedata_select" name="flow direction"
-													id="Flow Direction">
-													<option value="">Over</option>
-													<option value="">Under</option>
-													<option value="">Seat Downstream</option>
-
-												</select>
-											</div>
-										</div>
-										<div class="row">
-											<div class="col-6 pr-0">
-												<label for="Seat Leakage Class">Seat Leakage Class</label>
-
-											</div>
-											<div class="col-6">
-												<select class="form-control-sm-sm valvedata_select" name="seat seakage "
-													id="Seat Leakage Class">
-													<option value="">ANSI Class II</option>
-													<option value="">ANSI Class III</option>
-													<option value="">ANSI Class IV</option>
-
-												</select>
-											</div>
-										</div>
-										<!-- <button type="button" class="btn btn-info mt-4" style="margin-left: 60%;">Add
-											Project</button> -->
 									</div>
 								</div>
 
 
-								<!---MATERIAL SELECTIOn-->
-								<div class="col-3">
-									<!-- <div class="row">
-                                        <div class="col-6">
-                                            <label for="valve Style" style="margin-left: 12%;">Valve Style</label>
-                                        </div>
-                                        <div class="col-6">
-                                            <select class="form-control-sm-sm" style="width: 100%;">
-												<option value="Globle">Globle</option>
-												<option value="Butterfly">ButterFly</option>
-											</select>
-                                        </div>
-                                    </div> -->
-									<div class="materialselection shadow p-3">
-										<h6 class="valvedata_heading"><b>Material Selection</b></h6>
-										<hr>
-										<div class="row">
-											<div class="col-6">
-												<label for="Bonnet">Bonnet
-												</label>
 
-											</div>
-											<div class="col-6">
-												<select class="form-control-sm-sm valvedata_select" name="valve series" id="Valve Series"
-													>
-													<option value="">20</option>
-													<option value="">10</option>
-													<option value="">11</option>
-												</select>
-
-											</div>
-										</div>
-										
-										<div class="row">
-											<div class="col-6">
-												<label for="shaft">Shaft</label>
-
-											</div>
-											<div class="col-6">
-												<select class="form-control-sm-sm valvedata_select" name="shaft" id="shaft"
-													>
-													<option value="">None</option>
-													<option value="">Integral Flange</option>
-													<option value="">Loose Flange</option>
-													<option value="">Flange(Drilled ASME 150)</option>
-												</select>
-											</div>
-										</div>
-										<div class="row">
-											<div class="col-6">
-												<label for="Disc">Disc</label>
-
-											</div>
-											<div class="col-6">
-												<select class="form-control-sm-sm valvedata_select" name="disc" id="disc"
-													>
-													<option value="">None</option>
-													<option value="">Integral Flange</option>
-													<option value="">Loose Flange</option>
-													<option value="">Flange(Drilled ASME 150)</option>
-												</select>
-											</div>
-										</div>
-										<div class="row">
-											<div class="col-6">
-												<label for="Seat">Seat</label>
-
-											</div>
-											<div class="col-6">
-												<select class="form-control-sm-sm valvedata_select" name="seat" id="seat"
-												>
-													<option value="">None</option>
-													<option value="">Integral Flange</option>
-													<option value="">Loose Flange</option>
-													<option value="">Flange(Drilled ASME 150)</option>
-												</select>
-											</div>
-										</div>
-										<div class="row">
-											<div class="col-6">
-												<label for="Packing">Packing</label>
-
-											</div>
-											<div class="col-6">
-												<select class="form-control-sm-sm valvedata_select" name="packing" id="packing"
-												>
-													<option value="">None</option>
-													<option value="">Integral Flange</option>
-													<option value="">Loose Flange</option>
-													<option value="">Flange(Drilled ASME 150)</option>
-												</select>
-											</div>
-										</div>
-										<div class="row">
-											<div class="col-6">
-												<label for="Balance Seal">Balance Seal</label>
-
-											</div>
-											<div class="col-6">
-												<select class="form-control-sm-sm valvedata_select" name="balance seal"
-													id="Flow Charcter">
-													<option value="">None</option>
-													<option value="">Integral Flange</option>
-													<option value="">Loose Flange</option>
-													<option value="">Flange(Drilled ASME 150)</option>
-												</select>
-											</div>
-										</div>
-
-										<div class="row">
-											<div class="col-6">
-												<label for="FStud/Nut">Stud/Nut</label>
-
-											</div>
-											<div class="col-6">
-												<select class="form-control-sm-sm valvedata_select" name="stud/nut"
-												>
-													<option value="">None</option>
-													<option value="">Integral Flange</option>
-													<option value="">Loose Flange</option>
-													<option value="">Flange(Drilled ASME 150)</option>
-												</select>
-											</div>
-										</div>
-										<div class="row">
-											<div class="col-6">
-												<label for="Gasket">Gasket</label>
-
-											</div>
-											<div class="col-6">
-												<select class="form-control-sm-sm valvedata_select" name="gasket" id="gasket"
-												>
-													<option value="">None</option>
-													<option value="">Integral Flange</option>
-													<option value="">Loose Flange</option>
-													<option value="">Flange(Drilled ASME 150)</option>
-												</select>
-											</div>
-										</div>
-										<!-- <button type="button" class="btn btn-info mt-4" style="margin-left: 60%;">Add
-											Project</button> -->
-									</div>
-
-								</div>
 								<div class="col-3">
 									<div class="row">
-										<div class="col-10 shadow  p-3  warnings" >
-											<h6 class="valvedata_heading"><b>Warnings</b></h6>
-											<hr>
+										<div class="col-10">
+											<div class="row">
+												<div class="col-6">
+													<label for="Design Standard" style="margin-left: 12%;">Design
+														Standard</label>
+												</div>
+												<div class="col-6">
+													<select class="form-control-sm-sm valvedata_select"
+														 name="standard">
+														<option value="asme">ASME</option>
+														<option value="api">API</option>
+													</select>
+												</div>
+											</div>
+											<div class="row mt-1">
+												<div class="col-6">
+													<label for="valve Style" style="margin-left: 12%;">Valve Style</label>
+												</div>
+												<div class="col-6">
+													<select class="form-control-sm-sm valvedata_select" name="valve style">
+														<option value="Globle">Globe</option>
+														<option value="Butterfly">ButterFly</option>
+													</select>
+												</div>
+											</div> 
 										</div>
 										<!-- <div class="valvedatabtn" style="margin-top:65%; margin-left: 30%;">
 											<button type="button" class="btn badge-danger"
@@ -583,7 +614,7 @@
 								</div>
 							</div>
 							<div class="row mt-3">
-								<div class="col-3 mt-2">
+								<!-- <div class="col-3 mt-2">
 									<div class="row">
 										<div class="col-6">
 											<label for="Design Standard" style="margin-left: 12%;">Design
@@ -598,8 +629,8 @@
 										</div>
 									</div>
 
-								</div>
-								<div class="col-3 mt-2">
+								</div> -->
+								<!-- <div class="col-3 mt-2">
 									 <div class="row">
                                         <div class="col-6">
                                             <label for="valve Style" style="margin-left: 12%;">Valve Style</label>
@@ -612,12 +643,12 @@
                                         </div>
                                     </div> 
 
-								</div>
+								</div> -->
 								<div class="col-6">
 									<div class="row justify-content-end">
 										<div class="col-12 fixed-bottom d-flex justify-content-end mb-3">
 											<div class="valvedatabtn">
-												<button type="button" class="btn valvebutton"
+												<button type="button" class="btn valvebutton btn-info btn-sm"
 													>Update Item</button>
 												<!-- <button type="button" class="btn btn-info">create New Item</button> -->
 											</div>
