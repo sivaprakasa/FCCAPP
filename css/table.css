@@ -31,13 +31,19 @@
     margin-left: 8%;
 } 
 
-thead {
+.dash_thead {
+    position: sticky;
+    top: 0;
+    background-color: #ffffff;
+}
+
+/* thead {
     position: sticky;
     top: 0;
     z-index: 1;
     font-size: 11px;
     background-color: white;
-}
+} */
 
 tbody {
     font-size: 11px;
@@ -48,6 +54,7 @@ tbody {
 table {
 
     table-layout: fixed;
+    font-size: 11px;
 
 
 }
