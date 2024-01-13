@@ -157,6 +157,7 @@ label {
     background-color: #dedbdb;
     color: black;
     font-size: 14px;
+    border: none;
 }
 
 /* ---------------------------------------------------------------valve data page-------------------------------------------------------- */
@@ -223,6 +224,7 @@ label {
     background-color: #dedbdb;
     font-size: 14px;
     color: black;
+    border: none;
 }
 
 /* -------------------------------------valvesizing page------------------------------------------------------------------------ */
@@ -345,6 +347,7 @@ select {
     margin-left: 48%;
     background-color: #dedbdb;
     color: black;
+    border: none;
 
 }
 
@@ -355,6 +358,7 @@ select {
     margin: 0;
     background-color: #dedbdb;
     color: black;
+    border: none;
 }
 .valvesizing_select
 {
@@ -391,6 +395,42 @@ select {
 .outline{
     border-left: groove 1px black; 
     border-right: groove 1px black;
+}
+.valve_btn {
+    width: 100%;
+}
+.selectvalve_select
+{
+    background-color: white;
+    font-size: 11px;
+    border: 1px solid #607274;
+}
+
+.select_radio
+{
+    margin-left: 30%;
+    
+}
+.valvebtn
+{
+    background-color: #dedbdb;
+    color: black;
+    border: none;
+}
+.selectvalve_table
+{
+    width: 100%;
+    overflow-y: scroll;
+    display: block;
+    height: 80%;
+    font-size: 11px;
+}
+
+.selecthead th{
+    position: sticky;
+    top: 0;
+    background-color: #ffffff;
+    width: 1%;
 }
 /* -------------------------------------------------------------------------------------------------- */
 
@@ -461,6 +501,7 @@ a:link {
     color: black;
     width: 100%;
     font-size: 14px;
+    border: none;
 }
 
 .actuator_button2 {
@@ -468,6 +509,7 @@ a:link {
     color: black;
     width: 100%;
     font-size: 14px;
+    border: none;
 }
 
 .actuator_button3 {
@@ -475,6 +517,7 @@ a:link {
     color: black;
     width: 100%;
     font-size: 14px;
+    border: none;
 }
 
 /* -----------------------------------------------RotaryActuator page css---------------------------------------------------------- */
@@ -484,6 +527,7 @@ a:link {
     color: black;
     width: 100%;
     font-size: 14px;
+    border: none;
 }
 
 .Rotaryactuator_button2 {
@@ -491,6 +535,7 @@ a:link {
     color: black;
     width: 100%;
     font-size: 14px;
+    border: none;
 }
 
 .Rotaryactuator_button3 {
@@ -498,6 +543,7 @@ a:link {
     color: black;
     width: 100%;
     font-size: 14px;
+    border: none;
 }
 
 .Rotary_heading {
@@ -509,6 +555,7 @@ a:link {
     font-size: 14px;
     background-color: #dedbdb;
     color: black;
+    border: none;
 }
 
 .input_btn2 {
@@ -516,6 +563,7 @@ a:link {
     background-color: #dedbdb;
     color: black;
     font-size: 14px;
+    border: none;
 }
 
 /* .input_btn3
@@ -613,6 +661,7 @@ a:link {
 {
     background-color: #dedbdb;
     color: black;
+    border: none;
 }
 
 /* -------------------------------------limit switch(accessories)------------------------------------------------------------- */
@@ -643,6 +692,7 @@ a:link {
     margin-left: 74%;
     margin-top: 3%;
     font-size: 14px;
+    border: none;
 }
 
 /* ----------------------------------------------solenoid(accessories)------------------------------------------------------------ */
@@ -679,6 +729,7 @@ a:link {
     margin-left: 82%;
     margin-top: 3%;
     font-size: 14px;
+    border: none;
 }
 
 .afrhead th
@@ -738,6 +789,7 @@ a:link {
     margin-left: 75%;
     /* margin-top: 2%; */
     font-size: 14px;
+    border: none;
 }
 .back-btn
 {
@@ -746,6 +798,7 @@ a:link {
     /* margin-top: 2%; */
     /* margin-bottom: 2%; */
     font-size: 14px;
+    border: none;
 }
 /* ----------------------------------------------order and item notes page css----------------------------------------------------- */
 .Itemnotes_heading
@@ -771,6 +824,7 @@ a:link {
     background-color: #dedede; 
     color: black;
     font-size: 14px;
+    border: none;
    
 }
 .item_btn1
@@ -778,6 +832,7 @@ a:link {
     background-color: #dedbdb;
     color: black;
     font-size: 14px;
+    border: none;
 }
 .item_cancle_icon
 {
@@ -837,6 +892,7 @@ a:link {
     color: #000000;
     font-size: 61%;
     text-align: left;
+    border: none;
 }
 .viewdata_heading
 {
@@ -861,6 +917,7 @@ a:link {
     margin-left: 3%;
     background-color: #dedede;
     color: black;
+    border: none;
 }
 .refernce_btns
 {
@@ -868,6 +925,7 @@ a:link {
     margin-left: 1%;
     background-color: #dedede;
     color: black;
+    border: none;
 }
 .show-entry
 {
@@ -892,7 +950,7 @@ a:link {
 
 .refernce_table1
 {
-    width: 50%;
+    width: 38%;
     font-size: 11px;
     overflow-y: scroll;
     display: block;
@@ -903,6 +961,7 @@ a:link {
     position: sticky;
     top: 0;
     background-color: #ffffff;
+    width: 5%;
 }
 /* .reference_input
 {
@@ -927,6 +986,7 @@ a:link {
     background-color: #dedbdb;
     color: black;
     margin-top: 3%;
+    border: none;
 }
 
 
@@ -1035,3 +1095,12 @@ a:link {
 color: #000000;
     margin-left:1%;
 }
+/* .topinput {
+    width: 40%;
+    height: 90%;
+} */
+
+/* #topinput {
+    width: 40%;
+    height: 50%;
+} */
