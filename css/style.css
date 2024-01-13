@@ -963,3 +963,75 @@ a:link {
 
 
 }
+
+
+
+/* ------------------------------------Stroke Time Calculation -spring Diaphragam------------------------------ */
+
+
+.spring_input {
+    width: 100%;
+    border: 0px solid;
+}
+
+.spring_borderbottom {
+    border-bottom: 1px solid #607274;
+}
+
+.spring_btn {
+    background-color: #dedbdb;
+    margin-top: 3%;
+    /* margin-right:60%; */
+    width: 150px;
+    color: black;
+    font-size: 14px;
+}
+
+
+.savebtnspr {
+    margin-left: 86%;
+    margin-top: 4%;
+}
+
+/* -----------------------------piston stroke time---------------------------- */
+
+
+
+.piston_btn {
+    background-color: #dedbdb;
+    margin-top: 3%;
+    /* margin-right:60%; */
+    width: 100px;
+    color: black;
+    font-size: 14px;
+
+}
+
+.piston_calculate {
+    margin-left: 80%;
+    margin-top: 4%;
+}
+
+.cal_result_row {
+    margin-left: -1%;
+}
+
+.piston_borderbottom {
+    border-bottom: 1px solid #607274;
+}
+
+.piston_savebtn {
+    margin-left: 77%;
+    margin-top: 27%;
+}
+
+
+.piston_calbtn {
+    margin-left: 77%;
+    margin-top: 2%;
+}
+
+.close_icon{
+color: #000000;
+    margin-left:1%;
+}
