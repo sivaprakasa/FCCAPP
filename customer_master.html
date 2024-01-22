@@ -1,0 +1,143 @@
+<!-- preference.html -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- <link rel="stylesheet" href="css/table.css"> -->
+    <script src="js/fcc.js"></script>
+    <title>FCC</title>
+</head>
+
+<body>
+    <div class="container-fulid">
+        <div class="row mr-0">
+            <div class="col-2">
+                <div class="sidenav">
+                    <img src="photo/FCC _new.png" alt="fcc">
+                    <ul class="nav flex-column nav-pills vh-100">
+
+                        <li class="nav-item mt-4">
+                            <p><a class="nav-link" href="Dash.html">
+                                    Dashboard</a></p>
+                        </li>
+                        <li class="nav-item">
+                            <p><a class="nav-link" href="projectdetails.html">
+                                    Project Details</a></p>
+                        </li>
+                        <li class="nav-item">
+                            <p><a class="nav-link" href="valvedata.html">
+                                    Valve Data</a></p>
+                        </li>
+                        <li class="nav-item">
+                            <p>
+                                <a class="nav-link" href="valvesizing.html">
+                                    Valve Sizing</a>
+                            </p>
+                        </li>
+                        <li class="nav-item">
+                            <p><a class="nav-link" href="Actuatorsizing.html">
+                                    Actuator Sizing</a></p>
+                        </li>
+                        <li class="nav-item">
+                            <p><a class="nav-link" href="Accessories.html">
+                                    Accessories</a></p>
+                        </li>
+                        <li class="nav-item">
+                            <p><a class="nav-link" href="Itemnotes.html">
+                                    Orders, Item Notes</a></p>
+                        </li>
+                        <li class="nav-item">
+                            <p><a class="nav-link" href="Projectnotes.html">
+                                    </i> Project Notes</a></p>
+                        </li>
+                        <li class="nav-item">
+                            <p><a class="nav-link" href="Viewdata.html">
+                                    Reference Table
+                                </a></p>
+                        </li>
+                        <li class="nav-item">
+                            <p><a class="nav-link active " href="customer_master.html">
+                                    Customer Master</a></p>
+                        </li>
+                        <li class="nav-item">
+                            <p><a class="nav-link" href="#">
+                                    Logout</a></p>
+                        </li>
+                        <li class="nav-item mt-1">
+                            <p><a class="nav-link" href="#"> <i class="fa-solid fa-circle-user pr-2"
+                                        style="color: white;"></i> Suraj</a></p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="col-10">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="topicons mt-3 ml-3">
+                            <div class="row">
+                                <div class="icon">
+                                    <i class="fa-solid fa-backward-step" data-toggle="tooltip" title="first"></i>
+                                    <i class="fa-solid fa-angle-left ml-3" data-toggle="tooltip" title="Previous"></i>
+                                    <input type="text" class="form-control-sm-sm ml-3" name="name" />
+                                    <i class="fa-solid fa-angle-right ml-3" data-toggle="tooltip" title="next"></i>
+                                    <i class="fa-solid fa-forward-step ml-3" data-toggle="tooltip" title="last"></i>
+                                    <i class="fa-solid fa-file ml-3" data-toggle="tooltip" title="file"></i> <i
+                                        class="fa-solid fa-floppy-disk ml-3 fa-lg" data-toggle="tooltip"
+                                        title="save"></i>
+                                    <a href="Preference.html"><i class="fa-solid fa-sliders fa-1x ml-3"
+                                            data-toggle="tooltip" title="Preference"></i></a>
+                                    <i class="fa-solid fa-question ml-3" data-toggle="tooltip" title="help"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <hr>
+                    </div>
+                </div>
+
+                <div class="row mt-2 ml-3">
+                    <div class="col-3 shadow p-2">
+                        <h6 class="preference_heading"><b>Customer Details</b></h6>
+                        <hr>
+                        <div class="row mt-2">
+                            <div class="col-6">
+                                <label>Customer Name</label>
+                            </div>
+                            <div class="col-6">
+                                <input type="text" class="form-control-sm-sm cus_input" name="customer name">
+                            </div>
+                        </div>
+
+                        <div class="row mt-2">
+                            <div class="col-6">
+                                <label>Address</label>
+                            </div>
+                            <div class="col-6">
+                                <input type="text" class="form-control-sm-sm cus_input" name="address">
+
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+
+                <div class="row ml-4">
+                    <button type="button" class="btn btn-info preference_btn">Add Customer</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
