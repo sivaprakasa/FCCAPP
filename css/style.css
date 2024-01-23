@@ -1,4 +1,8 @@
 /* ----------------------------------------------------------------------style.css file-------------------------------------------------------- */
+
+body{
+    background-color: #fffefe;
+}
 .nav-pills .nav-link.active
 {
     background-color: white;
@@ -295,23 +299,27 @@ label {
 
 .clear {
     margin-left: 5%;
-    margin-top: 10%;
+    margin-top: 13%;
     text-align: right;
     color: rgb(28, 28, 28);
-    font-size: 12px;
+    font-size: 9px;
+}
+
+
+
+.closeicon {
+    margin-left: 5%;
+    margin-top: 10%;
+    text-align: right;
+    color: rgb(95, 95, 95);
+    font-size: 14px;
+
 }
 
 .calculatedcv_row {
     width: 100%;
     border: 0px solid;
     background-color: #ddebf7
-}
-
-.closeicon {
-    margin-left: 5%;
-    margin-top: 7%;
-    text-align: right;
-    color: rgb(95, 95, 95);
 }
 
 .valvesizing_fluid_data {
@@ -632,6 +640,10 @@ a:link {
 .piston_unit_input {
     width: 100%;
     border: 0px solid;
+}
+
+.speedrow {
+    margin-top: 3%;
 }
 
 /* ----------------------------------------------Accessories page css------------------------------------------------------------------ */
@@ -1115,3 +1127,7 @@ color: #000000;
     height: 70%;
     font-size: 11px;
 }
+
+
+
+
