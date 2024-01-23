@@ -1,8 +1,32 @@
 //--------------------------------------resizetable.js-------------------------------------------------------------------------------------
 
 
-// tableResize('#table');
+//table filter-----------------------------------------------------------
 
+    // project filter data
+    $(document).ready(function(){
+        $("#projectinput").on("keyup", function() {
+          var value = $(this).val().toLowerCase();
+          $("#projectlist tr").filter(function() {
+            $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+          });
+        });
+    });
+
+    // item filter data
+    $(document).ready(function(){
+        $("#iteminput").on("keyup", function() {
+          var value = $(this).val().toLowerCase();
+          $("#itemlist tr").filter(function() {
+            $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+          });
+        });
+    });
+
+
+
+
+// tableResize('#table');
 
 function tableResize(selector) {
     'use strict';
