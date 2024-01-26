@@ -33,25 +33,10 @@ body {
     margin-left: 8%;
 }
 
-.dash_thead {
-    position: sticky;
-    top: 0;
-    background-color: #ffffff;
-}
 
-/* thead {
-    position: sticky;
-    top: 0;
-    z-index: 1;
-    font-size: 11px;
-    background-color: white;
-} */
 
-tbody {
-    font-size: 11px;
-    height: 90px;
-}
 
+/* ---------------Dashboard Table 1----------------------------- */
 
 table {
 
@@ -61,145 +46,132 @@ table {
 
 }
 
-table col {
-    width: 100%;
 
+
+table,
+th,
+td {
+    border: 1px solid #ddd;
+    border-collapse: collapse;
+    position: relative;
+    overflow: auto;
 }
 
+table {
 
+    width: 100%;
+}
+
+#table-scroll {
+    height: 150px;
+    overflow: auto;
+    margin-top: 10px;
+}
 
 table td {
-
-    padding: 2%;
-    font-weight: normal;
-    text-align: left;
-    max-width: 100%;
-    overflow: hidden;
-    /* line-height: 18px; */
     white-space: nowrap;
-
-}
-
-
-/* table header */
-table th>div {
-    /* min-width: 20px; */
-    max-height: 1.5em;
+    text-overflow: ellipsis;
     overflow: hidden;
-    width: 100%;
-    padding-left: 0;
-    padding-right: 0;
-    position: relative;
 
 }
 
-/* table resize after refresh ,in side line */
-.tableResize {
-    position: absolute;
-    right: 0;
+table th {
+
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+thead {
+    background-color:white;
+
+    top: 0px;
+    z-index: 100;
+    color: #272727;
+}
+
+
+
+th,
+td {
+    height: 5px;
+    text-align: left;
+    vertical-align: top;
+    border-left: 1px solid #ccc;
+}
+
+.border_outline{
+    border: groove 1px rgb(196, 196, 196);
+}
+
+.dash_thead {
+    position: sticky;
     top: 0;
-    height: 100%;
-    width: 5%;
-    cursor: e-resize;
-
+    background-color: #ffffff;
 }
-
-/* line color */
-th>div:hover .tableResize {
-    background-color: green;
-}
-
-/* text alginment double click */
-.textWidth {
-    position: absolute;
-    visibility: hidden;
-
-}
-
-/* .tableResize{
-    min-width: 100px;
-} */
-th {
-    min-width: 100px;
-
-}
-
-
-/* Dashboard Table1 */
-.table-container1 {
-    /* max-height: 110px; */
-    overflow-y: scroll;
-    display: block;
-    height: 150px;
-    position: relative;
-    margin-top: 1%;
-
-
-    /* position: relative; */
-
-
-
-}
-
-
 .table1_ratio {
     text-align: center;
-    width: 0%;
+
     color: white
 }
 
 .table1_quote {
-    text-align: left;
-    width: 6%
+    text-align: center;
+
 }
 
 .table1_customer {
     text-align: left;
-    width: 17%;
+
 }
 
 .table1_enquiry {
     text-align: left;
-    width: 12%;
+
 }
 
 .table1_receipt {
     text-align: left;
-    width: 6%;
+
 }
 
 .table1_due {
     text-align: left;
-    width: 6%;
+   
 }
 
 .table1_region {
     text-align: left;
-    width: 8%;
+   
 }
 
 .table1_industry {
     text-align: left;
-    width: 15%;
+    
+   
 }
 
 .table1_engineer {
     text-align: left;
-    width: 5%;
+ 
 
 }
 
 .table1_status {
-    text-align: left;
-    width: 8%;
+    text-align: center;
+  
 
+}
+
+.table1_work{
+    text-align: center;
 }
 
 .table1_print {
     text-align: center;
-    width: 2%;
+ 
 }
-
+ 
 
 /* Dashboard Table2 */
 
@@ -213,7 +185,7 @@ th {
 
 .table2_ratio {
     text-align: center;
-    width: 2%;
+    width: 3%;
 }
 
 .table2_item {
