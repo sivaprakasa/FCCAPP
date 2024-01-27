@@ -110,32 +110,32 @@
                 </div>
 
                 <div class="row mt-0">
-                    <div class="col-3">
+                    <div class="col-3 mt-2">
                        
-                        <div class="actuator shadow p-2 mt-2">
+                        <div class="actuator shadow p-2">
                             <h6 class="actuator_heading"><b>Actuator Selection</b></h6>
                             <hr>
                             <div class="row">
                                 <div class="col-6">
-                                    <label for="type">Actuator Type</label>
+                                    <label for= "actType" >Actuator Type</label>
                                 </div>
                                 <div class="col-6">
-                                    <select class="manual gearbox actuator_select" name="type" id="type">
-                                        <option value="">Manual Gearbox</option>
-                                        <option value="">Spring & Diaphragam</option>
-                                        <option value="">Multi Spring 7 Diaphragam</option>
+                                    <select class="actuator_select"  name="actType" >
+                                        <option value="mg">Manual Gearbox</option>
+                                        <option value="sd">Spring & Diaphragam</option>
+                                        <option value="msd">Multi Spring 7 Diaphragam</option>
                                     </select>
                                 </div>
                             </div>
                             <div class="row">
                                 <div class="col-6 pr-0">
                                     <!-- Spring Action / Fail Mode -->
-                                    <label for="Spring Action">Spring Action / Fail Mode</label>
+                                    <label for="failAction">Spring Action/Fail Mode</label>
 
                                 </div>
                                 <div class="col-6">
-                                    <select class="Spring Action actuator_select" name="Spring Action"
-                                        id="Spring Action">
+                                    <select class="Spring Action actuator_select"  name="failAction"
+                                    >
                                         <option value="">N/A</option>
                                         <option value="">Fail Open</option>
                                         <option value="">Fail Close</option>
@@ -145,10 +145,10 @@
                             <div class="row">
                                 <div class="col-6">
                                     <!-- Hand Wheel -->
-                                    <label for="   Hand Wheel"> Hand Wheel</label>
+                                    <label for="mount"> Hand Wheel</label>
                                 </div>
                                 <div class="col-6">
-                                    <select class="hand Wheel actuator_select" name="hand Wheel" id="hand Wheel">
+                                    <select class=" actuator_select" name="mount" id="mount">
                                         <option value="">N/A</option>
                                         <option value="">Side mounted</option>
                                         <option value="">Top Mounted</option>
@@ -158,11 +158,11 @@
                             <div class="row">
                                 <div class="col-6">
                                     <!-- Orientation -->
-                                    <label for="Orientation">Orientation</label>
+                                    <label for="orientation">Orientation</label>
                                 </div>
                                 <div class="col-6">
-                                    <select class=" Orientation actuator_select" name="  Orientation "
-                                        id=" Orientation">
+                                    <select class=" Orientation actuator_select" name="  orientation "
+                                        id=" orientation">
                                         <option value="">N/A</option>
                                         <option value="">Horizontal</option>
                                         <option value="">Vertical</option>
@@ -170,16 +170,16 @@
                                 </div>
                             </div>
                             <div class="row">
-                                <div class="col-6">
+                                <div class="col-6 pr-0">
                                     <!-- Available Air Supply -->
-                                    <label for="Available">Air Supply Pressure</label>
+                                    <label for="airUnit">Air Supply Pressure</label>
 
                                 </div>
                                 <div class="col-3">
-                                    <input type="number" class="form-control-sm-sm actuator_input1">
+                                    <input type="number" class="form-control-sm-sm actuator_input1" name="airUnit">
                                 </div>
                                 <div class="col-3">
-                                    <select class="form-control-sm-sm actuator_select1" name="   Air Supply" id=" Air Supply">
+                                    <select class="form-control-sm-sm actuator_select1" name="airUnit">
                                         <option value="">Psig</option>
 
                                         <option value="">Psia</option>
@@ -190,14 +190,14 @@
                             <div class="row">
                                 <div class="col-6">
                                     <!-- Available Air Supply -->
-                                    <label for="Available">Set Pressure</label>
+                                    <label for="setpressure">Set Pressure</label>
 
                                 </div>
                                 <div class="col-3">
-                                    <input type="number" class="form-control-sm-sm actuator_input1">
+                                    <input type="number" class="form-control-sm-sm actuator_input1" name="setpressure">
                                 </div>
                                 <div class="col-3">
-                                    <select class="actuator_select1 form-control-sm-sm" name="   Air Supply" id=" Air Supply">
+                                    <select class="actuator_select1 form-control-sm-sm" name="set pressure">
                                         <option value="">Psig</option>
 
                                         <option value="">Psia</option>
@@ -208,10 +208,10 @@
                             <div class="row">
                                 <div class="col-6">
                                     <!-- Shut Off Pressure -->
-                                    <label for="Shut off">Shut Off Pressure</label>
+                                    <label for="shutoffDelP">Shut Off Pressure</label>
                                 </div>
                                 <div class="col-6">
-                                    <input type="text" id="shut off" class="form-control-sm-sm actuator_input" name="shut off">
+                                    <input type="text"  class="form-control-sm-sm actuator_input" name="shutoffDelP">
                                 </div>
                             </div>
                         </div>
@@ -227,10 +227,10 @@
                             <div class="col-4">
                                 <div class="row">
                                     <div class="col-4">
-                                        <label>Trim</label>
+                                        <label for="trim">Trim</label>
                                     </div>
                                     <div class="col-6">
-                                        <input type="text" class="form-control-sm-sm slidingtop_input">
+                                        <input type="text" class="form-control-sm-sm slidingtop_input" name="trim">
                                     </div>
                                 </div>
                             </div>
@@ -238,10 +238,10 @@
                             <div class="col-4">
                                 <div class="row">
                                     <div class="col-4">
-                                        <label>Balancing</label>
+                                        <label for="balancing">Balancing</label>
                                     </div>
                                     <div class="col-6">
-                                        <input type="text" class="form-control-sm-sm slidingtop_input">
+                                        <input type="text" class="form-control-sm-sm slidingtop_input" name="balancing">
                                     </div>
                                 </div>
                             </div>
@@ -249,10 +249,10 @@
                             <div class="col-4">
                                 <div class="row">
                                     <div class="col-4 pr-0">
-                                        <label>Flow Direction</label>
+                                        <label for="flow direction">Flow Direction</label>
                                     </div>
                                     <div class="col-6">
-                                        <input type="text" class="form-control-sm-sm slidingtop_input">
+                                        <input type="text" class="form-control-sm-sm slidingtop_input" name="flow direction">
                                     </div>
                                 </div>
                             </div>
@@ -262,52 +262,52 @@
                             <div class="col-5">
                                 <h6 class="sliding_heading"><b>Input</b></h6>
 
-                                <div class="row" style="margin-left: 1px;">
+                                <div class="row " style="margin-left: 1px;">
                                     <div class="col-6" style="border-bottom:  1px solid #607274;">
                                         <div class="row sizingtableleft">
                                             <p class="sizingp">Description</p>
                                         </div>
                                         <div class="row sizingtableleft">
-                                            <p class="sizingp">Valve Size</p>
+                                            <p class="sizingp" name="">Valve Size</p>
                                         </div>
                                         <div class="row sizingtableleft">
-                                            <p class="sizingp">Seat Dia</p>
+                                            <p class="sizingp" name="" >Seat Dia</p>
                                         </div>
                                         <div class="row sizingtableleft">
-                                            <p class="sizingp">Unbalanced Area</p>
+                                            <p class="sizingp" name="">Unbalanced Area</p>
                                         </div>
                                         <div class="row sizingtableleft">
-                                            <p class="sizingp">Stem Dia</p>
+                                            <p class="sizingp" name="">Stem Dia</p>
                                         </div>
                                         <div class="row sizingtableleft">
-                                            <p class="sizingp">Plug Dia</p>
+                                            <p class="sizingp" name="">Plug Dia</p>
                                         </div>
                                         <div class="row sizingtableleft">
-                                            <p class="sizingp">Valve Travel</p>
+                                            <p class="sizingp" name="">Valve Travel</p>
                                         </div>
                                         <div class="row sizingtableleft">
-                                            <p class="sizingp">Packing Friction</p>
+                                            <p class="sizingp" name="">Packing Friction</p>
                                         </div>
                                         <div class="row sizingtableleft">
-                                            <p class="sizingp">Seat Load Force</p>
+                                            <p class="sizingp" name="">Seat Load Force</p>
                                         </div>
                                         <div class="row sizingtableleft">
-                                            <p class="sizingp">P1</p>
+                                            <p class="sizingp" name="">P1</p>
                                         </div>
                                         <div class="row sizingtableleft">
-                                            <p class="sizingp">P2</p>
+                                            <p class="sizingp" name="">P2</p>
                                         </div>
                                         <div class="row sizingtableleft">
-                                            <p class="sizingp">ΔP Shutoff</p>
+                                            <p class="sizingp" name="">ΔP Shutoff</p>
                                         </div>
                                         <div class="row sizingtableleft">
-                                            <p class="sizingp">Unbal Force(Open)</p>
+                                            <p class="sizingp" name="">Unbal Force(Open)</p>
                                         </div>
                                         <div class="row sizingtableleft">
-                                            <p class="sizingp">Fluid Neg.Gardient</p>
+                                            <p class="sizingp" name="">Fluid Neg.Gardient</p>
                                         </div>
                                         <div class="row sizingtableleft">
-                                            <p class="sizingp">ΔP Flowing </p>
+                                            <p class="sizingp" name="">ΔP Flowing </p>
                                         </div>
                                     </div>
                                     <div class="col-3" style="border-bottom:  1px solid #607274;">
@@ -315,41 +315,41 @@
                                             <p class="sizingp">Unit</p>
                                         </div>
                                         <div class="row sizingtable">
-                                            <select id="" class="sliding_select">
+                                            <select name="" class="sliding_select">
                                                 <option>inch</option>
                                                 <option>mm</option>
                                             </select>
                                         </div>
                                         <div class="row sizingtable">
-                                            <select id="" class="form-control-sm-sm sliding_select"
+                                            <select name="" class="form-control-sm-sm sliding_select"
                                                 >
                                                 <option>inch</option>
                                                 <option>mm</option>
                                             </select>
                                         </div>
                                         <div class="row sizingtable">
-                                            <select id="" class="form-control-sm-sm sliding_select"
+                                            <select name="" class="form-control-sm-sm sliding_select"
                                                 >
                                                 <option>inch</option>
                                                 <option>inch²</option>
                                             </select>
                                         </div>
                                         <div class="row sizingtable">
-                                            <select id="" class="form-control-sm-sm sliding_select"
+                                            <select name="" class="form-control-sm-sm sliding_select"
                                                 >
                                                 <option>inch</option>
                                                 <option>mm</option>
                                             </select>
                                         </div>
                                         <div class="row sizingtable">
-                                            <select id="" class="form-control-sm-sm sliding_select"
+                                            <select name="" class="form-control-sm-sm sliding_select"
                                                 >
                                                 <option>inch</option>
                                                 <option>mm</option>
                                             </select>
                                         </div>
                                         <div class="row sizingtable">
-                                            <select id="" class="form-control-sm-sm sliding_select"
+                                            <select name="" class="form-control-sm-sm sliding_select"
                                                 >
                                                 <option>inch</option>
                                                 <option>mm</option>
@@ -357,51 +357,51 @@
                                         </div>
                                        
                                         <div class="row sizingtable"><input type="text" class="form-control-sm-sm sliding_input"
-                                                ></div>
+                                              name=""  ></div>
                                         <div class="row sizingtable">
-                                            <select id="" class="form-control-sm-sm sliding_select"
+                                            <select id="" class="form-control-sm-sm sliding_select" name=""
                                                 >
                                                 <option>lbf</option>
                                                 <option>mm</option>
                                             </select>
                                         </div>
                                         <div class="row sizingtable">
-                                            <select id="" class="form-control-sm-sm sliding_select"
+                                            <select id="" class="form-control-sm-sm sliding_select" name=""
                                                 >
                                                 <option>psig</option>
                                                 <option>psig</option>
                                             </select>
                                         </div>
                                         <div class="row sizingtable">
-                                            <select id="" class="form-control-sm-sm sliding_select"
+                                            <select id="" class="form-control-sm-sm sliding_select" name=""
                                                 >
                                                 <option>psig</option>
                                                 <option>psig</option>
                                             </select>
                                         </div>
                                         <div class="row sizingtable">
-                                            <select id="" class="form-control-sm-sm sliding_select"
+                                            <select id="" class="form-control-sm-sm sliding_select" name=""
                                                 >
                                                 <option>psig</option>
                                                 <option>psig</option>
                                             </select>
                                         </div>
                                         <div class="row sizingtable">
-                                            <select id="" class="form-control-sm-sm sliding_select"
+                                            <select id="" class="form-control-sm-sm sliding_select" name=""
                                                 >
                                                 <option>psig</option>
                                                 <option>psig</option>
                                             </select>
                                         </div>
                                         <div class="row sizingtable">
-                                            <select id="" class="form-control-sm-sm sliding_select"
+                                            <select id="" class="form-control-sm-sm sliding_select" name=""
                                                 >
                                                 <option></option>
                                                 <option>psig</option>
                                             </select>
                                         </div>
                                         <div class="row sizingtable">
-                                            <select id="" class="form-control-sm-sm sliding_select"
+                                            <select id="" class="form-control-sm-sm sliding_select" name=""
                                                >
                                                 <option>psig</option>
                                                 <option>psig</option>
@@ -413,20 +413,20 @@
                                         <div class="row sizingtableleft">
                                             <p class="sizingp">Values</p>
                                         </div>
-                                        <div class="row sizingtable"><input type="text" class="form-control-sm-sm sliding_input"></div>
-                                        <div class="row sizingtable"><input type="text" class="form-control-sm-sm sliding_input"></div>
-                                        <div class="row sizingtable"><input type="text" class="form-control-sm-sm sliding_input"></div>
-                                        <div class="row sizingtable"><input type="text" class="form-control-sm-sm sliding_input"></div>
-                                        <div class="row sizingtable"><input type="text" class="form-control-sm-sm sliding_input"></div>
-                                        <div class="row sizingtable"><input type="text" class="form-control-sm-sm sliding_input"></div>
-                                        <div class="row sizingtable"><input type="text" class="form-control-sm-sm sliding_input"></div>
-                                        <div class="row sizingtable"><input type="text" class="form-control-sm-sm sliding_input"></div>
-                                        <div class="row sizingtable"><input type="text" class="form-control-sm-sm sliding_input"></div>
-                                        <div class="row sizingtable"><input type="text" class="form-control-sm-sm sliding_input"></div>
-                                        <div class="row sizingtable"><input type="text" class="form-control-sm-sm sliding_input"></div>
-                                        <div class="row sizingtable"><input type="text" class="form-control-sm-sm sliding_input"></div>
-                                        <div class="row sizingtable"><input type="text" class="form-control-sm-sm sliding_input"></div>
-                                        <div class="row sizingtable"><input type="text" class="form-control-sm-sm sliding_input"></div>
+                                        <div class="row sizingtable"><input type="text" name="" class="form-control-sm-sm sliding_input"></div>
+                                        <div class="row sizingtable"><input type="text" name="" class="form-control-sm-sm sliding_input"></div>
+                                        <div class="row sizingtable"><input type="text" name="" class="form-control-sm-sm sliding_input"></div>
+                                        <div class="row sizingtable"><input type="text" name="" class="form-control-sm-sm sliding_input"></div>
+                                        <div class="row sizingtable"><input type="text" name="" class="form-control-sm-sm sliding_input"></div>
+                                        <div class="row sizingtable"><input type="text" name="" class="form-control-sm-sm sliding_input"></div>
+                                        <div class="row sizingtable"><input type="text" name="" class="form-control-sm-sm sliding_input"></div>
+                                        <div class="row sizingtable"><input type="text" name="" class="form-control-sm-sm sliding_input"></div>
+                                        <div class="row sizingtable"><input type="text" name="" class="form-control-sm-sm sliding_input"></div>
+                                        <div class="row sizingtable"><input type="text" name="" class="form-control-sm-sm sliding_input"></div>
+                                        <div class="row sizingtable"><input type="text" name="" class="form-control-sm-sm sliding_input"></div>
+                                        <div class="row sizingtable"><input type="text" name="" class="form-control-sm-sm sliding_input"></div>
+                                        <div class="row sizingtable"><input type="text" name="" class="form-control-sm-sm sliding_input"></div>
+                                        <div class="row sizingtable"><input type="text" name="" class="form-control-sm-sm sliding_input"></div>
                                     </div>
                                 </div>
                                 <div class="button mt-3 ml-3">
@@ -442,65 +442,65 @@
                                 <div class="row ml-1">
                                     <div class="col-6" style="border-bottom:  1px solid #607274;">
                                         <div class="row sizingtableleft">
-                                            <p class="sizingp">Description</p>
+                                            <p class="sizingp" name="">Description</p>
                                         </div>
                                         <div class="row sizingtableleft">
-                                            <p class="sizingp">Valve Thrust(close)</p>
+                                            <p class="sizingp" name="">Valve Thrust(close)</p>
                                         </div>
                                         <div class="row sizingtableleft">
-                                            <p class="sizingp">Valve Thrust(open)</p>
+                                            <p class="sizingp" name="">Valve Thrust(open)</p>
                                         </div>
                                         <div class="row sizingtableleft">
-                                            <p class="sizingp">Shut off Force
+                                            <p class="sizingp" name="">Shut off Force
                                         </div>
                                         <div class="row sizingtableleft">
-                                            <p class="sizingp">Stem Area</p>
+                                            <p class="sizingp" name="">Stem Area</p>
                                         </div>
                                         <div class="row sizingtableleft">
-                                            <p class="sizingp">Actuator Size</p>
+                                            <p class="sizingp" name="">Actuator Size</p>
                                         </div>
                                         <div class="row sizingtableleft">
-                                            <p class="sizingp">Actuator Travel</p>
+                                            <p class="sizingp" name="">Actuator Travel</p>
                                         </div>
                                         <div class="row sizingtableleft">
-                                            <p class="sizingp">Diaphragam Effective Area</p>
+                                            <p class="sizingp" name="">Diaphragam Effective Area</p>
                                         </div>
                                         <div class="row sizingtableleft">
-                                            <p class="sizingp">Lower Benchset</p>
+                                            <p class="sizingp" name="">Lower Benchset</p>
                                         </div>
                                         <div class="row sizingtableleft">
-                                            <p class="sizingp">Upper Benchset</p>
+                                            <p class="sizingp" name="">Upper Benchset</p>
                                         </div>
                                         <div class="row sizingtableleft">
-                                            <p class="sizingp">Spring Rate</p>
+                                            <p class="sizingp" name="">Spring Rate</p>
                                         </div>
                                         <div class="row sizingtableleft">
-                                            <p class="sizingp">Spring Windup</p>
+                                            <p class="sizingp" name="">Spring Windup</p>
                                         </div>
                                         <div class="row sizingtableleft">
-                                            <p class="sizingp">Max Spring Load</p>
+                                            <p class="sizingp" name="">Max Spring Load</p>
                                         </div>
                                         <div class="row sizingtableleft">
-                                            <p class="sizingp">Max Air Supply</p>
+                                            <p class="sizingp" name="">Max Air Supply</p>
                                         </div>
                                         <div class="row sizingtableleft">
-                                            <p class="sizingp">Set Pressure</p>
+                                            <p class="sizingp" name="">Set Pressure</p>
                                         </div>
                                         <div class="row sizingtableleft">
-                                            <p class="sizingp"> Actuator Thrust(Valve close)</p>
+                                            <p class="sizingp" name=""> Actuator Thrust(Valve close)</p>
                                         </div>
                                         <div class="row sizingtableleft">
-                                            <p class="sizingp"> Actuator Thrust(Valve Open)</p>
+                                            <p class="sizingp" name=""> Actuator Thrust(Valve Open)</p>
                                         </div>
                                         <div class="row sizingtableleft">
-                                            <p class="sizingp"> Friction Band(+/-)</p>
+                                            <p class="sizingp" name=""> Friction Band(+/-)</p>
                                         </div>
                                         <div class="row sizingtableleft">
-                                            <p class="sizingp">Req.HandWheel Thrust</p>
+                                            <p class="sizingp" name="">Req.HandWheel Thrust</p>
                                         </div>
                                       
                                         <div class="row sizingtableleft">
-                                            <p class="sizingp">Max.Top/Sie-Mount HW thrust</p>
+                                            <p class="sizingp" name="">Max.Top/Sie-Mount HW thrust</p>
                                         </div>
                                     </div>
 
@@ -509,98 +509,98 @@
                                             <p class="sizingp">Unit</p>
                                         </div>
                                         <div class="row sizingtable">
-                                            <select id="" class="form-control-sm-sm sliding_select">
+                                            <select id="" class="form-control-sm-sm sliding_select" name="">
                                                 <option>N-m</option>
                                             </select>
                                         </div>
                                         <div class="row sizingtable">
-                                            <select id="" class="form-control-sm-sm sliding_select">
+                                            <select id="" class="form-control-sm-sm sliding_select" name="">
                                                 <option>N-m</option>
                                             </select>
                                         </div>
                                         <div class="row sizingtable">
-                                            <select id="" class="form-control-sm-sm sliding_select">
+                                            <select id="" class="form-control-sm-sm sliding_select" name="">
                                                 <option>N-m</option>
                                             </select>
                                         </div>
                                         <div class="row sizingtable">
-                                            <select id="" class="form-control-sm-sm sliding_select">
+                                            <select id="" class="form-control-sm-sm sliding_select" name="">
                                                 <option>N-m</option>
                                             </select>
                                         </div>
                                         <div class="row sizingtable">
-                                            <select id="" class="form-control-sm-sm sliding_select">
+                                            <select id="" class="form-control-sm-sm sliding_select" name="">
                                                 <option>N-m</option>
                                             </select>
                                         </div>
                                         <div class="row sizingtable">
-                                            <select id="" class="form-control-sm-sm sliding_select">
+                                            <select id="" class="form-control-sm-sm sliding_select" name="">
                                                 <option>N-m</option>
                                             </select>
                                         </div>
                                         <div class="row sizingtable">
-                                            <select id="" class="form-control-sm-sm sliding_select">
+                                            <select id="" class="form-control-sm-sm sliding_select" name="">
                                                 <option>N-m</option>
                                             </select>
                                         </div>
                                         <div class="row sizingtable">
-                                            <select id="" class="form-control-sm-sm sliding_select">
+                                            <select id="" class="form-control-sm-sm sliding_select" name="">
                                                 <option>N-m</option>
                                             </select>
                                         </div>
                                         <div class="row sizingtable">
-                                            <select id="" class="form-control-sm-sm sliding_select">
+                                            <select id="" class="form-control-sm-sm sliding_select" name="">
                                                 <option>N-m</option>
                                             </select>
                                         </div>
                                         <div class="row sizingtable">
-                                            <select id="" class="form-control-sm-sm sliding_select">
+                                            <select id="" class="form-control-sm-sm sliding_select" name="">
                                                 <option></option>
                                             </select>
                                         </div>
                                         <div class="row sizingtable">
-                                            <select id="" class="form-control-sm-sm sliding_select">
+                                            <select id="" class="form-control-sm-sm sliding_select" name="">
                                                 <option>bar</option>
                                             </select>
                                         </div>
                                         <div class="row sizingtable">
-                                            <select id="" class="form-control-sm-sm sliding_select">
+                                            <select id="" class="form-control-sm-sm sliding_select" name="">
                                                 <option>inch</option>
                                                 <option>mm</option>
                                             </select>
                                         </div>
                                         <div class="row sizingtable">
-                                            <select id="" class="form-control-sm-sm sliding_select">
+                                            <select id="" class="form-control-sm-sm sliding_select" name="">
                                                 <option>psig</option>
                                             </select>
                                         </div>
                                         <div class="row sizingtable">
-                                            <select id="" class="form-control-sm-sm sliding_select">
+                                            <select id="" class="form-control-sm-sm sliding_select" name="">
                                                 <option></option>
                                             </select>
                                         </div>
                                         <div class="row sizingtable">
-                                            <select id="" class="form-control-sm-sm sliding_select">
+                                            <select id="" class="form-control-sm-sm sliding_select" name="">
                                                 <option>N.m</option>
                                             </select>
                                         </div>
                                         <div class="row sizingtable">
-                                            <select id="" class="form-control-sm-sm sliding_select">
+                                            <select id="" class="form-control-sm-sm sliding_select" name="">
                                                 <option>N.m</option>
                                             </select>
                                         </div>
                                         <div class="row sizingtable">
-                                            <select id="" class="form-control-sm-sm sliding_select">
+                                            <select id="" class="form-control-sm-sm sliding_select" name="">
                                                 <option>N.m</option>
                                             </select>
                                         </div>
                                         <div class="row sizingtable">
-                                            <select id="" class="form-control-sm-sm sliding_select">
+                                            <select id="" class="form-control-sm-sm sliding_select" name="">
                                                 <option>N.m</option>
                                             </select>
                                         </div>
                                         <div class="row sizingtable">
-                                            <select id="" class="form-control-sm-sm sliding_select">
+                                            <select id="" class="form-control-sm-sm sliding_select" name="">
                                                 <option>psig</option>
                                             </select>
                                         </div>
@@ -612,26 +612,26 @@
                                         <div class="row sizingtableleft">
                                             <p class="sizingp">Values</p>
                                         </div>
-                                        <div class="row sizingtable"><input type="text" class="form-control-sm-sm sliding_input"></div>
-                                        <div class="row sizingtable"><input type="text" class="form-control-sm-sm sliding_input"></div>
-                                        <div class="row sizingtable"><input type="text" class="form-control-sm-sm sliding_input"></div>
-                                        <div class="row sizingtable"><input type="text" class="form-control-sm-sm sliding_input"></div>
-                                        <div class="row sizingtable"><input type="text" class="form-control-sm-sm sliding_input"></div>
-                                        <div class="row sizingtable"><input type="text" class="form-control-sm-sm sliding_input"></div>
-                                        <div class="row sizingtable"><input type="text" class="form-control-sm-sm sliding_input"></div>
-                                        <div class="row sizingtable"><input type="text" class="form-control-sm-sm sliding_input"></div>
-                                        <div class="row sizingtable"><input type="text" class="form-control-sm-sm sliding_input"></div>
-                                        <div class="row sizingtable"><input type="text" class="form-control-sm-sm sliding_input"></div>
-                                        <div class="row sizingtable"><input type="text" class="form-control-sm-sm sliding_input"></div>
+                                        <div class="row sizingtable"><input type="text" class="form-control-sm-sm sliding_input" name=""></div>
+                                        <div class="row sizingtable"><input type="text" class="form-control-sm-sm sliding_input" name=""></div>
+                                        <div class="row sizingtable"><input type="text" class="form-control-sm-sm sliding_input" name=""></div>
+                                        <div class="row sizingtable"><input type="text" class="form-control-sm-sm sliding_input" name=""></div>
+                                        <div class="row sizingtable"><input type="text" class="form-control-sm-sm sliding_input" name=""></div>
+                                        <div class="row sizingtable"><input type="text" class="form-control-sm-sm sliding_input" name=""></div>
+                                        <div class="row sizingtable"><input type="text" class="form-control-sm-sm sliding_input" name=""></div>
+                                        <div class="row sizingtable"><input type="text" class="form-control-sm-sm sliding_input" name=""></div>
+                                        <div class="row sizingtable"><input type="text" class="form-control-sm-sm sliding_input" name=""></div>
+                                        <div class="row sizingtable"><input type="text" class="form-control-sm-sm sliding_input" name=""></div>
+                                        <div class="row sizingtable"><input type="text" class="form-control-sm-sm sliding_input" name=""></div>
                                         <div class="row sizingtable">
-                                            <input type="text" class="form-control-sm-sm sliding_input"></div>
-                                        <div class="row sizingtable"><input type="text" class="form-control-sm-sm sliding_input"></div>
-                                        <div class="row sizingtable"><input type="text" class="form-control-sm-sm sliding_input"></div>
-                                        <div class="row sizingtable"><input type="text" class="form-control-sm-sm sliding_input"></div>
-                                        <div class="row sizingtable"><input type="text" class="form-control-sm-sm sliding_input"></div>
-                                        <div class="row sizingtable"><input type="text" class="form-control-sm-sm sliding_input"></div>
-                                        <div class="row sizingtable"><input type="text" class="form-control-sm-sm sliding_input"></div>
-                                        <div class="row sizingtable"><input type="text" class="form-control-sm-sm sliding_input"></div>
+                                            <input type="text" class="form-control-sm-sm sliding_input" name=""></div>
+                                        <div class="row sizingtable"><input type="text" class="form-control-sm-sm sliding_input" name=""></div>
+                                        <div class="row sizingtable"><input type="text" class="form-control-sm-sm sliding_input" name=""></div>
+                                        <div class="row sizingtable"><input type="text" class="form-control-sm-sm sliding_input" name=""></div>
+                                        <div class="row sizingtable"><input type="text" class="form-control-sm-sm sliding_input" name=""></div>
+                                        <div class="row sizingtable"><input type="text" class="form-control-sm-sm sliding_input" name=""></div>
+                                        <div class="row sizingtable"><input type="text" class="form-control-sm-sm sliding_input" name=""></div>
+                                        <div class="row sizingtable"><input type="text" class="form-control-sm-sm sliding_input" name=""></div>
                                       
                                     </div>
                                 </div>

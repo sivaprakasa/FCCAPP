@@ -731,7 +731,7 @@ a:link {
 
 .close_icon {
     color: #000000;
-    margin-left: 58%;
+    margin-left: 57%;
 }
 
 
@@ -1099,16 +1099,6 @@ a:link {
 }
 
 
-
-
-
-
-
-
-
-
-
-
 /* ----------------------------------------Accessories Positioner Table ----------------------*/
 
 /* ------------------------------------------------------------ */
@@ -1134,24 +1124,37 @@ a:link {
 }
 
 
-
-/* .topinput {
-    width: 40%;
-    height: 90%;
-} */
-
-/* #topinput {
-    width: 40%;
-    height: 50%;
-} */
-
-
-
-
 /* --------------------Customer Master------------------------- */
 
 .cus_input {
     width: 100%;
     height: 70%;
+    font-size: 11px;
+}
+
+
+
+.table_sno {
+    width: 1%;
+    font-size: 11px;
+}
+
+.table_company {
+    width:3%;
+    font-size: 11px;
+}
+
+.table_desc {
+    width: 1%;
+    font-size: 11px;
+}
+
+.table_edit {
+    width: 1%;
+    font-size: 11px;
+    text-align: center;
+}
+
+.body_content_customer {
     font-size: 11px;
 }

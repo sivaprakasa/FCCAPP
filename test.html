@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>test</title>
+
+    <style>
+        table,
+        th,
+        td {
+            border: 1px solid #ddd;
+            border-collapse: collapse;
+            position: relative;
+            overflow:auto;  
+        }
+
+        table {
+            
+            width: 100%;
+        }
+
+        #table-scroll {
+            height:150px;
+            overflow:auto;  
+            margin-top:10px;
+          }
+
+        table td {
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            overflow: hidden;
+
+        }
+
+        table th {
+            
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            overflow: hidden;
+        }
+
+        thead {
+            background-color: aqua;
+            
+            top: 0px; 
+            z-index: 100;
+            color: #272727;
+        }
+
+        tbody {
+            
+            height: 5px;
+        }
+
+        th,
+        td {
+            height: 5px;
+            text-align: left;
+            vertical-align: top;
+            border-left: 1px solid #ccc;
+        }
+    </style>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script  type="text/javascript" src="js/colResizable-1.6.min.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            $(".test").colResizable({
+
+                // 'fit', 'flex' or 'overflow'
+                resizeMode: 'overflow',
+                fixed: false,
+                liveDrag: true
+
+
+            })
+        });
+
+
+    </script>
+
+</head>
+
+<body>
+<div id="table-scroll" style="border: groove 1px rgb(196, 196, 196);">
+    <table class="test container">
+        <thead style="position: sticky;">
+            <tr>
+                <th>header 1</th>
+                <th>H</th>
+                <th>header 1</th>
+                <th>header 2</th>
+                <th>header 1</th>
+                <th>header 2</th>
+                <th>header 1</th>
+                <th>header 2</th>
+                <th>header 1</th>
+                <th>header 2</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>lean</td>
+                <td>cell 1</td>
+                <td>lean</td>
+                <td>cell 1</td>
+                <td>lean</td>
+                <td>cell 1</td>
+                <td>lean</td>
+                <td>cell 1</td>
+                <td>lean</td>
+                <td>cell 1</td>
+            </tr>
+            <tr>
+
+                <td>chacha</td>
+                <td>cell 2</td>
+                <td>chacha</td>
+                <td>lean</td>
+                <td>cell 1</td>
+                <td>lean</td>
+                <td>cell 1</td>
+                <td>cell 2</td>
+                <td>chacha</td>
+                <td>cell 2</td>
+            </tr>
+            <tr>
+                <td>okaoka</td>
+                <td>cell 3</td>
+                <td>chacha</td>
+                <td>lean</td>
+                <td>cell 1</td>
+                <td>lean</td>
+                <td>cell 1</td>
+                <td>cell 2</td>
+                <td>chacha</td>
+                <td>cell 2</td>
+            </tr>
+            <tr>
+                <td>lean</td>
+                <td>cell 1</td>
+                <td>lean</td>
+                <td>lean</td>
+                <td>cell 1</td>
+                <td>lean</td>
+                <td>cell 1</td>
+                <td>cell 1</td>
+                <td>lean</td>
+                <td>cell 1</td>
+            </tr>
+            <tr>
+
+                <td>chacha</td>
+                <td>cell 2</td>
+                <td>chacha</td>
+                <td>lean</td>
+                <td>cell 1</td>
+                <td>lean</td>
+                <td>cell 1</td>
+                <td>cell 2</td>
+                <td>chacha</td>
+                <td>cell 2</td>
+            </tr>
+            <tr>
+                <td>okaoka</td>
+                <td>cell 3</td>
+                <td>chacha</td>
+                <td>cell 2</td>
+                <td>lean</td>
+                <td>cell 1</td>
+                <td>lean</td>
+                <td>cell 1</td>
+                <td>chacha</td>
+                <td>cell 2</td>
+            </tr>
+            <tr>
+                <td>lean</td>
+                <td>cell 1</td>
+                <td>lean</td>
+                <td>cell 1</td>
+                <td>lean</td>
+                <td>cell 1</td>
+                <td>lean</td>
+                <td>cell 1</td>
+                <td>lean</td>
+                <td>cell 1</td>
+            </tr>
+            <tr>
+
+                <td>chacha</td>
+                <td>cell 2</td>
+                <td>chacha</td>
+                <td>lean</td>
+                <td>cell 1</td>
+                <td>lean</td>
+                <td>cell 1</td>
+                <td>cell 2</td>
+                <td>chacha</td>
+                <td>cell 2</td>
+            </tr>
+            <tr>
+                <td>okaoka</td>
+                <td>cell 3</td>
+                <td>chacha</td>
+                <td>lean</td>
+                <td>cell 1</td>
+                <td>lean</td>
+                <td>cell 1</td>
+                <td>cell 2</td>
+                <td>chacha</td>
+                <td>cell 2</td>
+            </tr>
+            <tr>
+                <td>lean</td>
+                <td>cell 1</td>
+                <td>lean</td>
+                <td>lean</td>
+                <td>cell 1</td>
+                <td>lean</td>
+                <td>cell 1</td>
+                <td>cell 1</td>
+                <td>lean</td>
+                <td>cell 1</td>
+            </tr>
+            <tr>
+
+                <td>chacha</td>
+                <td>cell 2</td>
+                <td>lean</td>
+                <td>cell 1</td>
+                <td>lean</td>
+                <td>cell 1</td>
+                <td>chacha</td>
+                <td>cell 2</td>
+                <td>chacha</td>
+                <td>cell 2</td>
+            </tr>
+            <tr>
+                <td>okaoka</td>
+                <td>cell 3</td>
+                <td>chacha</td>
+                <td>lean</td>
+                <td>cell 1</td>
+                <td>lean</td>
+                <td>cell 1</td>
+                <td>cell 2</td>
+                <td>chacha</td>
+                <td>cell 2</td>
+            </tr>
+            <tr>
+                <td>lean</td>
+                <td>cell 1</td>
+                <td>lean</td>
+                <td>lean</td>
+                <td>cell 1</td>
+                <td>lean</td>
+                <td>cell 1</td>
+                <td>cell 1</td>
+                <td>lean</td>
+                <td>cell 1</td>
+            </tr>
+            <tr>
+
+                <td>chacha</td>
+                <td>cell 2</td>
+                <td>lean</td>
+                <td>cell 1</td>
+                <td>lean</td>
+                <td>cell 1</td>
+                <td>chacha</td>
+                <td>cell 2</td>
+                <td>chacha</td>
+                <td>cell 2</td>
+            </tr>
+            <tr>
+                <td>okaoka</td>
+                <td>cell 3</td>
+                <td>lean</td>
+                <td>cell 1</td>
+                <td>lean</td>
+                <td>cell 1</td>
+                <td>chacha</td>
+                <td>cell 2</td>
+                <td>chacha</td>
+                <td>cell 2</td>
+            </tr>
+            <tr>
+                <td>lean</td>
+                <td>cell 1</td>
+                <td>lean</td>
+                <td>cell 1</td>
+                <td>lean</td>
+                <td>cell 1</td>
+                <td>lean</td>
+                <td>cell 1</td>
+                <td>lean</td>
+                <td>cell 1</td>
+            </tr>
+            <tr>
+
+                <td>chacha</td>
+                <td>cell 2</td>
+                <td>chacha</td>
+                <td>lean</td>
+                <td>cell 1</td>
+                <td>lean</td>
+                <td>cell 1</td>
+                <td>cell 2</td>
+                <td>chacha</td>
+                <td>cell 2</td>
+            </tr>
+            <tr>
+                <td>okaoka</td>
+                <td>cell 3</td>
+                <td>chacha</td>
+                <td>lean</td>
+                <td>cell 1</td>
+                <td>lean</td>
+                <td>cell 1</td>
+                <td>cell 2</td>
+                <td>chacha</td>
+                <td>cell 2</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+   
+
+
+
+
+</body>
+
+</html>
