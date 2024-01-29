@@ -1161,6 +1161,46 @@ a:link {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ------------------------------------------------Admin page---------------------------------------------------------------------------- */
+
+.adminpage_heading {
+    font-size: 15px;
+}
+
+.adminpage_btn {
+    background-color: #dedbdb;
+    color: black;
+    font-size: 12px;
+    border: none;
+}
+
+
+
+
+
+
 /* ------------------------Admin register Page---------------------------- */
 
 .admim_register_box {
@@ -1189,6 +1229,8 @@ a:link {
     border: none;
     margin-left: 79%;
 }
+
+
 
 
 
