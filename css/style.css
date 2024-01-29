@@ -1159,6 +1159,73 @@ a:link {
     font-size: 11px;
 }
 
+
+
+
+
+
+
+
+/* --------------------------------------------Admin register Page-------------------------------------------------------------------------- */
+
+.admim_register_box {
+    padding: 10px;
+    width: 95%;
+}
+
+
+
+.admin_register_heading {
+    font-size: 15px;
+}
+
+.admin_register_input {
+    width: 100%;
+    height: 70%;
+    font-size: 11px;
+}
+
+
+
+.admin_register_btn {
+    background-color: #dedbdb;
+    color: black;
+    font-size: 14px;
+    border: none;
+    margin-left: 79%;
+}
+
+
+
+
+
+
+/* ---------------------------Admin  User Rights--------------------------------- */
+
+
+.admim_user_box {
+    padding: 10px;
+    width: 95%;
+}
+
+.adminUser_select {
+    width: 100%;
+    height: 70%;
+    font-size: 11px;
+    background-color: white;
+    border: 1px solid #607274;
+}
+
+
+
+.admin_user_btn {
+    background-color: #dedbdb;
+    color: black;
+    font-size: 14px;
+    border: none;
+    margin-left: 60%;
+    width: 40%;
+  
 /* ------------------------------------------------Admin page---------------------------------------------------------------------------- */
 
 .adminpage_heading {
@@ -1171,3 +1238,4 @@ a:link {
     font-size: 12px;
     border: none;
 }
+
