@@ -121,8 +121,48 @@ label {
     outline: none;
     border: none;
 }
-
-
+/* --------------------------------------project and item print--------------------------------------------------------- */
+.report_heading {
+    font-size: 17px;
+}
+.sub_heading {
+    font-size: 15px;
+}
+.project_lable {
+    margin-top: 10px;
+    font-size: 11px;
+}
+.project_download_btn
+{
+    margin-left: 45%;
+    background-color: #dedbdb;
+    color: black;
+    font-size: 12px;
+    border: none;
+}
+.project_print_table {
+    overflow-y: scroll;
+    display: block;
+    height: 242px;
+    font-size: 11px;
+    width: 92%;
+}
+.project_print_table_head th {
+    position: sticky;
+    top: 0;
+    background-color: #ffffff;
+    width: 1%;
+}
+.project_print_radio {
+    text-align: center;
+}
+.item_print_table {
+    width: 92%;
+    font-size: 11px;
+}
+.item_select_table {
+    height: 98%;
+}
 /* ----------------------------------------------------project details page-------------------------------------------------------------- */
 .projectdetails-form {
     /* background-color: white; */
