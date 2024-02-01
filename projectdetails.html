@@ -16,7 +16,7 @@
     <!-- <link rel="stylesheet" href="css/table.css"> -->
     <script src="js/fcc.js"></script>
     <title>FCC</title>
- 
+
 </head>
 
 <body>
@@ -24,58 +24,59 @@
         <div class="row mr-0">
             <div class="col-2">
                 <div class="sidenav">
-                    <img src="photo/FCC _new.png"  alt="fcc">
+                    <img src="photo/FCC _new.png" alt="fcc">
                     <ul class="nav nav-pills flex-column vh-100">
-                   
-                        <li  class="nav-item mt-4" >
+
+                        <li class="nav-item mt-4">
                             <p><a class="nav-link" href="Dash.html">
-                            Dashboard</a></p>
+                                    Dashboard</a></p>
                         </li>
                         <li class="nav-item">
                             <p><a class="nav-link active" href="projectdetails.html">
-                                Project Details</a></p>
+                                    Project Details</a></p>
                         </li>
                         <li class="nav-item">
-                            <p><a class="nav-link" href="valvedata.html">	
-                                Valve Data</a></p>
+                            <p><a class="nav-link" href="valvedata.html">
+                                    Valve Data</a></p>
                         </li>
                         <li class="nav-item">
                             <p>
                                 <a class="nav-link" href="valvesizing.html">
-                                     Valve Sizing</a>
+                                    Valve Sizing</a>
                             </p>
                         </li>
                         <li class="nav-item">
                             <p><a class="nav-link" href="Actuatorsizing.html">
-                                Actuator Sizing</a></p>
+                                    Actuator Sizing</a></p>
                         </li>
                         <li class="nav-item">
                             <p><a class="nav-link" href="Accessories.html">
-                                Accessories</a></p>
+                                    Accessories</a></p>
                         </li>
                         <li class="nav-item">
                             <p><a class="nav-link" href="Itemnotes.html">
-                               Orders, Item Notes</a></p>
+                                    Orders, Item Notes</a></p>
                         </li>
                         <li class="nav-item">
                             <p><a class="nav-link" href="Projectnotes.html">
-                                </i> Project Notes</a></p>
+                                    </i> Project Notes</a></p>
                         </li>
                         <li class="nav-item">
                             <p><a class="nav-link" href="Viewdata.html">
-                                Reference Table
-                            </a></p>
+                                    Reference Table
+                                </a></p>
                         </li>
                         <li class="nav-item">
-                            <p><a class="nav-link " href="customer_master.html"> 
-                                Customer Master</a></p>
+                            <p><a class="nav-link " href="customer_master.html">
+                                    Customer Master</a></p>
                         </li>
                         <li class="nav-item">
                             <p><a class="nav-link" href="#">
-                                 Logout</a></p>
+                                    Logout</a></p>
                         </li>
                         <li class="nav-item mt-1">
-                            <p><a class="nav-link" href="#"> <i class="fa-solid fa-circle-user  pr-2" style="color: white;"></i> Suraj</a></p>
+                            <p><a class="nav-link" href="#"> <i class="fa-solid fa-circle-user  pr-2"
+                                        style="color: white;"></i> Suraj</a></p>
                         </li>
                     </ul>
                 </div>
@@ -86,16 +87,50 @@
                     <div class="col-12">
                         <div class="topicons mt-3 ml-3">
                             <div class="row">
-                                <div class="icon">
+                                <div class="icon col-10">
                                     <i class="fa-solid fa-backward-step" data-toggle="tooltip" title="first"></i>
                                     <i class="fa-solid fa-angle-left ml-3" data-toggle="tooltip" title="Previous"></i>
-                                    <input type="text" class="form-control-sm-sm ml-3" id="topinput" name="name"/>
+                                    <input type="text" class="form-control-sm-sm ml-3" id="topinput" name="name" />
                                     <i class="fa-solid fa-angle-right ml-3" data-toggle="tooltip" title="next"></i>
                                     <i class="fa-solid fa-forward-step ml-3" data-toggle="tooltip" title="last"></i>
-                                    <i class="fa-solid fa-file ml-3" data-toggle="tooltip"title="file"></i>
-                                    <i class="fa-solid fa-floppy-disk ml-3 fa-lg" data-toggle="tooltip" title="save"></i>
-                                    <a href="Preference.html"><i class="fa-solid fa-sliders fa-1x ml-3" data-toggle="tooltip" title="Preference"></i></a>
+                                    <i class="fa-solid fa-file ml-3" data-toggle="tooltip" title="file"></i>
+                                    <i class="fa-solid fa-floppy-disk ml-3 fa-lg" data-toggle="tooltip"
+                                        title="save"></i>
+                                    <a href="Preference.html"><i class="fa-solid fa-sliders fa-1x ml-3"
+                                            data-toggle="tooltip" title="Preference"></i></a>
                                     <i class="fa-solid fa-question ml-3" data-toggle="tooltip" title="help"></i>
+                                </div>
+                                <div class="col-2">
+                                    <i class="fa-solid fa-circle-xmark" data-toggle="modal" data-target="#myModal"></i>
+
+                                </div>
+                                <!-- The Modal -->
+                                <div class="modal fade" id="myModal">
+                                    <div class="modal-dialog ">
+                                        <div class="modal-content">
+
+                                            <!-- Modal Header -->
+                                            <div class="modal-header">
+                  <h4 class="modal-title">Confirmation</h4>
+                
+                </div>
+
+                                            <!-- Modal body -->
+                                            <div class="modal-body">
+                                                Do you want to save changes ?
+
+                                            </div>
+
+                                            <!-- Modal footer -->
+                                            <div class="modal-footer ">
+                                                <button type="button" class="btn btn-success"
+                                                    >Save</button>
+                                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Discard
+                                                    Saves</button>
+                                            </div>
+
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -110,38 +145,44 @@
                                         <hr>
                                         <div class="row mt-2">
                                             <div class="col-6">
-                                                <label for="cname">Customer Name</label>
+                                                <label for="cname">Customser Name</label>
                                             </div>
                                             <div class="col-6">
-                                                <input type="text" class="form-control-sm-sm projectdetail_input" name="cname"
-                                                >
+                                                <select name="cname" class="form-control-sm-sm projectdetail_input" id="company"></select>
                                             </div>
                                         </div>
-                                        <div class="row  mt-1">
+                                        <div class="row mt-1">
                                             <div class="col-6">
-                                                <label for="pro">Project </label>
+                                                <label for="address">Address</label>
                                             </div>
                                             <div class="col-6">
-                                                <input type="text" class="form-control-sm-sm projectdetail_input" name="pro"
-                                                >
-                                            </div>
-                                        </div>
-                                        <div class="row  mt-1">
-                                            <div class="col-6">
-                                                <label for="End">End User </label>
-                                            </div>
-                                            <div class="col-6">
-                                                <input type="text" class="form-control-sm-sm projectdetail_input" name="end user"
-                                                >
+                                                <select name="address" id="address" class="form-control-sm-sm projectdetail_input"></select>
                                             </div>
                                         </div>
+                                        <div class="row mt-1">
+                                            <div class="col-6">
+                                                <label for="cname">End User</label>
+                                            </div>
+                                            <div class="col-6">
+                                                <select name="cnameE" id="companyE" class="form-control-sm-sm projectdetail_input"></select>
+                                            </div>
+                                        </div>
+                                        <div class="row mt-1">
+                                            <div class="col-6">
+                                                <label for="address">End User Address</label>
+                                            </div>
+                                            <div class="col-6">
+                                                <select name="addressE" id="addressE" class="form-control-sm-sm projectdetail_input"></select>
+                                            </div>
+                                        </div>
+                                        
                                         <div class="row  mt-1">
                                             <div class="col-6">
                                                 <label for="pro">Enquiry Ref.</label>
                                             </div>
                                             <div class="col-6">
-                                                <input type="text" class="form-control-sm-sm projectdetail_input" name="pro"
-                                                >
+                                                <input type="text" class="form-control-sm-sm projectdetail_input"
+                                                    name="pro">
                                             </div>
                                         </div>
                                         <div class="row  mt-1">
@@ -149,8 +190,8 @@
                                                 <label for="enquiry">Enquiry Date</label>
                                             </div>
                                             <div class="col-6">
-                                                <input type="date" class="form-control-sm-sm projectdetail_input" name="enquiry"
-                                                >
+                                                <input type="date" class="form-control-sm-sm projectdetail_input"
+                                                    name="enquiry">
                                             </div>
                                         </div>
                                         <div class="row  mt-1">
@@ -158,8 +199,8 @@
                                                 <label for="received">Receipt Date</label>
                                             </div>
                                             <div class="col-6">
-                                                <input type="date" class="form-control-sm-sm projectdetail_input" name="received"
-                                                >
+                                                <input type="date" class="form-control-sm-sm projectdetail_input"
+                                                    name="received">
                                             </div>
                                         </div>
                                         <div class="row  mt-1">
@@ -167,8 +208,8 @@
                                                 <label for="bid due">Bid Due Date</label>
                                             </div>
                                             <div class="col-6">
-                                                <input type="date" class="form-control-sm-sm projectdetail_input" name="bid due"
-                                                >
+                                                <input type="date" class="form-control-sm-sm projectdetail_input"
+                                                    name="bid due">
                                             </div>
                                         </div>
                                         <div class="row  mt-1">
@@ -176,8 +217,8 @@
                                                 <label for="application_eng">Application Engineer</label>
                                             </div>
                                             <div class="col-6">
-                                                <select class="form-control-sm-sm projectdetail_select" name="application_eng"
-                                                    id="application_eng">
+                                                <select class="form-control-sm-sm projectdetail_select"
+                                                    name="application_eng" id="application_eng">
                                                     <option value=" Divya">Divya</option>
                                                     <option value="Suraj">Suraj</option>
                                                     <option value="pandi">pandi</option>
@@ -190,8 +231,8 @@
                                                 <label for="purpose">Purpose</label>
                                             </div>
                                             <div class="col-6">
-                                                <select class="form-control-sm-sm projectdetail_select" name="purpose" id="purpose"
-                                                >
+                                                <select class="form-control-sm-sm projectdetail_select" name="purpose"
+                                                    id="purpose">
                                                     <option value="Bid On">Bid On</option>
                                                     <option value="Budget">Budget</option>
                                                     <option value="Example">Example</option>
@@ -206,8 +247,8 @@
                                                 <label for="Industry">Industry</label>
                                             </div>
                                             <div class="col-6">
-                                                <select class="form-control-sm-sm projectdetail_select" name="Industry" id="Industry"
-                                                >
+                                                <select class="form-control-sm-sm projectdetail_select" name="Industry"
+                                                    id="Industry">
                                                     <option value="Oil & Gas Production Offshore">Oil & Gas Production
                                                         Offshore
                                                     </option>
@@ -232,7 +273,7 @@
                                                         Onshore
                                                     </option>
                                                     <option value="OEM">OEM</option>
-                                          
+
                                                 </select>
                                             </div>
                                         </div>
@@ -242,11 +283,11 @@
                                                 <label for="project ">Region</label>
                                             </div>
                                             <div class="col-6">
-                                                <input type="text" class="form-control-sm-sm projectdetail_input" name="Region"
-                                                >
+                                                <input type="text" class="form-control-sm-sm projectdetail_input"
+                                                    name="Region">
                                             </div>
                                         </div>
-                                  
+
 
                                     </div>
                                 </div>
@@ -260,8 +301,8 @@
                                                 <label for="Contract Engineer">Contract Engineer</label>
                                             </div>
                                             <div class="col-6">
-                                                <select class="form-control-sm-sm projectdetail_select" name="Contract Engineer"
-                                                    id="Contract Engineer">
+                                                <select class="form-control-sm-sm projectdetail_select"
+                                                    name="Contract Engineer" id="Contract Engineer">
                                                     <option value="name">Nishanth</option>
                                                     <option value="name">Suraj</option>
                                                 </select>
@@ -273,8 +314,8 @@
                                                 <label for="Customer Po No">Customer PO No</label>
                                             </div>
                                             <div class="col-6">
-                                                <input type="text" class="form-control-sm-sm projectdetail_input" name="Customer PO No"
-                                                >
+                                                <input type="text" class="form-control-sm-sm projectdetail_input"
+                                                    name="Customer PO No">
                                             </div>
                                         </div>
 
@@ -283,8 +324,8 @@
                                                 <label for="Work Order No">Work Order No</label>
                                             </div>
                                             <div class="col-6">
-                                                <input type="text" class="form-control-sm-sm projectdetail_input" name="Work Order No"
-                                                >
+                                                <input type="text" class="form-control-sm-sm projectdetail_input"
+                                                    name="Work Order No">
                                             </div>
                                         </div>
 
@@ -305,11 +346,11 @@
                 </div>
                 <div class="row">
                     <div class="col-12 fixed-bottom d-flex justify-content-end mb-3">
-                        
-                            <button type="button" class="btn btn-info btn-sm projectdetail_btn">Add Project</button>
+
+                        <button type="button" class="btn btn-info btn-sm projectdetail_btn">Add Project</button>
 
 
-                    
+
 
 
                     </div>
